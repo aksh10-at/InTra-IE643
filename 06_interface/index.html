@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Notes2PDF — Handwritten notes to PDF</title>
+<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/" aria-label="Notes2PDF home"><span class="brandmark">N</span> Notes2PDF <span class="brandtag">IE643 COURSE PROJECT</span></a><div class="connection"><span class="dot" id="connection-dot"></span><span id="connection-label">Connecting</span><button class="text-button" id="signout" hidden>Sign out</button></div></header>
+<main>
+<section class="intro"><div><p class="eyebrow">HANDWRITTEN NOTES → STRUCTURED PDF</p><h1>From handwritten<br>to <em>ready to read.</em></h1><p class="intro-copy">Upload photos or scans of lecture notes. Get a searchable PDF with typeset<br>equations and diagram crops, plus an editable Markdown copy.</p></div><aside class="intro-steps" aria-label="How it works"><ol><li><strong>Clean</strong><span>page detection, contrast, denoising</span></li><li><strong>Read</strong><span>fine-tuned Qwen2.5-VL-7B</span></li><li><strong>Typeset</strong><span>LaTeX equations, Surya diagram crops</span></li></ol></aside></section>
+<div id="demo-banner" class="demo-banner" hidden><strong>Interface test mode</strong> · Files are decoded and preprocessed on this Mac. The PDF shows source previews. No recognition or layout model runs.</div>
+<section class="signin-panel" id="signin-panel" hidden><div><p class="eyebrow">PRIVATE ACCESS</p><h2>Sign in</h2><p>Enter the access key you were given. Your files and downloads stay private to this browser session.</p></div><form id="login-form"><label for="access-key">Access key</label><div class="login-controls"><input id="access-key" type="password" autocomplete="off" spellcheck="false" required placeholder="Paste your access key"><button type="submit" class="button" id="login-button">Sign in</button></div><p id="login-error" class="field-error" role="alert"></p></form></section>
+<div class="workspace">
+<section class="upload-panel panel">
+<div class="section-title"><span class="step-number">01</span><div><h2>Upload pages</h2><p>One document, in the order listed below.</p></div></div>
+<form id="convert-form">
+<label class="field-label" for="title">DOCUMENT TITLE</label><input id="title" type="text" value="Lecture notes" maxlength="120" required>
+<div class="dropzone" id="dropzone"><div class="upload-symbol" aria-hidden="true">↥</div><h3>Drop your notes here</h3><p>or <label for="files" class="file-label">choose files</label> from your device</p><input id="files" type="file" accept=".pdf,.heic,.heif,.hif,.png,.jpg,.jpeg,.webp,.bmp,.tif,.tiff,image/heic,image/heif" multiple><div class="format-pills"><span>PDF</span><span>HEIC / HEIF</span><span>JPG / PNG</span><span>+ more</span></div><p class="limits">20 pages maximum · 25 MiB total</p></div>
+<div class="file-heading" id="file-heading" hidden><span id="file-summary"></span><button type="button" class="text-button" id="clear-files">Clear all</button></div>
+<ol id="file-list" class="file-list" aria-label="Files in reading order"></ol>
+<p class="field-error" id="upload-error" role="alert"></p>
+<button class="button convert-button" id="convert" type="submit" disabled>Convert to PDF</button>
+<p class="below-button">The original pages are appended to the PDF for comparison.</p>
+</form>
+</section>
+<section class="output-panel panel" aria-labelledby="output-heading">
+<div class="section-title"><span class="step-number">02</span><div><h2 id="output-heading">Result</h2><p>Progress and downloads appear here.</p></div></div>
+<div id="empty-result" class="empty-result"><div class="paper-stack" aria-hidden="true"><div class="paper-sheet"><span></span><span></span><span class="short"></span><div class="paper-equation">a² + b² = c²</div><span></span><span class="short"></span></div></div><h3>No document yet</h3><p>Upload pages on the left to start.<br>The first upload loads the models (about a minute); later ones start immediately.</p></div>
+<div id="result" hidden aria-live="polite"><div class="result-heading"><span class="status-pill" id="status-pill">IN PROGRESS</span><span id="elapsed" class="elapsed"></span></div><h3 id="result-title">Preparing your document</h3><p id="status">Checking files…</p><div class="progress-track" id="progress-track"><div id="progress-bar"></div></div><ol class="stages" id="stages"><li data-stage="0"><span>1</span>Prepare pages</li><li data-stage="1"><span>2</span>Load models</li><li data-stage="2"><span>3</span>Read text, equations and diagrams</li><li data-stage="3"><span>4</span>Typeset the PDF</li></ol><div id="links" class="download-links"></div><div id="warnings"></div><div class="result-actions"><button class="text-button" id="retry-status" hidden>Check again</button><button class="text-button danger" id="delete-job" hidden>Delete these files from server</button></div></div>
+<div class="review-note"><span aria-hidden="true">✦</span><p><strong>Machine-generated draft.</strong> Check equations and diagram crops against the original pages before sharing.</p></div>
+</section>
+</div>
+<footer><span>NOTES2PDF · IE643</span><p>Uploads and results are deleted after 24 hours. Processing runs on the project’s own GPU machine.</p><span class="footer-end" id="model-state"></span></footer>
+</main>
+</body></html>
