@@ -2,7 +2,7 @@
 Sauvola adaptive binarization for handwritten pages.
 
 Sauvola (like most binarizers) assumes DARK ink on a LIGHT background.
-Pages with a dark background (blackboard, dark-green board, dark-mode ink)
+Pages with a dark background (IE643 class scribes: dark-green canvas, dark-mode ink)
 are therefore inverted first. --invert auto decides this per image from the
 median gray level.
 

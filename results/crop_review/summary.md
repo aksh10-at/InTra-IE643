@@ -13,10 +13,10 @@ By source (val + test):
 
 | source | figures | correct | partial | wrong | not a drawing |
 |---|---|---|---|---|---|
-| chalkboard (ie643) | 16 | 15 | 0 | 0 | 1 |
+| dark-background ink (ie643) | 16 | 15 | 0 | 0 | 1 |
 | digital ink (mlt) | 18 | 17 | 0 | 1 | 0 |
 | notebook photos (ie802) | 24 | 10 | 7 | 6 | 1 |
 
-Chalkboard and digital-ink figures are almost all right (32 of 34). Nearly all errors are on the
+IE643 and MLT (digital-ink) figures are almost all right (32 of 34). Nearly all errors are on the
 dense IE802 notebook pages, where many small sketches sit next to text: Surya splits or merges
 them and position-based matching then pairs some descriptions with the neighbouring sketch.

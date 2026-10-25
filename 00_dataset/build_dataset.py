@@ -24,7 +24,7 @@ the same source repeat the same equations and diagrams, so a random split would 
 near-duplicates into val/test and inflate every metric.
 
 Sources, told apart by filename prefix (the unit is the second part):
-  ie643_lecNN_pageNNN   chalkboard (Class Scribes), unit = lecture
+  ie643_lecNN_pageNNN   dark-background digital ink (Class Scribes), unit = lecture
   mlt_weekNN_pageNNN    digital stylus notes (MLT Notes), unit = week
   ie802_notes_pageNNN   notebook (IE802), one unit "notes"
   hlcs_noteNN_page001   HumynLabs notebooks, unit = note

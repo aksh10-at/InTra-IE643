@@ -20,7 +20,7 @@ reports and PDFs in `results/reconstruction/`. No hand fixes applied.
   Vanishing/Exploding Grad -> ... -> Soft-Max Function.
 - **Hand-graded figures** (all 58 placed in val + test, `results/crop_review/summary.md`):
   72% correct, 12% partial crop, 12% wrong drawing, 3% not a drawing; right drawing 84.5%.
-  Chalkboard 15/16 and digital ink 17/18 correct; IE802 notebook pages only 10/24 (dense small
+  IE643 15/16 and MLT 17/18 correct; IE802 notebook pages only 10/24 (dense small
   sketches: Surya splits/merges them and position matching picks a neighbour).
 - **PDF style:** Merriweather text (bundled, OFL), Latin Modern maths, DejaVu Serif for arrows,
   circled numbers and check marks Merriweather lacks; uniform green headings, 1.18 line spacing,

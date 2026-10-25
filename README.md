@@ -3,7 +3,7 @@
 IE 643 (Deep Learning: Theory and Practice), July–Dec 2026 course project, team **Intra**
 (Ishaan Mane, Akshat Verma).
 
-Photographed or scanned handwritten lecture notes go in; a searchable, structured PDF and an
+Handwritten lecture notes (digital stylus notes, scans or phone photos) go in; a searchable, structured PDF and an
 editable Markdown file come out. Text and equations are read by **Qwen2.5-VL-7B fine-tuned with
 QLoRA**, drawings are located by **Surya** and cropped from the original page, and a deterministic
 renderer builds the PDF without adding any content.
@@ -67,7 +67,7 @@ python3 06_interface/manage.py start --tunnel cloudflare     # web interface
 
 ## Data
 
-IE643 class scribes (chalkboard), MLT notes (digital ink), an IE802 notebook and 20 pages of the
+IE643 class scribes (digital stylus ink on a dark background), MLT notes (digital stylus ink on white), an IE802 notebook and 20 pages of the
 [HumynLabs handwritten CS notes](https://huggingface.co/datasets/HumynLabs/Handwritten-Computer-Science-Notes-Dataset).
 Split by lecture/week/notebook into 303 / 31 / 76 pages. Details: [`data/README.md`](data/README.md),
 [`findings/00_dataset.md`](findings/00_dataset.md).

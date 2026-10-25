@@ -19,8 +19,8 @@ error, so the reported score is wrong too. That is why only the 76 test pages mu
 
 | Unit | Pages | Type |
 |---|---|---|
-| ie643_lec03 | 001–015 | chalkboard, many equations |
-| ie643_lec09 | 001–019 | chalkboard, many equations |
+| ie643_lec03 | 001–015 | dark-background digital ink, many equations |
+| ie643_lec09 | 001–019 | dark-background digital ink, many equations |
 | mlt_week03 | 001–013 | digital-ink notes |
 | mlt_week09 | 001–013 | digital-ink notes |
 | ie802_notes | 045–056 | notebook photos |

@@ -9,7 +9,7 @@ For each unit (a lecture, a week, a notebook):
   2. every [Diagram: ...] line matched to a Surya figure crop by position on the page
      (both are in reading order; unequal counts are allowed); the crop replaces nothing,
      it is placed above the description, which becomes its caption
-  3. figure crops cut from the preprocessed page and cleaned (chalkboards inverted to
+  3. figure crops cut from the preprocessed page and cleaned (dark-background crops inverted to
      dark-on-white, contrast stretched)
   4. equations checked: by LaTeX when xelatex is installed (exact), otherwise by pandoc's
      math parser (approximate); a failing equation is shown verbatim with a warning,
@@ -131,7 +131,7 @@ def clean_crop(page_img, bbox, pad=0.01):
     crop = page_img.crop(box)
     gray = ImageOps.grayscale(crop)
     if ImageStat.Stat(gray).mean[0] < 100:
-        # chalkboard: grayscale first (inverting a green board in colour gives pink), then
+        # dark background: grayscale first (inverting a green background in colour gives pink), then
         # invert so strokes are dark on white for print
         crop = ImageOps.autocontrast(ImageOps.invert(gray), cutoff=1).convert("RGB")
     else:

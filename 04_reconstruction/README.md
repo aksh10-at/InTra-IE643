@@ -12,7 +12,7 @@ No model is involved, so nothing can be invented: every sentence and equation is
 | Figures | Each `[Diagram: ...]` matched to a Surya figure by position on the page (both in reading order; order-preserving alignment allows unequal counts). The crop goes in, the description becomes its caption. |
 | Over-split figures | When Surya has more figure boxes than the page has descriptions, the closest boxes on the same row/column are merged until the counts match (one drawing boxed as three icons becomes one crop) |
 | Unmatched | A description without a crop stays as italic text; a Surya drawing without a description is added only if it covers at least 3% of the page |
-| Crop cleaning | Chalkboard crops: grayscale, inverted to dark-on-white; others: contrast stretch |
+| Crop cleaning | Dark-background (IE643) crops: grayscale, inverted to dark-on-white; others: contrast stretch |
 | Figure layout | Numbered, centred figures with the description as caption; aspect ratio preserved; at most 55% text width / 30% text height on letter paper with 2 cm margins; pinned in place (no LaTeX floating), so order matches the notes |
 | Equations | Syntax checked with xelatex or Tectonic, else pandoc's approximate parser. Diagnosed failures are shown verbatim with a warning. Compiler errors/timeouts are reported separately; syntax success does not mean mathematical correctness. |
 

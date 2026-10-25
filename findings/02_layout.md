@@ -13,5 +13,5 @@
   text and equations, some partial or missed figures. Weights: research-use licence.
 - **Count check** (`results/layout/count_metrics.md`): Surya finds 93% of the drawings the labels
   mention (recall 0.93) and reports extra regions (precision 0.73: tables, split drawings); exact
-  count on 88% of test pages; weakest on chalkboard test pages (7 of 11).
+  count on 88% of test pages; weakest on IE643 test pages (7 of 11).
 - **Hand-graded crops** after reconstruction: see `04_reconstruction.md` (84.5% right drawing).

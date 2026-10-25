@@ -1,6 +1,6 @@
 # 00 · Dataset
 
-- **410 pages** from four sources: IE643 chalkboard frames (205), MLT digital-ink notes (129),
+- **410 pages** from four sources: IE643 class scribes, digital stylus ink on a dark background (205), MLT digital-ink notes on white (129),
   IE802 notebook photos (56), HumynLabs notebook photos (20). Labels: one Markdown file per page,
   `$...$` / `$$...$$` maths, `[Diagram: ...]` for drawings.
 - **Split by unit**, so near-identical neighbouring pages never cross splits: **train 303, val 31,

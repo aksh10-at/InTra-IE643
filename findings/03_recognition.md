@@ -9,7 +9,7 @@ Full table: [../results/recognition_experiments.md](../results/recognition_exper
   token F1 0.623 -> 0.855, normalised equation F1 0.143 -> 0.338, equation edit score 0.336 -> 0.703.
   Better on 74 of 76 pages. The zero-shot model also writes 1.5-3x too much text.
 - By source (test NED, clean): HumynLabs 0.170, digital ink 0.300, IE802 notebook 0.327,
-  chalkboard 0.331.
+  IE643 dark-background 0.331.
 - **clean vs boxed_json** (boxes drawn + JSON layout in the prompt): no measurable difference.
   Test paired NED +0.001 (95% CI -0.019 to +0.020), 32 pages better / 39 worse; val -0.011
   (CI -0.036 to +0.013). **clean is the final model**: no Surya step before recognition, training

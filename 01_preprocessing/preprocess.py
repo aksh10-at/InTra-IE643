@@ -13,11 +13,11 @@ Design notes
 - Deskew is OFF by default. Photos are already straightened by the page-boundary
   perspective warp, and the pages in our dataset are essentially upright. The
   projection-profile estimator below recovers a known tilt on dense ruled notebook
-  pages but not on chalkboard equations (it measures text lines, which a board
-  does not have), so it is opt-in (`deskew=True`) with a strict confidence gate.
+  pages but not on dark-background equation pages (it measures text lines, which such a
+  page does not have), so it is opt-in (`deskew=True`) with a strict confidence gate.
   The earlier minAreaRect-of-all-ink estimator rotated ~80% of straight digital
   pages by up to ~14 degrees and was removed.
-- Resizing happens before denoising: non-local-means is slow and the chalkboard
+- Resizing happens before denoising: non-local-means is slow and the IE643 dark-background
   frames are 7168 px wide.
 """
 import cv2
@@ -52,7 +52,7 @@ class NotesPreprocessor:
     def binarize(self, img: np.ndarray) -> np.ndarray:
         """Optional debug view only — not used for VLM training data."""
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) if img.ndim == 3 else img
-        if gray.mean() < 127:  # light text on dark background (e.g. chalkboard)
+        if gray.mean() < 127:  # light text on dark background (e.g. IE643 class scribes)
             gray = cv2.bitwise_not(gray)
         return cv2.adaptiveThreshold(
             gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
@@ -66,7 +66,7 @@ class NotesPreprocessor:
 
         Tries real document-boundary detection first (Canny edges, close gaps, fit a
         rotated rectangle, perspective-warp it flat). Falls back to a brightness
-        bounding-box crop when no confident page boundary exists (chalkboard frames
+        bounding-box crop when no confident page boundary exists (IE643 dark-background pages
         and digital-ink pages have no physical page edge to find).
         """
         quad, frac = self._find_page_quad(img)
@@ -90,7 +90,7 @@ class NotesPreprocessor:
         brightness crop then kept the desk. Desk and binding are dark or saturated
         regions that touch the image border and are large; ink strokes are neither,
         so they are kept. Measured: fires on 19 of the 21 IE802 fallback pages and on
-        no chalkboard, digital-ink or HumynLabs page. Returns (image, fraction whitened).
+        no IE643 dark-background, digital-ink or HumynLabs page. Returns (image, fraction whitened).
         """
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
         bg = ((hsv[..., 2] < 150) | (hsv[..., 1] > 70)).astype(np.uint8)
@@ -118,9 +118,9 @@ class NotesPreprocessor:
         """
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         if gray.mean() < 100:
-            # Dark background = chalkboard frame or dark-mode screenshot: there is no
+            # Dark background = IE643 dark-canvas digital ink or a dark-mode screenshot: there is no
             # physical page edge, and the largest edge shape is just a block of strokes.
-            # Warping to it cropped away most of the board on some pages.
+            # Warping to it cropped away most of the page on some pages.
             return None, 0.0
         blurred = cv2.GaussianBlur(gray, (5, 5), 0)
         edges = cv2.Canny(blurred, 30, 100)
@@ -228,7 +228,7 @@ class NotesPreprocessor:
     def _flatten_illumination(self, img: np.ndarray, info: dict) -> np.ndarray:
         """Divide out the slowly varying paper brightness (shadows, uneven light).
 
-        Skipped for dark backgrounds (chalkboards are fairly uniform and the division
+        Skipped for dark backgrounds (dark-background pages are fairly uniform and the division
         assumes dark ink on light paper).
         """
         info["illum"] = False

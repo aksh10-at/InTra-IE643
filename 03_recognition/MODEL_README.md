@@ -5,7 +5,7 @@ lecture notes into Markdown (`$...$` / `$$...$$` LaTeX, `[Diagram: ...]` for dra
 Code: https://github.com/aksh10-at/InTra-IE643 (`03_recognition/`, run name `final_clean`).
 
 ## Training
-- Data: 303 training pages (IE643 chalkboard, MLT digital ink, IE802 and HumynLabs notebook photos),
+- Data: 303 training pages (IE643 dark-background digital ink, MLT light-background digital ink, IE802 and HumynLabs notebook photos),
   split by lecture/week/notebook; best epoch chosen on 31 validation pages.
 - 4-bit NF4 QLoRA (double quantisation), bf16 compute; LoRA rank 16, alpha 32, dropout 0.05 on
   q, k, v, o, gate, up, down projections (47.6M trainable parameters).

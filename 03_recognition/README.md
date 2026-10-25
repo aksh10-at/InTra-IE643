@@ -38,5 +38,5 @@ Qwen2.5-VL uses one visual token per 28x28 pixels. Our processed pages are about
 | 1,000,000 | 865x1155 | about 1270 |
 | 1,500,000 | 1060x1414 | about 1910 |
 
-Smaller is cheaper but chalkboard handwriting gets harder to read. The pilot picks the value.
+Smaller is cheaper but small IE643 handwriting gets harder to read. The pilot picks the value.
 

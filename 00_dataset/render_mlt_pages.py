@@ -1,9 +1,9 @@
 """Render every page of every MLT Notes PDF to data/raw_scans/.
 
 Same idea as render_pages.py, pointed at a second source: "MLT Notes/" (digital
-stylus notes, one PDF per week), instead of Class Scribes (chalkboard photos).
+stylus notes, one PDF per week), instead of Class Scribes (dark-background digital ink).
 Kept as a separate script rather than editing render_pages.py, so the existing
-205-page chalkboard set can never be accidentally renamed or regenerated
+205-page Class Scribes set can never be accidentally renamed or regenerated
 differently by a change made for this new source.
 
 Usage: python3 00_dataset/render_mlt_pages.py
