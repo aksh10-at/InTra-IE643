@@ -10,9 +10,9 @@ if sys.prefix == sys.base_prefix:
     raise SystemExit('Activate the existing Qwen environment first; do not install into system Python.')
 PY
 if command -v uv >/dev/null 2>&1; then
-  uv pip install --python "$(command -v python3)" -r 06_interface/requirements.txt
+  uv pip install --python "$(command -v python3)" -r 06_interface_v2/requirements.txt
 else
-  python3 -m pip install -r 06_interface/requirements.txt
+  python3 -m pip install -r 06_interface_v2/requirements.txt
 fi
 python3 - <<'PY'
 from importlib.metadata import version
@@ -22,6 +22,6 @@ for package in ('Flask', 'Werkzeug', 'waitress', 'pillow-heif', 'Pillow'):
     print(f'{package}: {version(package)}')
 PY
 if ! command -v tailscale >/dev/null 2>&1; then
-  echo 'Tailscale is not installed (needed for the https://notes2pdf.<tailnet>.ts.net link). See 06_interface/README.md.'
+  echo 'Tailscale is not installed (needed for the https://notes2pdf.<tailnet>.ts.net link). See 06_interface_v2/README.md.'
 fi
 echo 'UI setup complete. Start only after training is idle, with an explicit corrected-data adapter path.'

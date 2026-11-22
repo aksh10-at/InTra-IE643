@@ -109,7 +109,7 @@ def supervise(args):
                 said = (error.stdout or '') + (error.stderr or '') if isinstance(error.stdout, str) else ''
                 link = re.search(r'https://login\.tailscale\.com/\S+', said)
                 raise RuntimeError('Tailscale Funnel needs one-time approval: open '
-                                   + (link.group(0) if link else 'the link printed by `tailscale funnel --bg 7860`')
+                                   + (link.group(0) if link else f'the link printed by `tailscale funnel --bg {args.port}`')
                                    + ' and approve, then run start again.') from None
             funnel_on = True
         elif args.tunnel == 'cloudflare':

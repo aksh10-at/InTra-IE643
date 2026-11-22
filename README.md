@@ -85,7 +85,7 @@ pip install -r requirements.txt -r 03_recognition/requirements-train.txt   # PyT
 python3 00_dataset/build_dataset.py && python3 00_dataset/check_dataset.py
 python3 01_preprocessing/batch_preprocess.py --workers 8 --force
 python3 02_layout/run_layout.py                    # needs the Surya/vLLM environments, see 02_layout/README.md
-python3 03_recognition/finetune_qwen25vl.py --test # trains and scores (about 1.5 h on a 16 GB GPU)
+python3 03_recognition/finetune_qwen25vl.py --test # trains (53 min on a 16 GB GPU), then scores val and test
 bash 04_reconstruction/run_reconstruction.sh       # PDFs for validation and test
 python3 05_evaluation/evaluate.py --pred preds/final_clean_test --split data/test.jsonl --full
 ```
