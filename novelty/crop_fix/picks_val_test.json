@@ -1,0 +1,2297 @@
+{
+ "rule": "max p_match over B25, Q, B2 (ties keep B25)",
+ "picks": {
+  "ie643_lec07_page002": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     249.875,
+     192.32,
+     1839.08,
+     853.42
+    ],
+    "scores": {
+     "B25": 0.9859,
+     "Q": 0.977,
+     "B2": 0.9876
+    },
+    "cands": {
+     "B25": [
+      249.875,
+      192.32,
+      1839.08,
+      847.41
+     ],
+     "Q": [
+      261,
+      173,
+      1842,
+      720
+     ],
+     "B2": [
+      249.875,
+      192.32,
+      1839.08,
+      853.42
+     ]
+    },
+    "text": "A chain of $N_1 \\to N_2 \\to \\cdots \\to N_{L-1} \\to N_L$ boxes, labeled \"Input layer\" (input vector $x \\in \\mathbb{R}^{n_d}$) on the left, \"Output layer\" on the right."
+   }
+  },
+  "ie643_lec07_page003": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     1173.413,
+     34.974,
+     1983.008,
+     647.622
+    ],
+    "scores": {
+     "B25": 0.9948,
+     "Q": 0.9941,
+     "B2": 0.9948
+    },
+    "cands": {
+     "B25": [
+      1173.413,
+      34.974,
+      1983.008,
+      647.622
+     ],
+     "Q": [
+      1174,
+      40,
+      1988,
+      635
+     ],
+     "B2": [
+      1173.413,
+      34.974,
+      1983.008,
+      647.622
+     ]
+    },
+    "text": "A wavy error curve with a local minimum marked at $(w_1,w_2)$, labeled \"NP-hard\" and \"local minimum\"."
+   }
+  },
+  "ie643_lec07_page004": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     0.0,
+     0.0,
+     1291.354,
+     886.2
+    ],
+    "scores": {
+     "B25": 0.9981,
+     "Q": 0.9964,
+     "B2": 0.9983
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      1287.356,
+      886.2
+     ],
+     "Q": [
+      55,
+      16,
+      1306,
+      898
+     ],
+     "B2": [
+      0.0,
+      0.0,
+      1291.354,
+      886.2
+     ]
+    },
+    "text": "A wavy error curve with local minima marked at $w_1$, $w_2$, etc., labeled \"local optimum points\" \u2014 one of these is the global optimum point."
+   },
+   "1": {
+    "pick": "B2",
+    "box": [
+     1291.354,
+     493.74,
+     1999.0,
+     1257.138
+    ],
+    "scores": {
+     "B25": 0.9526,
+     "Q": 0.9526,
+     "B2": 0.9627
+    },
+    "cands": {
+     "B25": [
+      1279.36,
+      493.74,
+      1993.003,
+      1266.0
+     ],
+     "Q": [
+      1288,
+      493,
+      1999,
+      1260
+     ],
+     "B2": [
+      1291.354,
+      493.74,
+      1999.0,
+      1257.138
+     ]
+    },
+    "text": "A funnel-shaped bowl (loss surface) with a ball rolling down from $w$ to $w+\\Delta w$."
+   }
+  },
+  "ie643_lec07_page007": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     1014.0,
+     15.353,
+     2000.0,
+     1169.19
+    ],
+    "scores": {
+     "B25": 0.989,
+     "Q": 0.9627,
+     "B2": 0.989
+    },
+    "cands": {
+     "B25": [
+      1014.0,
+      15.353,
+      2000.0,
+      1169.19
+     ],
+     "Q": [
+      1022,
+      62,
+      1750,
+      889
+     ],
+     "B2": [
+      1022.0,
+      12.991,
+      2000.0,
+      1169.19
+     ]
+    },
+    "text": "A 3D surface with level curves (contours of $f$) labeled $w_1$, $w_2$, and an arrow pointing downward into the minimum, illustrating a descent direction."
+   }
+  },
+  "ie643_lec07_page008": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     320.0,
+     1010.0,
+     980.0
+    ],
+    "scores": {
+     "B25": 0.9241,
+     "Q": 0.852,
+     "B2": 0.8933
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      320.0,
+      1010.0,
+      980.0
+     ],
+     "Q": [
+      4,
+      320,
+      1123,
+      970
+     ],
+     "B2": [
+      0.0,
+      320.0,
+      1120.0,
+      985.0
+     ]
+    },
+    "text": "A wavy curve with an arrow pointing left from a marked point, labeled \"step length/learning rate.\""
+   }
+  },
+  "ie643_lec07_page017": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     0.0,
+     0.0,
+     2000.0,
+     1376.0
+    ],
+    "scores": {
+     "B25": 0.9241,
+     "Q": 0.8933,
+     "B2": 0.9325
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      2000.0,
+      1353.984
+     ],
+     "Q": [
+      63,
+      17,
+      689,
+      1303
+     ],
+     "B2": [
+      0.0,
+      0.0,
+      2000.0,
+      1376.0
+     ]
+    },
+    "text": "A chain of neurons \u2014 input layer neuron \u2192 $j^{th}$ neuron in layer $l-1$ \u2192 $i^{th}$ neuron in layer $l$."
+   }
+  },
+  "ie643_lec07_page018": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     1250.0,
+     107.358,
+     1984.0,
+     883.544
+    ],
+    "scores": {
+     "B25": 0.9981,
+     "Q": 0.9981,
+     "B2": 0.9975
+    },
+    "cands": {
+     "B25": [
+      1250.0,
+      107.358,
+      1984.0,
+      883.544
+     ],
+     "Q": [
+      1267,
+      101,
+      1984,
+      886
+     ],
+     "B2": [
+      1260.0,
+      111.06,
+      1980.0,
+      888.48
+     ]
+    },
+    "text": "A neuron $a^l_i$ (layer $l$ input) feeding into multiple neurons of layer $l+1$, labeled $z_m^{l+1}$ and $a_m^{l+1}$."
+   }
+  },
+  "ie643_lec07_page020": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     0.0,
+     2000.0,
+     1332.0
+    ],
+    "scores": {
+     "B25": 0.7311
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      2000.0,
+      1332.0
+     ],
+     "Q": null,
+     "B2": null
+    },
+    "text": "A hexagonal grid of small circles, each with a dot at its center, arranged in a repeating pattern across the page."
+   }
+  },
+  "ie802_notes_page041": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     242,
+     70,
+     455,
+     202
+    ],
+    "scores": {
+     "B25": 0.7311,
+     "Q": 0.7549,
+     "B2": 0.7058
+    },
+    "cands": {
+     "B25": [
+      241.9,
+      78.0,
+      452.825,
+      204.0
+     ],
+     "Q": [
+      242,
+      70,
+      455,
+      202
+     ],
+     "B2": [
+      243.375,
+      76.0,
+      454.3,
+      206.0
+     ]
+    },
+    "text": "A squiggly \"S\" shape with \"$S$ not possible\" below."
+   },
+   "1": {
+    "pick": "B25",
+    "box": [
+     764,
+     52,
+     1191,
+     416
+    ],
+    "scores": {
+     "B25": 0.9526,
+     "Q": 0.9526,
+     "B2": 0.4378
+    },
+    "cands": {
+     "B25": [
+      764,
+      52,
+      1191,
+      416
+     ],
+     "Q": [
+      764,
+      52,
+      1191,
+      416
+     ],
+     "B2": [
+      759.625,
+      60.0,
+      1019.225,
+      218.0
+     ]
+    },
+    "text": "$S$ and $T$ separated by an arrow, labeled \"Separate $S$ from $T$ by a hyperplane... on linear.\""
+   },
+   "2": {
+    "pick": "B2",
+    "box": [
+     47.2,
+     452.0,
+     536.9,
+     888.0
+    ],
+    "scores": {
+     "B25": 0.9948,
+     "Q": 0.9972,
+     "B2": 0.9978
+    },
+    "cands": {
+     "B25": [
+      44.25,
+      448.0,
+      536.9,
+      886.0
+     ],
+     "Q": [
+      18,
+      397,
+      541,
+      892
+     ],
+     "B2": [
+      47.2,
+      452.0,
+      536.9,
+      888.0
+     ]
+    },
+    "text": "A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separating line through the middle."
+   },
+   "3": {
+    "pick": "B2",
+    "box": [
+     14.75,
+     920.0,
+     272.875,
+     1280.0
+    ],
+    "scores": {
+     "B25": 0.9669,
+     "Q": 0.9669,
+     "B2": 0.974
+    },
+    "cands": {
+     "B25": [
+      18,
+      920,
+      281,
+      1280
+     ],
+     "Q": [
+      18,
+      920,
+      281,
+      1280
+     ],
+     "B2": [
+      14.75,
+      920.0,
+      272.875,
+      1280.0
+     ]
+    },
+    "text": "Two overlapping \"S1\" regions, each with a red separating line through them."
+   },
+   "4": {
+    "pick": "Q",
+    "box": [
+     0,
+     866,
+     953,
+     1282
+    ],
+    "scores": {
+     "B25": 0.5622,
+     "Q": 0.6514,
+     "B2": 0.6514
+    },
+    "cands": {
+     "B25": [
+      14.75,
+      796.0,
+      1209.5,
+      1276.0
+     ],
+     "Q": [
+      0,
+      866,
+      953,
+      1282
+     ],
+     "B2": [
+      0,
+      866,
+      953,
+      1282
+     ]
+    },
+    "text": "A scatter plot of points with a red separating line, labeled \"minimize flat hat 2-norm\" \u2014 \"split cutg...\" \u2014 \"not necessary\" \u2014 \"no good\" \u2014 \"too big of separation\" \u2014 \"using convex hulls\" \u2014 \"shrink\" \u2014 \"and convex hull\"."
+   },
+   "5": {
+    "pick": "B25",
+    "box": [
+     541,
+     862,
+     959,
+     1258
+    ],
+    "scores": {
+     "B25": 0.974,
+     "Q": 0.974,
+     "B2": 0.9579
+    },
+    "cands": {
+     "B25": [
+      541,
+      862,
+      959,
+      1258
+     ],
+     "Q": [
+      541,
+      862,
+      959,
+      1258
+     ],
+     "B2": [
+      413.0,
+      840.0,
+      973.5,
+      1260.0
+     ]
+    },
+    "text": "A polygonal region with a red separating line through it, labeled \"split cutg...\" \u2014 \"this has been done before\" \u2014 \"(shrinkage needs more research)\"."
+   }
+  },
+  "ie802_notes_page042": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     855.358,
+     208.0,
+     1048.6,
+     356.0
+    ],
+    "scores": {
+     "B25": 0.989,
+     "Q": 0.9797,
+     "B2": 0.982
+    },
+    "cands": {
+     "B25": [
+      855.358,
+      208.0,
+      1048.6,
+      356.0
+     ],
+     "Q": [
+      861,
+      209,
+      1063,
+      361
+     ],
+     "B2": [
+      859.852,
+      210.0,
+      1048.6,
+      360.0
+     ]
+    },
+    "text": "A set $S$ split into two regions by a vertical line, labeled \"S\" on the left and \"$11$\" on the right."
+   },
+   "1": {
+    "pick": "Q",
+    "box": [
+     244,
+     631,
+     437,
+     789
+    ],
+    "scores": {
+     "B25": 0.989,
+     "Q": 0.9914,
+     "B2": 0.9903
+    },
+    "cands": {
+     "B25": [
+      244.174,
+      630.0,
+      434.42,
+      784.0
+     ],
+     "Q": [
+      244,
+      631,
+      437,
+      789
+     ],
+     "B2": [
+      247.17,
+      630.0,
+      434.42,
+      790.0
+     ]
+    },
+    "text": "Two overlapping sets $S_1$ and $S_2$."
+   },
+   "2": {
+    "pick": "B25",
+    "box": [
+     387.982,
+     790.0,
+     719.04,
+     1010.0
+    ],
+    "scores": {
+     "B25": 0.9841,
+     "Q": 0.2942,
+     "B2": 0.977
+    },
+    "cands": {
+     "B25": [
+      387.982,
+      790.0,
+      719.04,
+      1010.0
+     ],
+     "Q": [
+      389,
+      780,
+      610,
+      923
+     ],
+     "B2": [
+      389.48,
+      790.0,
+      719.04,
+      1010.0
+     ]
+    },
+    "text": "Two separate sets $S_1$ and $S_2$ each with a line $\\alpha x \\leq \\beta$ through them."
+   },
+   "3": {
+    "pick": "B2",
+    "box": [
+     247.17,
+     1340.0,
+     719.04,
+     1620.0
+    ],
+    "scores": {
+     "B25": 0.9627,
+     "Q": 0.9669,
+     "B2": 0.982
+    },
+    "cands": {
+     "B25": [
+      244.174,
+      1336.0,
+      1113.014,
+      1616.0
+     ],
+     "Q": [
+      246,
+      1340,
+      722,
+      1568
+     ],
+     "B2": [
+      247.17,
+      1340.0,
+      719.04,
+      1620.0
+     ]
+    },
+    "text": "An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded region on the right."
+   }
+  },
+  "ie802_notes_page044": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     860.775,
+     756.0,
+     1278.438,
+     976.0
+    ],
+    "scores": {
+     "B25": 0.982,
+     "Q": 0.9669,
+     "B2": 0.982
+    },
+    "cands": {
+     "B25": [
+      860.775,
+      756.0,
+      1278.438,
+      976.0
+     ],
+     "Q": [
+      855,
+      758,
+      1294,
+      991
+     ],
+     "B2": [
+      862.272,
+      754.0,
+      1278.438,
+      976.0
+     ]
+    },
+    "text": "A red line (convex hull boundary) through a set of marked points on an oval curve, illustrating the convex hull concept."
+   }
+  },
+  "mlt_week06_page002": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     466.5,
+     1810.0,
+     1100.94,
+     1902.0
+    ],
+    "scores": {
+     "B25": 0.9978,
+     "Q": 0.9914,
+     "B2": 0.9978
+    },
+    "cands": {
+     "B25": [
+      466.5,
+      1810.0,
+      1100.94,
+      1902.0
+     ],
+     "Q": [
+      466,
+      1866,
+      1159,
+      1934
+     ],
+     "B2": [
+      464.945,
+      1810.0,
+      1100.94,
+      1904.0
+     ]
+    },
+    "text": "A horizontal bar divided into two parts labeled \"training set\" (left) and \"validation set\" (right)."
+   }
+  },
+  "mlt_week06_page003": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     314,
+     617,
+     943,
+     713
+    ],
+    "scores": {
+     "B25": 0.9914,
+     "Q": 0.9914,
+     "B2": 0.9914
+    },
+    "cands": {
+     "B25": [
+      314,
+      617,
+      943,
+      713
+     ],
+     "Q": [
+      314,
+      617,
+      943,
+      713
+     ],
+     "B2": [
+      314,
+      617,
+      943,
+      713
+     ]
+    },
+    "text": "A row of boxes labeled $F_1, F_2, \\dots, F_k$, with a line through the middle of the last box."
+   }
+  },
+  "ie643_lec03_page002": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     0.0,
+     1480.0,
+     1038.78
+    ],
+    "scores": {
+     "B25": 0.9995,
+     "B2": 0.9987
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      1480.0,
+      1038.78
+     ],
+     "Q": null,
+     "B2": [
+      0.0,
+      0.0,
+      1500.0,
+      716.4
+     ]
+    },
+    "text": "A perceptron neuron \u2014 inputs $x_1, x_2, \\dots, x_d$ each with weight $w_1, w_2, \\dots, w_d$, feeding into a dot-product sum $\\sum_{j=1}^{d} w_j x_j$. The output branch splits: $\\geq\\theta \\to +1$, $<\\theta \\to -1$."
+   }
+  },
+  "ie643_lec03_page004": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     40.0,
+     514.71,
+     2000.0,
+     1197.0
+    ],
+    "scores": {
+     "B25": 0.9399,
+     "Q": 0.9466,
+     "B2": 0.9903
+    },
+    "cands": {
+     "B25": [
+      554.0,
+      519.498,
+      1448.0,
+      1079.694
+     ],
+     "Q": [
+      708,
+      521,
+      1688,
+      1080
+     ],
+     "B2": [
+      40.0,
+      514.71,
+      2000.0,
+      1197.0
+     ]
+    },
+    "text": "A line $x_1 - 2x_2 = 3$ (offset/bias) plotted on axes $x_1, x_2$, with a point $(x_1, x_2)$ marked near the line, showing its projection onto the normal vector $\\vec{n}$ of the line."
+   }
+  },
+  "ie643_lec03_page007": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     1044.0,
+     253.552,
+     1984.0,
+     1182.43
+    ],
+    "scores": {
+     "B25": 0.9975,
+     "Q": 0.9964,
+     "B2": 0.9954
+    },
+    "cands": {
+     "B25": [
+      1044.0,
+      253.552,
+      1984.0,
+      1182.43
+     ],
+     "Q": [
+      1006,
+      242,
+      1987,
+      1200
+     ],
+     "B2": [
+      1050.0,
+      254.771,
+      1982.0,
+      1179.992
+     ]
+    },
+    "text": "A chain of boxes labeled $w^t$, $(x^t,y^t)$, $w^{t+1}$, $(x^{t+1},y^{t+1})$, $\\hat{y}^t$, $\\hat{y}^{t+1}$, $w^{t+2}$, illustrating the online learning process over time."
+   }
+  },
+  "ie643_lec03_page010": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     208,
+     41,
+     1087,
+     984
+    ],
+    "scores": {
+     "B25": 0.9964,
+     "Q": 0.9992,
+     "B2": 0.9968
+    },
+    "cands": {
+     "B25": [
+      208.0,
+      37.324,
+      1072.0,
+      951.16
+     ],
+     "Q": [
+      208,
+      41,
+      1087,
+      984
+     ],
+     "B2": [
+      208.0,
+      36.12,
+      1076.0,
+      977.648
+     ]
+    },
+    "text": "A scatter plot of overlapping \"+\" and \"-\" data points with many crossing lines (hyperplanes) drawn through them."
+   }
+  },
+  "ie643_lec09_page002": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     472,
+     250,
+     943,
+     857
+    ],
+    "scores": {
+     "B25": 0.5927,
+     "Q": 0.5927,
+     "B2": 0.5927
+    },
+    "cands": {
+     "B25": [
+      472,
+      250,
+      943,
+      857
+     ],
+     "Q": [
+      472,
+      250,
+      943,
+      857
+     ],
+     "B2": [
+      472,
+      250,
+      943,
+      857
+     ]
+    },
+    "text": "A chain of nodes $a_j^{l-1}$ feeding into $z_i^l$, which feeds into $a_i^l$."
+   }
+  },
+  "ie643_lec09_page005": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     0.0,
+     1979.01,
+     981.96
+    ],
+    "scores": {
+     "B25": 0.9983,
+     "Q": 0.9841,
+     "B2": 0.9981
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      1979.01,
+      981.96
+     ],
+     "Q": [
+      54,
+      57,
+      1292,
+      825
+     ],
+     "B2": [
+      0.0,
+      0.0,
+      1999.0,
+      1002.0
+     ]
+    },
+    "text": "A chain of fully-connected layers \u2014 input layer (a $d$-dim vector) \u2192 several hidden layers \u2192 output layer ($C$ neurons, one per class)."
+   }
+  },
+  "ie643_lec09_page006": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     1371,
+     642,
+     1552,
+     1153
+    ],
+    "scores": {
+     "B25": 0.8933,
+     "Q": 0.8933,
+     "B2": 0.8933
+    },
+    "cands": {
+     "B25": [
+      1371,
+      642,
+      1552,
+      1153
+     ],
+     "Q": [
+      1371,
+      642,
+      1552,
+      1153
+     ],
+     "B2": [
+      1371,
+      642,
+      1552,
+      1153
+     ]
+    },
+    "text": "A column of $C$-dimensional vectors, each with a single 1 in the $k^{th}$ position and 0s elsewhere, labeled \"1st component\"."
+   }
+  },
+  "ie643_lec09_page013": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     38.67,
+     1108.0,
+     1263.22
+    ],
+    "scores": {
+     "B25": 0.9669,
+     "Q": 0.9399,
+     "B2": 0.9399
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      38.67,
+      1108.0,
+      1263.22
+     ],
+     "Q": [
+      16,
+      49,
+      510,
+      765
+     ],
+     "B2": [
+      16,
+      49,
+      510,
+      765
+     ]
+    },
+    "text": "A column of output neurons $\\hat{y}_1, \\hat{y}_2, \\dots, \\hat{y}_C$, each connected to a separate box (layer input)."
+   }
+  },
+  "ie643_lec09_page014": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     0.0,
+     1580.0,
+     581.0
+    ],
+    "scores": {
+     "B25": 0.7058,
+     "B2": 0.6514
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      1580.0,
+      581.0
+     ],
+     "Q": null,
+     "B2": [
+      0.0,
+      0.0,
+      2000.0,
+      749.49
+     ]
+    },
+    "text": "A chain of fully-connected layers (left) vs. a fully-connected layer feeding into a single output neuron (right)."
+   }
+  },
+  "ie643_lec09_page015": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     609,
+     57,
+     930,
+     898
+    ],
+    "scores": {
+     "B25": 0.9876,
+     "Q": 0.9914,
+     "B2": 0.9914
+    },
+    "cands": {
+     "B25": [
+      608.0,
+      39.42,
+      962.0,
+      897.9
+     ],
+     "Q": [
+      609,
+      57,
+      930,
+      898
+     ],
+     "B2": [
+      609,
+      57,
+      930,
+      898
+     ]
+    },
+    "text": "A chain of neurons labeled $a_1^L, a_2^L, \\dots, a_C^L$, each feeding into the next."
+   }
+  },
+  "ie643_lec09_page016": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     0.0,
+     826.0,
+     979.215
+    ],
+    "scores": {
+     "B25": 0.9466,
+     "Q": 0.9149,
+     "B2": 0.8808
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      0.0,
+      826.0,
+      979.215
+     ],
+     "Q": [
+      0,
+      0,
+      828,
+      984
+     ],
+     "B2": [
+      0.0,
+      0.0,
+      830.0,
+      982.125
+     ]
+    },
+    "text": "A feedforward neural network with input layer nodes $a_1, a_2, \\dots, a_c$, fully connecting to an output layer node (neuron) computing $\\hat{y}_j$ for each of $c$ outputs."
+   }
+  },
+  "ie802_notes_page046": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     898.2,
+     438.0,
+     1392.21,
+     720.0
+    ],
+    "scores": {
+     "B25": 0.9983,
+     "Q": 0.9981,
+     "B2": 0.9985
+    },
+    "cands": {
+     "B25": [
+      898.2,
+      440.0,
+      1390.713,
+      722.0
+     ],
+     "Q": [
+      855,
+      441,
+      1419,
+      725
+     ],
+     "B2": [
+      898.2,
+      438.0,
+      1392.21,
+      720.0
+     ]
+    },
+    "text": "A polygon with vertices marked by \"x\"s, one red dot labeled \"corner point\" at the bottom right."
+   },
+   "1": {
+    "pick": "B2",
+    "box": [
+     419.16,
+     880.0,
+     1175.145,
+     1530.0
+    ],
+    "scores": {
+     "B25": 0.9669,
+     "Q": 0.9466,
+     "B2": 0.977
+    },
+    "cands": {
+     "B25": [
+      414.669,
+      878.0,
+      1169.157,
+      1528.0
+     ],
+     "Q": [
+      371,
+      895,
+      1210,
+      1538
+     ],
+     "B2": [
+      419.16,
+      880.0,
+      1175.145,
+      1530.0
+     ]
+    },
+    "text": "A cone with several \"x\" points inside and a few outside, an arrow from a point inside the cone to another point outside labeled \"yield cut for original problem too\", with a note \"has to get these cuts\"."
+   },
+   "2": {
+    "pick": "B25",
+    "box": [
+     350.298,
+     1644.0,
+     717.063,
+     1886.0
+    ],
+    "scores": {
+     "B25": 0.9526,
+     "Q": 0.9149,
+     "B2": 0.9047
+    },
+    "cands": {
+     "B25": [
+      350.298,
+      1644.0,
+      717.063,
+      1886.0
+     ],
+     "Q": [
+      321,
+      1646,
+      1301,
+      1927
+     ],
+     "B2": [
+      351.795,
+      1640.0,
+      726.045,
+      1890.0
+     ]
+    },
+    "text": "A region with a red cross through it, labeled \"current plane\", and a note \"intersection of tiny region does not have any feasible point\"."
+   }
+  },
+  "ie802_notes_page047": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     703.59,
+     326.0,
+     1261.971,
+     502.0
+    ],
+    "scores": {
+     "B25": 0.9941,
+     "Q": 0.9924,
+     "B2": 0.6225
+    },
+    "cands": {
+     "B25": [
+      703.59,
+      326.0,
+      1261.971,
+      502.0
+     ],
+     "Q": [
+      704,
+      321,
+      1354,
+      500
+     ],
+     "B2": [
+      705.087,
+      328.0,
+      986.523,
+      502.0
+     ]
+    },
+    "text": "A polygon with a marked corner point, labeled \"basic Gom point\", and an arrow labeled \"cut off here as much deeper\"."
+   },
+   "1": {
+    "pick": "B2",
+    "box": [
+     353.292,
+     700.0,
+     573.351,
+     902.0
+    ],
+    "scores": {
+     "B25": 0.977,
+     "Q": 0.8808,
+     "B2": 0.9797
+    },
+    "cands": {
+     "B25": [
+      353.292,
+      700.0,
+      571.854,
+      902.0
+     ],
+     "Q": [
+      353,
+      702,
+      561,
+      899
+     ],
+     "B2": [
+      353.292,
+      700.0,
+      573.351,
+      902.0
+     ]
+    },
+    "text": "A square containing a smaller circle \u2014 a convex set."
+   },
+   "2": {
+    "pick": "Q",
+    "box": [
+     888,
+     749,
+     1347,
+     948
+    ],
+    "scores": {
+     "B25": 0.2018,
+     "Q": 0.9149,
+     "B2": 0.2689
+    },
+    "cands": {
+     "B25": [
+      893.709,
+      750.0,
+      1092.81,
+      934.0
+     ],
+     "Q": [
+      888,
+      749,
+      1347,
+      948
+     ],
+     "B2": [
+      893.709,
+      750.0,
+      1098.798,
+      932.0
+     ]
+    },
+    "text": "An irregular shape with a small circle inside, labeled \"we cant chop off the palm\"."
+   },
+   "3": {
+    "pick": "Q",
+    "box": [
+     907,
+     976,
+     1101,
+     1155
+    ],
+    "scores": {
+     "B25": 0.3775,
+     "Q": 0.5312,
+     "B2": 0.5312
+    },
+    "cands": {
+     "B25": [
+      907.182,
+      976.0,
+      1088.319,
+      1150.0
+     ],
+     "Q": [
+      907,
+      976,
+      1101,
+      1155
+     ],
+     "B2": [
+      910.176,
+      976.0,
+      1094.307,
+      1150.0
+     ]
+    },
+    "text": "A rectangle with a red dot marked on one side, labeled \"not useful\"."
+   },
+   "4": {
+    "pick": "B25",
+    "box": [
+     778.44,
+     1280.0,
+     1068.858,
+     1482.0
+    ],
+    "scores": {
+     "B25": 0.9841,
+     "Q": 0.9841,
+     "B2": 0.9797
+    },
+    "cands": {
+     "B25": [
+      778.44,
+      1280.0,
+      1068.858,
+      1482.0
+     ],
+     "Q": [
+      888,
+      1282,
+      1078,
+      1493
+     ],
+     "B2": [
+      779.937,
+      1280.0,
+      1071.852,
+      1484.0
+     ]
+    },
+    "text": "A shaded region with a marked point, labeled \"Valid cut\"."
+   }
+  },
+  "ie802_notes_page048": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     77.0,
+     220.0,
+     338.8,
+     440.0
+    ],
+    "scores": {
+     "B25": 0.8808,
+     "Q": 0.8933,
+     "B2": 0.9241
+    },
+    "cands": {
+     "B25": [
+      73.92,
+      218.0,
+      331.1,
+      458.0
+     ],
+     "Q": [
+      71,
+      207,
+      417,
+      461
+     ],
+     "B2": [
+      77.0,
+      220.0,
+      338.8,
+      440.0
+     ]
+    },
+    "text": "A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a corner point and cutting all the edge of infeasible region then draw a cut."
+   }
+  },
+  "ie802_notes_page052": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     394.97,
+     514.0,
+     803.935,
+     738.0
+    ],
+    "scores": {
+     "B25": 0.9579,
+     "Q": 0.9325,
+     "B2": 0.9579
+    },
+    "cands": {
+     "B25": [
+      394.97,
+      514.0,
+      803.935,
+      738.0
+     ],
+     "Q": [
+      365,
+      516,
+      812,
+      743
+     ],
+     "B2": [
+      396.525,
+      516.0,
+      805.49,
+      700.0
+     ]
+    },
+    "text": "A wavy curve with a local minimum marked at the start, and another point further along the curve."
+   },
+   "1": {
+    "pick": "Q",
+    "box": [
+     331,
+     1445,
+     810,
+     1673
+    ],
+    "scores": {
+     "B25": 0.4378,
+     "Q": 0.9841,
+     "B2": 0.3775
+    },
+    "cands": {
+     "B25": [
+      331.215,
+      1452.0,
+      802.38,
+      1656.0
+     ],
+     "Q": [
+      331,
+      1445,
+      810,
+      1673
+     ],
+     "B2": [
+      331.215,
+      1452.0,
+      802.38,
+      1658.0
+     ]
+    },
+    "text": "A graph with nodes $x_1, x_2, x_3, x_4$ \u2014 $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an edge to $x_4$."
+   }
+  },
+  "ie802_notes_page054": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     121,
+     1347,
+     365,
+     1575
+    ],
+    "scores": {
+     "B25": 0.8933,
+     "Q": 0.9047,
+     "B2": 0.8933
+    },
+    "cands": {
+     "B25": [
+      125.748,
+      1346.0,
+      359.28,
+      1572.0
+     ],
+     "Q": [
+      121,
+      1347,
+      365,
+      1575
+     ],
+     "B2": [
+      125.748,
+      1348.0,
+      360.777,
+      1574.0
+     ]
+    },
+    "text": "A tree with root node branching into two children, each of which branches further."
+   }
+  },
+  "ie802_notes_page055": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     129.54,
+     194.0,
+     507.492,
+     552.0
+    ],
+    "scores": {
+     "B25": 0.9579,
+     "Q": 0.9579,
+     "B2": 0.989
+    },
+    "cands": {
+     "B25": [
+      129.54,
+      194.0,
+      504.444,
+      552.0
+     ],
+     "Q": [
+      235,
+      193,
+      627,
+      552
+     ],
+     "B2": [
+      129.54,
+      194.0,
+      507.492,
+      552.0
+     ]
+    },
+    "text": "A branching tree \u2014 root splits into two children, each of which splits further, one branch ending at a node labeled \"not useful\" with $y=6$, violating cardinality constraint."
+   }
+  },
+  "mlt_week03_page007": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     1146.0,
+     1239.489,
+     1696.0
+    ],
+    "scores": {
+     "B25": 0.9981,
+     "Q": 0.9972,
+     "B2": 0.9972
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      1146.0,
+      1239.489,
+      1696.0
+     ],
+     "Q": [
+      88,
+      1202,
+      1076,
+      1714
+     ],
+     "B2": [
+      15.83,
+      1150.0,
+      870.65,
+      1700.0
+     ]
+    },
+    "text": "A 2D scatter plot showing two clusters \u2014 yellow shaded region labeled \"Cluster 1 region\" on the left, green shaded region labeled \"Cluster 2 region\" on the right. A dashed line from $\\mu_1$ to $\\mu_2$ is shown, with an arrow pointing right labeled \"$(x_2-\\mu_1)$\". The line $x^T(\\mu_2-\\mu_1)=0$ is marked at the bottom."
+   }
+  },
+  "mlt_week03_page008": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     175,
+     185,
+     898,
+     813
+    ],
+    "scores": {
+     "B25": 0.9954,
+     "Q": 0.9975,
+     "B2": 0.9933
+    },
+    "cands": {
+     "B25": [
+      185.504,
+      183.908,
+      1069.64,
+      807.596
+     ],
+     "Q": [
+      175,
+      185,
+      898,
+      813
+     ],
+     "B2": [
+      187.0,
+      183.908,
+      1074.128,
+      811.594
+     ]
+    },
+    "text": "A central point with radii drawn to three cluster centers $\\mu_1$, $\\mu_2$, $\\mu_3$. Each radius defines a \"cluster region\" \u2014 yellow for Cluster 1, green for Cluster 2, purple for Cluster 3 \u2014 as the area closer than its respective center."
+   }
+  },
+  "mlt_week03_page010": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     540,
+     281,
+     1035,
+     628
+    ],
+    "scores": {
+     "B25": 0.8933,
+     "Q": 0.9466,
+     "B2": 0.9149
+    },
+    "cands": {
+     "B25": [
+      590.64,
+      282.0,
+      1021.2,
+      584.0
+     ],
+     "Q": [
+      540,
+      281,
+      1035,
+      628
+     ],
+     "B2": [
+      590.64,
+      286.0,
+      1025.34,
+      582.0
+     ]
+    },
+    "text": "A scatter plot showing a red dot at $(7,4)$, with several other points scattered around it."
+   },
+   "1": {
+    "pick": "B25",
+    "box": [
+     590.64,
+     1190.0,
+     1021.2,
+     1488.0
+    ],
+    "scores": {
+     "B25": 0.867,
+     "Q": 0.7549,
+     "B2": 0.867
+    },
+    "cands": {
+     "B25": [
+      590.64,
+      1190.0,
+      1021.2,
+      1488.0
+     ],
+     "Q": [
+      571,
+      1194,
+      1057,
+      1556
+     ],
+     "B2": [
+      590.64,
+      1194.0,
+      1025.34,
+      1490.0
+     ]
+    },
+    "text": "A scatter plot showing a green dot at $(3,3)$, with a red dot at $(7,4)$ and several other points scattered around them."
+   }
+  },
+  "mlt_week03_page011": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     534,
+     517,
+     1000,
+     810
+    ],
+    "scores": {
+     "B25": 0.6225,
+     "Q": 0.6792,
+     "B2": 0.5312
+    },
+    "cands": {
+     "B25": [
+      534.254,
+      468.0,
+      1009.42,
+      824.0
+     ],
+     "Q": [
+      534,
+      517,
+      1000,
+      810
+     ],
+     "B2": [
+      539.178,
+      472.0,
+      1015.575,
+      814.0
+     ]
+    },
+    "text": "A scatter plot showing three red dots at $(5,9)$, $(8,3)$, and $(10,1)$, two blue dots at $(3,3)$, and one green dot at $(1,3)$, labeled $\\mu_1^0$, $\\mu_2^0$, $\\mu_3^0$."
+   }
+  },
+  "mlt_week03_page013": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     0.0,
+     9.995,
+     1033.956,
+     499.75
+    ],
+    "scores": {
+     "B25": 0.9975,
+     "Q": 0.9933,
+     "B2": 0.9972
+    },
+    "cands": {
+     "B25": [
+      0.0,
+      9.995,
+      1033.956,
+      499.75
+     ],
+     "Q": [
+      139,
+      17,
+      1055,
+      411
+     ],
+     "B2": [
+      0.0,
+      0.0,
+      1035.448,
+      499.75
+     ]
+    },
+    "text": "A plot of objective function vs. $k$, with a red dashed line showing the objective, a blue solid line showing $\\text{penalty}(k)$, and their sum (purple) crossing at $k^*$."
+   }
+  },
+  "mlt_week09_page001": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     80,
+     575,
+     1136,
+     1030
+    ],
+    "scores": {
+     "B25": 0.9964,
+     "Q": 0.9968,
+     "B2": 0.9964
+    },
+    "cands": {
+     "B25": [
+      78.822,
+      572.0,
+      1065.456,
+      1000.0
+     ],
+     "Q": [
+      80,
+      575,
+      1136,
+      1030
+     ],
+     "B2": [
+      82.899,
+      574.0,
+      1066.815,
+      1000.0
+     ]
+    },
+    "text": "Two scatter plots \u2014 one with a clear linear separator (left, \"Linear separate exists\"), the other with overlapping clusters (right, \"No linear separator\")."
+   }
+  },
+  "mlt_week09_page003": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     189.789,
+     1214.0,
+     1414.931,
+     1656.0
+    ],
+    "scores": {
+     "B25": 0.9933,
+     "Q": 0.977,
+     "B2": 0.9669
+    },
+    "cands": {
+     "B25": [
+      189.789,
+      1214.0,
+      1414.931,
+      1656.0
+     ],
+     "Q": [
+      139,
+      1232,
+      667,
+      1650
+     ],
+     "B2": [
+      192.875,
+      1214.0,
+      668.119,
+      1642.0
+     ]
+    },
+    "text": "Two scatter plots of data points with a dashed decision boundary line, showing an initial misclassified point near the origin being corrected by the update rule, resulting in a new, more accurate boundary."
+   }
+  },
+  "mlt_week09_page004": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     259,
+     225,
+     1031,
+     1353
+    ],
+    "scores": {
+     "B25": 0.4378,
+     "Q": 0.852,
+     "B2": 0.5312
+    },
+    "cands": {
+     "B25": [
+      265.33,
+      217.891,
+      1263.85,
+      679.66
+     ],
+     "Q": [
+      259,
+      225,
+      1031,
+      1353
+     ],
+     "B2": [
+      268.47,
+      221.889,
+      879.2,
+      617.691
+     ]
+    },
+    "text": "A line through the origin with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1)$ on one side labeled $+1$, and $(\\begin{bmatrix}-1\\\\0\\end{bmatrix},+1)$, $(\\begin{bmatrix}0\\\\-1\\end{bmatrix},+1)$ on the other side."
+   },
+   "1": {
+    "pick": "B2",
+    "box": [
+     379.94,
+     873.563,
+     1017.36,
+     1291.354
+    ],
+    "scores": {
+     "B25": 0.5622,
+     "Q": 0.6792,
+     "B2": 0.7058
+    },
+    "cands": {
+     "B25": [
+      376.8,
+      869.565,
+      1014.22,
+      1287.356
+     ],
+     "Q": [
+      259,
+      903,
+      1031,
+      1353
+     ],
+     "B2": [
+      379.94,
+      873.563,
+      1017.36,
+      1291.354
+     ]
+    },
+    "text": "Same line through the origin, but now with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1)$ on the \"wrong\" side (below the line) labeled $+1$, and $(\\begin{bmatrix}-1\\\\0\\end{bmatrix},+1)$, $(\\begin{bmatrix}0\\\\-1\\end{bmatrix},+1)$ still on the \"correct\" side above the line."
+   },
+   "2": {
+    "pick": "B25",
+    "box": [
+     105.19,
+     1469.265,
+     645.27,
+     1903.048
+    ],
+    "scores": {
+     "B25": 0.852,
+     "B2": 0.7311
+    },
+    "cands": {
+     "B25": [
+      105.19,
+      1469.265,
+      645.27,
+      1903.048
+     ],
+     "Q": null,
+     "B2": [
+      108.33,
+      1475.262,
+      646.84,
+      1905.047
+     ]
+    },
+    "text": "A scatter plot of points $\\begin{bmatrix}0\\\\1\\end{bmatrix}$, $\\begin{bmatrix}-1\\\\1/2\\end{bmatrix}$, $\\begin{bmatrix}-1\\\\-1\\end{bmatrix}$, $\\begin{bmatrix}1\\\\-1\\end{bmatrix}$, all labeled $+1$. A separating line through the origin is shown, with an arrow from $\\begin{bmatrix}-1\\\\1/2\\end{bmatrix}$ to $\\begin{bmatrix}1\\\\1/2\\end{bmatrix}=w^*$, and another arrow from $\\begin{bmatrix}-1\\\\-1\\end{bmatrix}$ to $\\begin{bmatrix}1\\\\-1\\end{bmatrix}=w^*$."
+   }
+  },
+  "mlt_week09_page005": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     531.65,
+     1134.0,
+     1230.7,
+     1700.0
+    ],
+    "scores": {
+     "B25": 0.9924,
+     "Q": 0.9903,
+     "B2": 0.9914
+    },
+    "cands": {
+     "B25": [
+      531.65,
+      1134.0,
+      1230.7,
+      1700.0
+     ],
+     "Q": [
+      621,
+      1141,
+      1259,
+      1704
+     ],
+     "B2": [
+      536.3,
+      1136.0,
+      1233.8,
+      1700.0
+     ]
+    },
+    "text": "Two overlapping green and yellow regions separated by a margin band, labeled $\\{x:w^Tx\\geq\\gamma\\}$ and $\\{x:w^Tx\\leq-\\gamma\\}$, with a separating line $w$ through the origin, and a shaded gap between them."
+   }
+  },
+  "mlt_week09_page006": {
+   "0": {
+    "pick": "B2",
+    "box": [
+     509.652,
+     322.0,
+     802.23,
+     596.0
+    ],
+    "scores": {
+     "B25": 0.9975,
+     "Q": 0.9903,
+     "B2": 0.9983
+    },
+    "cands": {
+     "B25": [
+      506.506,
+      324.0,
+      800.657,
+      600.0
+     ],
+     "Q": [
+      460,
+      321,
+      857,
+      659
+     ],
+     "B2": [
+      509.652,
+      322.0,
+      802.23,
+      596.0
+     ]
+    },
+    "text": "A circle of radius $R$ centered at the origin with several data points (green crosses and red dots) inside it, each labeled with an arrow pointing from the origin."
+   },
+   "1": {
+    "pick": "Q",
+    "box": [
+     134,
+     755,
+     1051,
+     1159
+    ],
+    "scores": {
+     "B25": 0.9959,
+     "Q": 0.9968,
+     "B2": 0.9941
+    },
+    "cands": {
+     "B25": [
+      138.424,
+      752.0,
+      1074.359,
+      1312.0
+     ],
+     "Q": [
+      134,
+      755,
+      1051,
+      1159
+     ],
+     "B2": [
+      136.851,
+      750.0,
+      1080.651,
+      1314.0
+     ]
+    },
+    "text": "A dot product decision boundary around the origin \u2014 a circle of radius $y'/\\|w^*\\|$ \u2014 with a green vector $w^*$ inside it, and two sets of data points ($+$'s and $-$'s) on either side of the boundary."
+   }
+  },
+  "mlt_week09_page008": {
+   "0": {
+    "pick": "Q",
+    "box": [
+     212,
+     632,
+     587,
+     870
+    ],
+    "scores": {
+     "B25": 0.8176,
+     "Q": 0.8933,
+     "B2": 0.867
+    },
+    "cands": {
+     "B25": [
+      209.984,
+      616.0,
+      605.248,
+      872.0
+     ],
+     "Q": [
+      212,
+      632,
+      587,
+      870
+     ],
+     "B2": [
+      211.528,
+      612.0,
+      606.792,
+      872.0
+     ]
+    },
+    "text": "A point $y$ on the axis with a dashed line to an off-axis point labeled $x$, and a dot at the origin."
+   }
+  },
+  "mlt_week09_page010": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     112.606,
+     660.0,
+     1468.636,
+     1300.0
+    ],
+    "scores": {
+     "B25": 0.982,
+     "B2": 0.9707
+    },
+    "cands": {
+     "B25": [
+      112.606,
+      660.0,
+      1468.636,
+      1300.0
+     ],
+     "Q": null,
+     "B2": [
+      112.606,
+      652.0,
+      1479.738,
+      1302.0
+     ]
+    },
+    "text": "A 2D plot showing a line through the origin (normal vector $w$) with several points $x_1, x_2, x_3, x_4$ marked on either side, labeled $\\{x:w^Tx=-15\\}$, $\\{x:w^Tx=-5\\}$, $\\{x:w^Tx=0\\}$, $\\{x:w^Tx=1\\}$, $\\{x:w^Tx=100\\}$, illustrating the decision boundary."
+   }
+  },
+  "mlt_week09_page011": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     297.024,
+     642.0,
+     1143.012,
+     1008.0
+    ],
+    "scores": {
+     "B25": 0.8933,
+     "Q": 0.7982,
+     "B2": 0.852
+    },
+    "cands": {
+     "B25": [
+      297.024,
+      642.0,
+      1143.012,
+      1008.0
+     ],
+     "Q": [
+      299,
+      674,
+      1150,
+      1012
+     ],
+     "B2": [
+      297.024,
+      640.0,
+      1144.338,
+      1008.0
+     ]
+    },
+    "text": "A sigmoid curve labeled $g(z)=1/e^{z^2}$, with asymptotes at $y=0$ and $y=1$, crossing through $(0,0.5)$, and increasing steeply from left to right."
+   }
+  },
+  "mlt_week09_page013": {
+   "0": {
+    "pick": "B25",
+    "box": [
+     721,
+     723,
+     1320,
+     1058
+    ],
+    "scores": {
+     "B25": 0.9859,
+     "Q": 0.9859,
+     "B2": 0.9859
+    },
+    "cands": {
+     "B25": [
+      721,
+      723,
+      1320,
+      1058
+     ],
+     "Q": [
+      721,
+      723,
+      1320,
+      1058
+     ],
+     "B2": [
+      721,
+      723,
+      1320,
+      1058
+     ]
+    },
+    "text": "A green box containing $x_i$, an arrow to $y_i$, an arrow to $\\theta_i \\in \\mathbb{R}^d$, an arrow back to the green box via $g(w_t^T x_i)$, with a label $\\{0,1\\}$ near $y_i$."
+   }
+  }
+ }
+}

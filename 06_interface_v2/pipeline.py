@@ -1,0 +1,432 @@
+"""New-input inference using the existing clean adapter; no training or label lookup."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import re
+import shutil
+import sys
+import subprocess
+import threading
+import time
+import zipfile
+
+ROOT = Path(__file__).resolve().parents[1]
+for folder in ('01_preprocessing', '03_recognition', '04_reconstruction', 'novelty'):
+    sys.path.insert(0, str(ROOT / folder))
+
+IMAGE_TYPES = {'.jpg', '.jpeg', '.png', '.webp', '.bmp', '.tif', '.tiff', '.heic', '.heif', '.hif'}
+MAX_IMAGE_PIXELS = 40_000_000
+MODEL_ID = 'Qwen/Qwen2.5-VL-7B-Instruct'
+DEFAULT_ADAPTER = ROOT / 'runs/final_clean/final_adapter'
+
+
+def adapter_config(path):
+    path = Path(path)
+    config = json.loads((path / 'adapter_config.json').read_text())
+    if config.get('base_model_name_or_path') != MODEL_ID:
+        raise ValueError('This runner supports the trained Qwen2.5-VL-7B clean adapter only.')
+    weights = list(path.glob('adapter_model*.safetensors'))
+    if not weights or not all(p.stat().st_size for p in weights):
+        raise ValueError('Adapter safetensors weights are missing or empty.')
+    return config
+
+
+class CleanRecognizer:
+    def __init__(self, adapter=DEFAULT_ADAPTER, max_pixels=1_000_000, max_new_tokens=2048):
+        self.adapter = Path(adapter).resolve()
+        adapter_config(self.adapter)
+        self.max_pixels, self.max_new_tokens = max_pixels, max_new_tokens
+        self.model = self.processor = None
+
+    def load(self):
+        if self.model is not None:
+            return
+        import torch
+        from transformers import AutoProcessor, BitsAndBytesConfig, Qwen2_5_VLForConditionalGeneration
+        from peft import PeftModel
+        if not torch.cuda.is_available():
+            raise RuntimeError('CUDA GPU not available. Run inference on the GPU machine.')
+        dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+        config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type='nf4',
+                                   bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=dtype)
+        # A saved processor is preferred; the base processor is compatible with training.
+        processor_path = self.adapter if (self.adapter / 'preprocessor_config.json').exists() else MODEL_ID
+        processor = AutoProcessor.from_pretrained(str(processor_path), min_pixels=4*28*28,
+                                                  max_pixels=self.max_pixels)
+        base = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            MODEL_ID, quantization_config=config, torch_dtype=dtype,
+            device_map={'': 0}, attn_implementation='sdpa')
+        model = PeftModel.from_pretrained(base, str(self.adapter), is_trainable=False)
+        model.eval()
+        model.config.use_cache = True
+        self.model, self.processor = model, processor
+
+    def release(self):
+        if self.model is None and self.processor is None:
+            return
+        import gc
+        self.model = self.processor = None
+        gc.collect()
+        import torch
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
+    def predict(self, image_path):
+        import torch
+        from qwen_data import load_page_image, PAGE_PROMPT
+        self.load()
+        image = load_page_image(str(image_path), self.max_pixels)
+        messages = [{'role':'user', 'content':[{'type':'image'}, {'type':'text','text':PAGE_PROMPT}]}]
+        text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = self.processor(text=[text], images=[[image]], return_tensors='pt').to(self.model.device)
+        start = inputs['input_ids'].shape[1]
+        with torch.inference_mode():
+            output = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens,
+                                         do_sample=False, repetition_penalty=1.05, use_cache=True)
+        generated = output[:, start:]
+        prediction = self.processor.batch_decode(generated, skip_special_tokens=True)[0]
+        count = int(generated.shape[1])
+        eos = self.model.generation_config.eos_token_id
+        eos = eos if isinstance(eos, list) else [eos]
+        truncated = count >= self.max_new_tokens and int(generated[0, -1]) not in eos
+        return prediction, {'generated_tokens':count, 'possibly_truncated':truncated}
+
+    # ---- v2: the same loaded model with the adapter switched off (= base Qwen2.5-VL) --------
+    # Used for figure grounding and the yes/no checks of the novelty pipeline (novelty/NOTES.md
+    # steps 3, 14, 15, 17). Same prompts and image size as the offline experiments.
+    def _base_generate(self, image, prompt, max_new_tokens):
+        import torch
+        messages = [{'role': 'user', 'content': [{'type': 'image'}, {'type': 'text', 'text': prompt}]}]
+        text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = self.processor(text=[text], images=[[image]], return_tensors='pt').to(self.model.device)
+        start = inputs['input_ids'].shape[1]
+        with torch.inference_mode(), self.model.disable_adapter():
+            out = self.model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False)
+        return self.processor.batch_decode(out[:, start:], skip_special_tokens=True)[0]
+
+    def _page_scale(self, image_path):
+        from PIL import Image
+        from qwen_data import load_page_image
+        with Image.open(image_path) as im:
+            W, H = im.size
+        image = load_page_image(str(image_path), self.max_pixels)
+        return image, W, H
+
+    @staticmethod
+    def _to_page(vals, W, H, w, h):
+        x0, y0, x1, y1 = (float(v) for v in vals)
+        box = [round(x0 * W / w), round(y0 * H / h), round(x1 * W / w), round(y1 * H / h)]
+        box = [max(0, min(W, box[0])), max(0, min(H, box[1])), max(0, min(W, box[2])), max(0, min(H, box[3]))]
+        return box if box[2] > box[0] and box[3] > box[1] else None
+
+    def ground(self, image_path, descs):
+        import ground_qwen as G
+        self.load()
+        image, W, H = self._page_scale(image_path)
+        out = []
+        for d in descs:
+            m = G.BOX.search(self._base_generate(image, G.PROMPT.format(desc=d), 128))
+            out.append(self._to_page(m.groups(), W, H, *image.size) if m else None)
+        return out
+
+    def ground_page(self, image_path, descs):
+        import ground_page as GP
+        self.load()
+        image, W, H = self._page_scale(image_path)
+        items = '\n'.join(f'{k + 1}. {d}' for k, d in enumerate(descs))
+        raw = self._base_generate(image, GP.PROMPT.format(items=items), 60 * len(descs) + 64)
+        found = {}
+        for m in GP.ITEM.finditer(raw):
+            k = int(m.group(1)) - 1
+            if 0 <= k < len(descs) and k not in found:
+                found[k] = self._to_page(m.groups()[1:], W, H, *image.size)
+        return [found.get(k) for k in range(len(descs))]
+
+    def p_yes(self, image_path, question):
+        import torch
+        from PIL import Image
+        self.load()
+        tok = self.processor.tokenizer
+        yes_id, no_id = tok.encode('Yes', add_special_tokens=False)[0], tok.encode('No', add_special_tokens=False)[0]
+        image = Image.open(image_path).convert('RGB')
+        messages = [{'role': 'user', 'content': [{'type': 'image'}, {'type': 'text', 'text': question}]}]
+        text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = self.processor(text=[text], images=[[image]], return_tensors='pt').to(self.model.device)
+        with torch.inference_mode(), self.model.disable_adapter():
+            logits = self.model(**inputs).logits[0, -1].float()
+        return round(torch.softmax(logits[[yes_id, no_id]], dim=0)[0].item(), 4)
+
+
+def extract_pages(inputs, raw_dir, max_pages=20):
+    """Input order is explicit; PDF/TIFF pages follow their native order."""
+    from PIL import Image, ImageOps, ImageSequence, UnidentifiedImageError
+    import warnings
+    # Explicit decoder: old Surya/Pillow installations must not silently reject Apple photos.
+    try:
+        from pillow_heif import register_heif_opener
+        register_heif_opener(thumbnails=False)
+    except ImportError:
+        if any(Path(p).suffix.lower() in {'.heic', '.heif', '.hif'} for p in inputs):
+            raise ValueError('HEIC support is missing. Install 06_interface/requirements.txt in the server environment.')
+    raw_dir = Path(raw_dir)
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    pages, manifest = [], []
+
+    def save(image, source, source_page):
+        if len(pages) >= max_pages:
+            raise ValueError(f'Input exceeds the {max_pages}-page limit; split the document.')
+        name = f'upload_notes_page{len(pages)+1:03d}'
+        if image.width * image.height > MAX_IMAGE_PIXELS:
+            raise ValueError('A photo exceeds the 40-megapixel decoding limit. Export a smaller copy.')
+        image = ImageOps.exif_transpose(image)
+        # Transparency should become white paper, not black writing/background.
+        if image.mode in ('RGBA', 'LA') or 'transparency' in image.info:
+            rgba = image.convert('RGBA')
+            canvas = Image.new('RGBA', rgba.size, 'white')
+            image = Image.alpha_composite(canvas, rgba)
+        image = image.convert('RGB')
+        # Bound processing memory while retaining the uploaded originals separately.
+        image.thumbnail((4000,4000), Image.Resampling.LANCZOS)
+        target = raw_dir / (name+'.jpg')
+        image.save(target, quality=95)
+        pages.append(name)
+        manifest.append({'page':name,'input':source,'input_page':source_page})
+
+    for filename in inputs:
+        path = Path(filename)
+        if path.suffix.lower() == '.pdf':
+            import fitz
+            try:
+                document = fitz.open(path)
+            except (fitz.FileDataError, fitz.EmptyFileError, OSError) as error:
+                raise ValueError('The PDF could not be opened. Export a fresh, unencrypted PDF.') from error
+            with document as pdf:
+                if not pdf.is_pdf:
+                    raise ValueError('The uploaded file is not a PDF.')
+                if pdf.needs_pass:
+                    raise ValueError('Password-protected PDFs are not supported.')
+                if len(pages)+pdf.page_count > max_pages:
+                    raise ValueError(f'Input exceeds the {max_pages}-page limit; split the document.')
+                for index, page in enumerate(pdf):
+                    if not (0 < page.rect.width <= 20000 and 0 < page.rect.height <= 20000):
+                        raise ValueError('PDF page dimensions are invalid or too large.')
+                    scale = min(2.0, 4000/max(page.rect.width,page.rect.height))
+                    pix = page.get_pixmap(matrix=fitz.Matrix(scale,scale), colorspace=fitz.csRGB, alpha=False)
+                    save(Image.frombytes('RGB',[pix.width,pix.height],pix.samples),path.name,index+1)
+        elif path.suffix.lower() in IMAGE_TYPES:
+            try:
+                with warnings.catch_warnings():
+                    warnings.simplefilter('error', Image.DecompressionBombWarning)
+                    with Image.open(path) as image:
+                        formats = {'.jpg': 'JPEG', '.jpeg': 'JPEG', '.png': 'PNG', '.webp': 'WEBP', '.bmp': 'BMP', '.tif': 'TIFF', '.tiff': 'TIFF', '.heic': 'HEIF', '.heif': 'HEIF', '.hif': 'HEIF'}
+                        if image.format != formats[path.suffix.lower()]:
+                            raise ValueError('Image content does not match its file extension.')
+                        count = getattr(image, 'n_frames', 1)
+                        if count + len(pages) > max_pages:
+                            raise ValueError(f'Input exceeds the {max_pages}-page limit; split the document.')
+                        for index, frame in enumerate(ImageSequence.Iterator(image)):
+                            # Check before copy/load: an oversized compressed image must never allocate its full raster.
+                            if frame.width * frame.height > MAX_IMAGE_PIXELS:
+                                raise ValueError('A photo exceeds the 40-megapixel decoding limit. Export a smaller copy.')
+                            save(frame.copy(), path.name, index+1)
+            except (UnidentifiedImageError, Image.DecompressionBombError, Image.DecompressionBombWarning, OSError) as error:
+                raise ValueError('An image could not be decoded safely. Export it again as HEIC, JPEG or PNG.') from error
+        else:
+            raise ValueError('Supported input types: PDF, HEIC/HEIF, PNG, JPEG, WebP, BMP, TIFF.')
+    if not pages:
+        raise ValueError('No pages were found.')
+    return pages, manifest
+
+
+def validate_prediction(text):
+    """Keep document content from issuing TeX file/command operations at rendering.
+
+    File access, redefinitions and embedded resources stop the job. Commands or environments
+    outside the known list are only reported: the PDF is built with raw TeX disabled and every
+    equation is compiled on its own, so an unknown command can at worst make that one equation
+    fall back to plain text. Returns the list of such warnings."""
+    if not text.strip():
+        raise ValueError('Model returned an empty transcription.')
+    blocked = r'\\(?:input|include|includegraphics|openin|openout|read|write(?:18)?|catcode|csname|let|futurelet|expandafter|def|edef|gdef|xdef|newcommand|renewcommand|usepackage|documentclass|special|directlua|endlinechar|font|pdf[A-Za-z]*|href|url|immediate|jobname|openout|scantokens|luaexec|luadirect|lowercase|uppercase|csname)\b'
+    if '^^' in text or re.search(blocked, text, re.I) or re.search(r'!\s*\[',text):
+        raise ValueError('Transcription contains a file/resource command; raw prediction saved for review.')
+    allowed = set("frac dfrac tfrac cfrac textit mathfrak overrightarrow overleftarrow hookrightarrow hookleftarrow sqrt left right middle big Big bigg Bigg bigl bigr Bigl Bigr biggl biggr Biggl Biggr sum prod int iint iiint oint lim limsup liminf infty partial nabla alpha beta gamma delta epsilon varepsilon zeta eta theta vartheta iota kappa lambda mu nu xi pi varpi rho varrho sigma varsigma tau upsilon phi varphi chi psi omega Gamma Delta Theta Lambda Xi Pi Sigma Upsilon Phi Psi Omega mathbb mathcal mathrm mathbf mathit mathsf mathtt mathscr boldsymbol bm text textrm textbf operatorname overline underline hat widehat tilde widetilde bar vec dot ddot dots ldots cdots vdots ddots cdot times div pm mp ast star circ bullet otimes oplus odot le leq ge geq neq ne approx sim simeq equiv cong propto ll gg in notin ni subset subseteq supset supseteq cup cap union emptyset varnothing forall exists neg land lor wedge vee implies iff to gets rightarrow leftarrow Rightarrow Leftarrow leftrightarrow Leftrightarrow mapsto longrightarrow longleftarrow Longrightarrow Longleftarrow uparrow downarrow updownarrow perp parallel angle langle rangle lceil rceil lfloor rfloor vert Vert mid sin cos tan cot sec csc sinh cosh tanh arcsin arccos arctan log ln exp max min arg det dim ker rank Pr mod bmod pmod gcd lcm Re Im top bot ell hbar prime colon quad qquad thinspace enspace smallskip medskip bigskip limits nolimits underbrace overbrace overset underset stackrel binom dbinom tbinom choose displaystyle textstyle scriptstyle scriptscriptstyle substack boxed fbox cancel bcancel xcancel phantom vphantom hphantom mathop mathrel mathbin mathord mathpunct mathopen mathclose ensuremath begin end label tag nonumber notag rowcolor hline cline hdotsfor arraystretch small tiny large Large rm bf cal Bbb sf tt textsc textnormal mathnormal percent therefore because square triangle triangleq checkmark lnot lvert rvert lVert rVert lt gt degree sharp flat natural setminus backslash addlinespace toprule midrule bottomrule".split())
+    commands = [c for c in re.findall(r'\\([A-Za-z]+|[^A-Za-z])', text) if c.isalpha()]
+    warnings = []
+    unknown = sorted({command for command in commands if command not in allowed})
+    if unknown:
+        warnings.append('Uncommon TeX commands kept for checking: ' + ', '.join('\\' + c for c in unknown[:8]))
+    safe_environments = {'matrix', 'pmatrix', 'bmatrix', 'Bmatrix', 'vmatrix', 'Vmatrix', 'smallmatrix',
+                         'cases', 'array', 'aligned', 'alignedat', 'gathered', 'split', 'align', 'align*',
+                         'equation', 'equation*', 'gather', 'gather*'}
+    for environment in re.findall(r'\\(?:begin|end)\s*\{([^}]+)\}', text):
+        if environment.strip().lower() in {'document', 'filecontents', 'filecontents*', 'verbatimwrite', 'luacode', 'luacode*'}:
+            raise ValueError('Transcription contains an unsafe TeX environment.')
+        if environment not in safe_environments:
+            warnings.append('Uncommon TeX environment kept for checking: ' + environment)
+    if re.search(r'<\s*(?:script|iframe|img|object|embed)\b',text,re.I):
+        raise ValueError('Transcription contains embedded resources; raw prediction saved for review.')
+    return warnings
+
+
+def run_document(inputs, output, recognizer, title='Lecture notes', max_pages=20, progress=None, layout_mode='none'):
+    import cv2
+    from preprocess import NotesPreprocessor
+    from render_document import render_unit
+    progress = progress or (lambda message: print(message, flush=True))
+    output = Path(output).resolve()
+    if output.exists() and any(output.iterdir()):
+        raise ValueError('Output folder must be new or empty; existing runs are never overwritten.')
+    output.mkdir(parents=True, exist_ok=True)
+    if not shutil.which('pandoc') or not (shutil.which('xelatex') or shutil.which('tectonic')):
+        raise RuntimeError('PDF generation requires pandoc and xelatex (or tectonic).')
+    started = time.time()
+    data = output/'data'
+    (data/'processed').mkdir(parents=True)
+    (data/'tags').mkdir()
+    (output/'predictions').mkdir()
+    originals = output/'uploads'; originals.mkdir()
+    uploads=[]
+    for i, filename in enumerate(inputs):
+        source=Path(filename)
+        target=originals/f'{i+1:03d}{source.suffix.lower()}'
+        shutil.copy2(source,target)
+        uploads.append({'name':source.name,'sha256':hashlib.sha256(target.read_bytes()).hexdigest()})
+    progress('Reading input pages')
+    pages, manifest = extract_pages(inputs, data/'raw', max_pages)
+    prep = NotesPreprocessor()
+    preprocessing=[]
+    for i,page in enumerate(pages,1):
+        progress(f'Preprocessing page {i}/{len(pages)}')
+        image, info = prep.process_with_info(str(data/'raw'/(page+'.jpg')))
+        if not cv2.imwrite(str(data/'processed'/(page+'.jpg')),image):
+            raise RuntimeError('Could not save processed page.')
+        preprocessing.append({'page':page,**info})
+    (output/'preprocessing.json').write_text(json.dumps(preprocessing,indent=2))
+    layout_info = {'status': 'disabled'}
+    if layout_mode not in ('surya', 'none'):
+        raise ValueError('Unknown layout mode')
+    if hasattr(recognizer, 'recognize'):  # engine.WarmModels: models stay loaded between uploads
+        with recognizer:
+            if layout_mode == 'surya':
+                # Surya starts first (its server measures free GPU memory), then layout runs in the
+                # background while Qwen reads the pages: the two models work at the same time.
+                recognizer.surya.start(progress)
+                box = {}
+                def layout_job():
+                    try: box['info'] = recognizer.layout(data, pages, output, lambda _: None)
+                    except Exception as error: box['error'] = error
+                thread = threading.Thread(target=layout_job); thread.start()
+            predictions = recognizer.recognize(data, pages, output, progress)
+            if layout_mode == 'surya':
+                progress('Finishing diagram detection')
+                thread.join()
+                if 'error' in box:
+                    raise box['error']
+                layout_info = box['info']
+                # v2: novelty figure choice while the models are still loaded (figures_v2.py)
+                from figures_v2 import choose_and_render
+                report, figure_log = choose_and_render(
+                    data, pages, output/'predictions', output, lambda r: recognizer.ask(r, progress),
+                    title, [data/'raw'/(p+'.jpg') for p in pages], progress)
+    else:
+        if layout_mode == 'surya':
+            from layout import run_layout
+            recognizer.release()  # one-shot layout needs the whole GPU
+            layout_info = run_layout(data, pages, output, progress)
+        predictions=[]
+        for i,page in enumerate(pages,1):
+            progress(f'Recognizing page {i}/{len(pages)}' + (' — first run loads the trained model' if i==1 else ''))
+            text, details = recognizer.predict(data/'processed'/(page+'.jpg'))
+            (output/'predictions'/(page+'.md')).write_text(text)
+            details = {**details, 'tex_warnings': validate_prediction(text)}
+            predictions.append({'page':page,**details})
+    if layout_mode == 'surya' and not hasattr(recognizer, 'recognize'):
+        # command-line run: same novelty figure choice with the in-process model
+        from figures_v2 import choose_and_render
+        def ask(r):
+            kind = r.get('kind')
+            if kind == 'ground': return {'boxes': recognizer.ground(r['image'], r['descs'])}
+            if kind == 'ground_page': return {'boxes': recognizer.ground_page(r['image'], r['descs'])}
+            return {'p_yes': recognizer.p_yes(r['image'], r['question'])}
+        report, figure_log = choose_and_render(data, pages, output/'predictions', output, ask, title,
+                                               [data/'raw'/(p+'.jpg') for p in pages], progress)
+    elif layout_mode != 'surya':
+        progress('Checking equations and building searchable PDF')
+        report = render_unit('upload_notes',pages,str(output/'predictions'),str(output/'documents'),
+                             'pdf',data_dir=str(data),document_title=title,secure_input=True,
+                             source_pages=[data/'raw'/(p+'.jpg') for p in pages])
+    warnings = ['Automatic diagram cropping is unavailable for new uploads in this mode. '
+                'Original source pages are appended so diagrams remain available for checking.',
+                'Recognition can misread formulas. Compilation checks do not establish mathematical correctness.']
+    if layout_mode == 'surya':
+        unmatched = [p['page'] for p in report['pages'] if p['descriptions_without_figure']]
+        warnings[0] = ('Drawings placed with the v2 figure method (Surya 2.5 boxes, chosen by Qwen grounding and a '
+                       'completeness check). Captions and crop boundaries still need review.')
+        if unmatched:
+            warnings.append('Diagram descriptions without crops: ' + ', '.join(unmatched))
+        review = {'unmatched_pages': unmatched, 'pages': report['pages'],
+                  'note': 'No guessed or manually corrected boxes were applied.'}
+        (output/'diagram_review.json').write_text(json.dumps(review, indent=2))
+    tex_notes = [p['page'] for p in predictions if p.get('tex_warnings')]
+    if tex_notes:
+        warnings.append('Uncommon LaTeX commands on ' + ', '.join(tex_notes) + '; check those equations against the originals.')
+    if any(p.get('possibly_truncated') for p in predictions):
+        warnings.append('At least one prediction reached the token budget; inspect its ending.')
+    if report['math']['status'] != 'completed':
+        warnings.append('Equation checking did not complete; inspect the report.')
+    if report['math'].get('remaining_failed'):
+        warnings.append(f"{report['math']['remaining_failed']} equation snippets remain verbatim with warnings.")
+    if report.get('pandoc_warnings'):
+        warnings.append('The PDF compiler reported warnings; inspect report.json.')
+    audit=report.get('pdf_audit',{})
+    if audit.get('status') != 'completed' or audit.get('outside_words',0):
+        warnings.append('PDF bounds check is unavailable, failed, or found overflow; inspect report.json.')
+    inference={'model':MODEL_ID,'adapter':str(getattr(recognizer,'adapter','test backend')),
+               'uploads':uploads,'page_map':manifest,'predictions':predictions,
+               'elapsed_seconds':round(time.time()-started,2),'warnings':warnings,
+               'layout_mode':layout_mode, 'layout':layout_info, 'report':report}
+    (output/'inference.json').write_text(json.dumps(inference,indent=2))
+    if not report.get('output'):
+        raise RuntimeError('PDF compilation failed; see documents/upload_notes/report.json.')
+    package=output/'document_bundle.zip'
+    with zipfile.ZipFile(package,'w',zipfile.ZIP_DEFLATED) as archive:
+        for directory in ('documents','predictions','uploads','data/tags','data_v2/tags','surya_layout'):
+            for path in sorted((output/directory).rglob('*')):
+                if path.is_file(): archive.write(path,path.relative_to(output))
+        for name in ('inference.json','preprocessing.json','figure_choice.json'):
+            if (output/name).exists():
+                archive.write(output/name,name)
+        if (output/'diagram_review.json').exists():
+            archive.write(output/'diagram_review.json', 'diagram_review.json')
+    progress('Completed — review the PDF against the original pages')
+    return {'pdf':str(Path(report['output']).relative_to(output)),
+            'markdown':'documents/upload_notes/upload_notes.md',
+            'bundle':'document_bundle.zip','report':'inference.json',
+            'warnings':warnings,'pages':len(pages),'elapsed_seconds':inference['elapsed_seconds']}
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('inputs',nargs='+',type=Path)
+    parser.add_argument('--out',required=True,type=Path)
+    parser.add_argument('--adapter',type=Path,default=DEFAULT_ADAPTER)
+    parser.add_argument('--layout', choices=['surya','none'], default='surya')
+    parser.add_argument('--title',default='Lecture notes')
+    parser.add_argument('--max-pages',type=int,default=20)
+    parser.add_argument('--max-new-tokens',type=int,default=2048)
+    args=parser.parse_args()
+    if args.max_pages<1 or args.max_new_tokens<1:
+        parser.error('Limits must be positive.')
+    from engine import WarmModels
+    models=WarmModels(args.adapter,args.out.parent/'model_logs',max_new_tokens=args.max_new_tokens)
+    try:
+        result=run_document(args.inputs,args.out,models,args.title,args.max_pages,layout_mode=args.layout)
+    finally:
+        models.unload()
+    print(json.dumps(result,indent=2))
+
+
+if __name__=='__main__':
+    main()

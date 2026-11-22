@@ -1,0 +1,536 @@
+{
+ "question": "This image was cut from a page of handwritten lecture notes. Does it show the hand-drawn sketch described as: \"{desc}\"? Answer Yes if it shows that sketch (even if a small part is cut off). Answer No if it shows a different sketch, only text or equations, or nothing recognisable. Answer with one word: Yes or No.",
+ "model": "Qwen2.5-VL-7B-Instruct base, 4-bit, no adapter",
+ "scores": {
+  "c001": {
+   "p_yes": 0.9047,
+   "page": "ie802_notes_page046",
+   "desc": "D3",
+   "arms": [
+    "B"
+   ]
+  },
+  "c002": {
+   "p_yes": 0.5312,
+   "page": "ie802_notes_page047",
+   "desc": "D4",
+   "arms": [
+    "C"
+   ]
+  },
+  "c003": {
+   "p_yes": 0.9991,
+   "page": "ie643_lec03_page010",
+   "desc": "D1",
+   "arms": [
+    "A"
+   ]
+  },
+  "c004": {
+   "p_yes": 0.8933,
+   "page": "ie802_notes_page048",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c005": {
+   "p_yes": 0.974,
+   "page": "ie802_notes_page041",
+   "desc": "D6",
+   "arms": [
+    "C"
+   ]
+  },
+  "c006": {
+   "p_yes": 0.3486,
+   "page": "ie802_notes_page047",
+   "desc": "D3",
+   "arms": [
+    "B"
+   ]
+  },
+  "c007": {
+   "p_yes": 0.9797,
+   "page": "ie802_notes_page047",
+   "desc": "D2",
+   "arms": [
+    "B"
+   ]
+  },
+  "c008": {
+   "p_yes": 0.7549,
+   "page": "ie802_notes_page041",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c009": {
+   "p_yes": 0.9914,
+   "page": "ie643_lec09_page015",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c010": {
+   "p_yes": 0.4378,
+   "page": "ie802_notes_page041",
+   "desc": "D2",
+   "arms": [
+    "B"
+   ]
+  },
+  "c011": {
+   "p_yes": 0.9399,
+   "page": "ie643_lec09_page013",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c012": {
+   "p_yes": 0.9841,
+   "page": "ie802_notes_page047",
+   "desc": "D5",
+   "arms": [
+    "C"
+   ]
+  },
+  "c013": {
+   "p_yes": 0.9924,
+   "page": "ie802_notes_page047",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c014": {
+   "p_yes": 0.867,
+   "page": "ie802_notes_page046",
+   "desc": "D2",
+   "arms": [
+    "A"
+   ]
+  },
+  "c015": {
+   "p_yes": 0.9978,
+   "page": "ie802_notes_page041",
+   "desc": "D3",
+   "arms": [
+    "B"
+   ]
+  },
+  "c016": {
+   "p_yes": 0.9841,
+   "page": "ie802_notes_page052",
+   "desc": "D2",
+   "arms": [
+    "C"
+   ]
+  },
+  "c017": {
+   "p_yes": 0.852,
+   "page": "ie802_notes_page046",
+   "desc": "D3",
+   "arms": [
+    "A"
+   ]
+  },
+  "c018": {
+   "p_yes": 0.5312,
+   "page": "ie802_notes_page047",
+   "desc": "D4",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c019": {
+   "p_yes": 0.0052,
+   "page": "ie802_notes_page047",
+   "desc": "D2",
+   "arms": [
+    "A"
+   ]
+  },
+  "c020": {
+   "p_yes": 0.0141,
+   "page": "ie802_notes_page042",
+   "desc": "D2",
+   "arms": [
+    "A"
+   ]
+  },
+  "c021": {
+   "p_yes": 0.6225,
+   "page": "ie802_notes_page042",
+   "desc": "D3",
+   "arms": [
+    "C"
+   ]
+  },
+  "c022": {
+   "p_yes": 0.9859,
+   "page": "mlt_week09_page013",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c023": {
+   "p_yes": 0.5927,
+   "page": "ie802_notes_page047",
+   "desc": "D3",
+   "arms": [
+    "A"
+   ]
+  },
+  "c024": {
+   "p_yes": 0.9797,
+   "page": "ie802_notes_page047",
+   "desc": "D5",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c025": {
+   "p_yes": 0.9149,
+   "page": "ie802_notes_page041",
+   "desc": "D4",
+   "arms": [
+    "B",
+    "C"
+   ]
+  },
+  "c026": {
+   "p_yes": 0.9948,
+   "page": "ie802_notes_page041",
+   "desc": "D3",
+   "arms": [
+    "C"
+   ]
+  },
+  "c027": {
+   "p_yes": 0.989,
+   "page": "ie802_notes_page042",
+   "desc": "D2",
+   "arms": [
+    "B",
+    "C"
+   ]
+  },
+  "c028": {
+   "p_yes": 0.989,
+   "page": "ie802_notes_page055",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c029": {
+   "p_yes": 0.9914,
+   "page": "mlt_week09_page003",
+   "desc": "D1",
+   "arms": [
+    "A"
+   ]
+  },
+  "c030": {
+   "p_yes": 0.9669,
+   "page": "mlt_week09_page003",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c031": {
+   "p_yes": 0.9579,
+   "page": "ie802_notes_page055",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c032": {
+   "p_yes": 0.9914,
+   "page": "mlt_week06_page003",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c033": {
+   "p_yes": 0.9241,
+   "page": "ie802_notes_page048",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c034": {
+   "p_yes": 0.6225,
+   "page": "ie802_notes_page042",
+   "desc": "D3",
+   "arms": [
+    "B"
+   ]
+  },
+  "c035": {
+   "p_yes": 0.1824,
+   "page": "ie802_notes_page041",
+   "desc": "D5",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c036": {
+   "p_yes": 0.9669,
+   "page": "ie802_notes_page052",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c037": {
+   "p_yes": 0.9149,
+   "page": "ie802_notes_page041",
+   "desc": "D4",
+   "arms": [
+    "A"
+   ]
+  },
+  "c038": {
+   "p_yes": 0.9526,
+   "page": "ie802_notes_page041",
+   "desc": "D2",
+   "arms": [
+    "C"
+   ]
+  },
+  "c039": {
+   "p_yes": 0.982,
+   "page": "ie802_notes_page042",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c040": {
+   "p_yes": 0.8933,
+   "page": "ie802_notes_page054",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B",
+    "C"
+   ]
+  },
+  "c041": {
+   "p_yes": 0.6514,
+   "page": "ie802_notes_page041",
+   "desc": "D5",
+   "arms": [
+    "C"
+   ]
+  },
+  "c042": {
+   "p_yes": 0.9985,
+   "page": "ie802_notes_page046",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c043": {
+   "p_yes": 0.9981,
+   "page": "ie802_notes_page046",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c044": {
+   "p_yes": 0.5927,
+   "page": "ie643_lec09_page002",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c045": {
+   "p_yes": 0.9669,
+   "page": "ie802_notes_page046",
+   "desc": "D2",
+   "arms": [
+    "B"
+   ]
+  },
+  "c046": {
+   "p_yes": 0.0036,
+   "page": "ie802_notes_page041",
+   "desc": "D2",
+   "arms": [
+    "A"
+   ]
+  },
+  "c047": {
+   "p_yes": 0.9466,
+   "page": "ie802_notes_page046",
+   "desc": "D2",
+   "arms": [
+    "C"
+   ]
+  },
+  "c048": {
+   "p_yes": 0.9841,
+   "page": "ie802_notes_page044",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c049": {
+   "p_yes": 0.8808,
+   "page": "ie802_notes_page047",
+   "desc": "D2",
+   "arms": [
+    "C"
+   ]
+  },
+  "c050": {
+   "p_yes": 0.8933,
+   "page": "ie643_lec09_page006",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c051": {
+   "p_yes": 0.9149,
+   "page": "ie802_notes_page047",
+   "desc": "D3",
+   "arms": [
+    "C"
+   ]
+  },
+  "c052": {
+   "p_yes": 0.9669,
+   "page": "ie802_notes_page044",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c053": {
+   "p_yes": 0.7058,
+   "page": "ie802_notes_page041",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c054": {
+   "p_yes": 0.9669,
+   "page": "ie802_notes_page042",
+   "desc": "D4",
+   "arms": [
+    "C"
+   ]
+  },
+  "c055": {
+   "p_yes": 0.9797,
+   "page": "ie802_notes_page042",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c056": {
+   "p_yes": 0.9627,
+   "page": "ie802_notes_page042",
+   "desc": "D3",
+   "arms": [
+    "A"
+   ]
+  },
+  "c057": {
+   "p_yes": 0.0331,
+   "page": "ie802_notes_page041",
+   "desc": "D3",
+   "arms": [
+    "A"
+   ]
+  },
+  "c058": {
+   "p_yes": 0.9968,
+   "page": "ie643_lec03_page010",
+   "desc": "D1",
+   "arms": [
+    "B"
+   ]
+  },
+  "c059": {
+   "p_yes": 0.9579,
+   "page": "ie802_notes_page041",
+   "desc": "D6",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c060": {
+   "p_yes": 0.6225,
+   "page": "ie802_notes_page047",
+   "desc": "D1",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c061": {
+   "p_yes": 0.9841,
+   "page": "ie802_notes_page042",
+   "desc": "D4",
+   "arms": [
+    "A",
+    "B"
+   ]
+  },
+  "c062": {
+   "p_yes": 0.9149,
+   "page": "ie802_notes_page046",
+   "desc": "D3",
+   "arms": [
+    "C"
+   ]
+  },
+  "c063": {
+   "p_yes": 0.9325,
+   "page": "ie802_notes_page052",
+   "desc": "D1",
+   "arms": [
+    "C"
+   ]
+  },
+  "c064": {
+   "p_yes": 0.3775,
+   "page": "ie802_notes_page052",
+   "desc": "D2",
+   "arms": [
+    "A",
+    "B"
+   ]
+  }
+ }
+}

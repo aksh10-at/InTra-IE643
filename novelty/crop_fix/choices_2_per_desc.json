@@ -1,0 +1,597 @@
+{
+ "ie802_notes_page041": {
+  "A": [
+   [
+    243.375,
+    76.0,
+    454.3,
+    206.0
+   ],
+   [
+    759.625,
+    70.0,
+    871.725,
+    192.0
+   ],
+   [
+    930.725,
+    60.0,
+    1019.225,
+    218.0
+   ],
+   [
+    47.2,
+    452.0,
+    536.9,
+    888.0
+   ],
+   [
+    14.75,
+    920.0,
+    272.875,
+    1280.0
+   ],
+   [
+    413.0,
+    840.0,
+    973.5,
+    1260.0
+   ]
+  ],
+  "B": [
+   [
+    243.375,
+    76.0,
+    454.3,
+    206.0
+   ],
+   [
+    759.625,
+    60.0,
+    1019.225,
+    218.0
+   ],
+   [
+    47.2,
+    452.0,
+    536.9,
+    888.0
+   ],
+   [
+    0,
+    484,
+    536,
+    895
+   ],
+   [
+    14.75,
+    920.0,
+    272.875,
+    1280.0
+   ],
+   [
+    413.0,
+    840.0,
+    973.5,
+    1260.0
+   ]
+  ],
+  "C": [
+   [
+    242,
+    70,
+    455,
+    202
+   ],
+   [
+    764,
+    52,
+    1191,
+    416
+   ],
+   [
+    18,
+    484,
+    536,
+    895
+   ],
+   [
+    0,
+    484,
+    536,
+    895
+   ],
+   [
+    0,
+    866,
+    953,
+    1282
+   ],
+   [
+    541,
+    862,
+    959,
+    1258
+   ]
+  ],
+  "B_how": [
+   "surya",
+   "surya+",
+   "surya",
+   "qwen",
+   "surya",
+   "surya"
+  ],
+  "texts": [
+   "A squiggly \"S\" shape with \"$S$ not possible\" below.",
+   "$S$ and $T$ separated by an arrow, labeled \"Separate $S$ from $T$ by a hyperplane... on linear.\"",
+   "A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separating line through the middle.",
+   "Two overlapping \"S1\" regions, each with a red separating line through them.",
+   "A scatter plot of points with a red separating line, labeled \"minimize flat hat 2-norm\" \u2014 \"split cutg...\" \u2014 \"not necessary\" \u2014 \"no good\" \u2014 \"too big of separation\" \u2014 \"using convex hulls\" \u2014 \"shrink\" \u2014 \"and convex hull\".",
+   "A polygonal region with a red separating line through it, labeled \"split cutg...\" \u2014 \"this has been done before\" \u2014 \"(shrinkage needs more research)\"."
+  ]
+ },
+ "ie802_notes_page042": {
+  "A": [
+   [
+    859.852,
+    210.0,
+    1048.6,
+    360.0
+   ],
+   [
+    1116.01,
+    230.0,
+    1220.87,
+    330.0
+   ],
+   [
+    247.17,
+    630.0,
+    719.04,
+    1300.0
+   ],
+   [
+    247.17,
+    1340.0,
+    719.04,
+    1620.0
+   ]
+  ],
+  "B": [
+   [
+    859.852,
+    210.0,
+    1048.6,
+    360.0
+   ],
+   [
+    243,
+    634,
+    437,
+    784
+   ],
+   [
+    247.17,
+    630.0,
+    434.42,
+    790.0
+   ],
+   [
+    247.17,
+    1340.0,
+    719.04,
+    1620.0
+   ]
+  ],
+  "C": [
+   [
+    861,
+    209,
+    1063,
+    361
+   ],
+   [
+    243,
+    634,
+    437,
+    784
+   ],
+   [
+    244,
+    634,
+    437,
+    784
+   ],
+   [
+    246,
+    1340,
+    722,
+    1568
+   ]
+  ],
+  "B_how": [
+   "surya",
+   "qwen",
+   "surya",
+   "surya"
+  ],
+  "texts": [
+   "A set $S$ split into two regions by a vertical line, labeled \"S\" on the left and \"$11$\" on the right.",
+   "Two overlapping sets $S_1$ and $S_2$.",
+   "Two separate sets $S_1$ and $S_2$ each with a line $\\alpha x \\leq \\beta$ through them.",
+   "An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded region on the right."
+  ]
+ },
+ "ie802_notes_page044": {
+  "A": [
+   [
+    862.272,
+    754.0,
+    1278.438,
+    976.0
+   ]
+  ],
+  "B": [
+   [
+    862.272,
+    754.0,
+    1278.438,
+    976.0
+   ]
+  ],
+  "C": [
+   [
+    855,
+    758,
+    1294,
+    991
+   ]
+  ],
+  "B_how": [
+   "surya"
+  ],
+  "texts": [
+   "A red line (convex hull boundary) through a set of marked points on an oval curve, illustrating the convex hull concept."
+  ]
+ },
+ "ie802_notes_page046": {
+  "A": [
+   [
+    898.2,
+    438.0,
+    1392.21,
+    720.0
+   ],
+   [
+    561.375,
+    880.0,
+    1160.175,
+    1050.0
+   ],
+   [
+    351.795,
+    1250.0,
+    1175.145,
+    1890.0
+   ]
+  ],
+  "B": [
+   [
+    898.2,
+    438.0,
+    1392.21,
+    720.0
+   ],
+   [
+    419.16,
+    880.0,
+    1175.145,
+    1530.0
+   ],
+   [
+    351.795,
+    1640.0,
+    726.045,
+    1890.0
+   ]
+  ],
+  "C": [
+   [
+    855,
+    441,
+    1419,
+    725
+   ],
+   [
+    371,
+    895,
+    1210,
+    1538
+   ],
+   [
+    321,
+    1646,
+    1301,
+    1927
+   ]
+  ],
+  "B_how": [
+   "surya",
+   "surya+",
+   "surya"
+  ],
+  "texts": [
+   "A polygon with vertices marked by \"x\"s, one red dot labeled \"corner point\" at the bottom right.",
+   "A cone with several \"x\" points inside and a few outside, an arrow from a point inside the cone to another point outside labeled \"yield cut for original problem too\", with a note \"has to get these cuts\".",
+   "A region with a red cross through it, labeled \"current plane\", and a note \"intersection of tiny region does not have any feasible point\"."
+  ]
+ },
+ "ie802_notes_page047": {
+  "A": [
+   [
+    705.087,
+    328.0,
+    986.523,
+    502.0
+   ],
+   [
+    893.709,
+    750.0,
+    1098.798,
+    932.0
+   ],
+   [
+    353.292,
+    700.0,
+    573.351,
+    902.0
+   ],
+   [
+    910.176,
+    976.0,
+    1094.307,
+    1150.0
+   ],
+   [
+    779.937,
+    1280.0,
+    1071.852,
+    1484.0
+   ]
+  ],
+  "B": [
+   [
+    705.087,
+    328.0,
+    986.523,
+    502.0
+   ],
+   [
+    353.292,
+    700.0,
+    573.351,
+    902.0
+   ],
+   [
+    893.709,
+    750.0,
+    1098.798,
+    932.0
+   ],
+   [
+    910.176,
+    976.0,
+    1094.307,
+    1150.0
+   ],
+   [
+    779.937,
+    1280.0,
+    1071.852,
+    1484.0
+   ]
+  ],
+  "C": [
+   [
+    704,
+    321,
+    1354,
+    500
+   ],
+   [
+    353,
+    702,
+    561,
+    899
+   ],
+   [
+    888,
+    749,
+    1347,
+    948
+   ],
+   [
+    907,
+    976,
+    1101,
+    1155
+   ],
+   [
+    888,
+    1282,
+    1078,
+    1493
+   ]
+  ],
+  "B_how": [
+   "surya",
+   "surya",
+   "surya",
+   "surya",
+   "surya"
+  ],
+  "texts": [
+   "A polygon with a marked corner point, labeled \"basic Gom point\", and an arrow labeled \"cut off here as much deeper\".",
+   "A square containing a smaller circle \u2014 a convex set.",
+   "An irregular shape with a small circle inside, labeled \"we cant chop off the palm\".",
+   "A rectangle with a red dot marked on one side, labeled \"not useful\".",
+   "A shaded region with a marked point, labeled \"Valid cut\"."
+  ]
+ },
+ "ie802_notes_page048": {
+  "A": [
+   [
+    77.0,
+    220.0,
+    338.8,
+    440.0
+   ]
+  ],
+  "B": [
+   [
+    77.0,
+    220.0,
+    338.8,
+    440.0
+   ]
+  ],
+  "C": [
+   [
+    71,
+    207,
+    417,
+    461
+   ]
+  ],
+  "B_how": [
+   "surya"
+  ],
+  "texts": [
+   "A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a corner point and cutting all the edge of infeasible region then draw a cut."
+  ]
+ },
+ "ie802_notes_page052": {
+  "A": [
+   [
+    396.525,
+    516.0,
+    805.49,
+    700.0
+   ],
+   [
+    331.215,
+    1452.0,
+    802.38,
+    1658.0
+   ]
+  ],
+  "B": [
+   [
+    396.525,
+    516.0,
+    805.49,
+    700.0
+   ],
+   [
+    331.215,
+    1452.0,
+    802.38,
+    1658.0
+   ]
+  ],
+  "C": [
+   [
+    365,
+    516,
+    812,
+    743
+   ],
+   [
+    331,
+    1445,
+    810,
+    1673
+   ]
+  ],
+  "B_how": [
+   "surya",
+   "surya"
+  ],
+  "texts": [
+   "A wavy curve with a local minimum marked at the start, and another point further along the curve.",
+   "A graph with nodes $x_1, x_2, x_3, x_4$ \u2014 $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an edge to $x_4$."
+  ]
+ },
+ "ie802_notes_page054": {
+  "A": [
+   [
+    125.748,
+    1348.0,
+    360.777,
+    1574.0
+   ]
+  ],
+  "B": [
+   [
+    125.748,
+    1348.0,
+    360.777,
+    1574.0
+   ]
+  ],
+  "C": [
+   [
+    121,
+    1347,
+    365,
+    1575
+   ]
+  ],
+  "B_how": [
+   "surya"
+  ],
+  "texts": [
+   "A tree with root node branching into two children, each of which branches further."
+  ]
+ },
+ "ie802_notes_page055": {
+  "A": [
+   [
+    129.54,
+    194.0,
+    507.492,
+    552.0
+   ]
+  ],
+  "B": [
+   [
+    129.54,
+    194.0,
+    507.492,
+    552.0
+   ]
+  ],
+  "C": [
+   [
+    235,
+    193,
+    627,
+    552
+   ]
+  ],
+  "B_how": [
+   "surya"
+  ],
+  "texts": [
+   "A branching tree \u2014 root splits into two children, each of which splits further, one branch ending at a node labeled \"not useful\" with $y=6$, violating cardinality constraint."
+  ]
+ },
+ "ie802_notes_page056": {
+  "A": [],
+  "B": [],
+  "C": [],
+  "B_how": [],
+  "texts": []
+ }
+}

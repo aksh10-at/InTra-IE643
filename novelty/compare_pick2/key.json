@@ -1,0 +1,51 @@
+{
+ "v01": {
+  "page": "mlt_week06_page002",
+  "desc": "D1",
+  "left": "methodB",
+  "right": "verifier",
+  "verifier_source": "U"
+ },
+ "v02": {
+  "page": "ie802_notes_page047",
+  "desc": "D3",
+  "left": "methodB",
+  "right": "verifier",
+  "verifier_source": "Q"
+ },
+ "v03": {
+  "page": "ie802_notes_page052",
+  "desc": "D1",
+  "left": "verifier",
+  "right": "methodB",
+  "verifier_source": "Q"
+ },
+ "v04": {
+  "page": "mlt_week09_page001",
+  "desc": "D1",
+  "left": "verifier",
+  "right": "methodB",
+  "verifier_source": "Q"
+ },
+ "v05": {
+  "page": "ie802_notes_page052",
+  "desc": "D2",
+  "left": "verifier",
+  "right": "methodB",
+  "verifier_source": "Q"
+ },
+ "v06": {
+  "page": "ie802_notes_page048",
+  "desc": "D1",
+  "left": "verifier",
+  "right": "methodB",
+  "verifier_source": "Q"
+ },
+ "v07": {
+  "page": "ie802_notes_page046",
+  "desc": "D1",
+  "left": "methodB",
+  "right": "verifier",
+  "verifier_source": "Q"
+ }
+}

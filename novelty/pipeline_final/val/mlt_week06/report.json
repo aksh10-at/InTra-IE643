@@ -1,0 +1,96 @@
+{
+ "unit": "mlt_week06",
+ "run_id": "novelty-structure",
+ "pages": [
+  {
+   "page": "mlt_week06_page001",
+   "descriptions": 0,
+   "surya_figures": 0,
+   "merged_from": 0,
+   "matched": 0,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "mlt_week06_page002",
+   "descriptions": 1,
+   "surya_figures": 1,
+   "merged_from": 1,
+   "matched": 1,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "mlt_week06_page003",
+   "descriptions": 1,
+   "surya_figures": 1,
+   "merged_from": 1,
+   "matched": 1,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "mlt_week06_page004",
+   "descriptions": 0,
+   "surya_figures": 0,
+   "merged_from": 0,
+   "matched": 0,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "mlt_week06_page005",
+   "descriptions": 0,
+   "surya_figures": 0,
+   "merged_from": 0,
+   "matched": 0,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "mlt_week06_page006",
+   "descriptions": 0,
+   "surya_figures": 0,
+   "merged_from": 0,
+   "matched": 0,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  }
+ ],
+ "missing_pages": [],
+ "expected_pages": 6,
+ "input_directory": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/pages_md",
+ "outline_sections": 5,
+ "requested_format": "pdf",
+ "outline": "5 sections",
+ "reviewed_figure_links": [],
+ "outline_unapplied_starts": [],
+ "preservation": {
+  "blocks": 42,
+  "missing": 0,
+  "missing_list": [],
+  "scope": "ordered occurrences in Markdown before math fallback; not PDF accuracy"
+ },
+ "math": {
+  "equations": 41,
+  "failed": 1,
+  "failed_list": [
+   "= E\\left[\\|\\hat{w}_{ML}-w\\|^2\\right] \\quad \\text{(Expected value of the norm of estimator & } w \\in \\mathbb{R}^d \\text{ over randomness in } y)"
+  ],
+  "reviewed_repairs": [],
+  "remaining_failed": 1,
+  "status": "completed",
+  "checked_with": "xelatex",
+  "error": null
+ },
+ "output": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/mlt_week06/mlt_week06.pdf",
+ "pandoc_errors": "",
+ "pandoc_warnings": "",
+ "pdf_audit": {
+  "status": "completed",
+  "pages": 3,
+  "outside_words": 0,
+  "examples": [],
+  "scope": "word bounds only; not overlap, glyph or semantic correctness"
+ }
+}

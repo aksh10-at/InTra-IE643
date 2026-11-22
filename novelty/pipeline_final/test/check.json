@@ -1,0 +1,167 @@
+{
+ "split": "test",
+ "crop_clean": true,
+ "tau": 0.2,
+ "surya": "2.5",
+ "grounding": "dup_only",
+ "pick": "verifier2",
+ "recover": true,
+ "notation": true,
+ "units": {
+  "hlcs_note17": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 7,
+   "blocks": 7,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/hlcs_note17/hlcs_note17.pdf",
+   "pandoc_errors": ""
+  },
+  "hlcs_note18": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 7,
+   "blocks": 7,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/hlcs_note18/hlcs_note18.pdf",
+   "pandoc_errors": ""
+  },
+  "hlcs_note19": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 5,
+   "blocks": 5,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/hlcs_note19/hlcs_note19.pdf",
+   "pandoc_errors": ""
+  },
+  "hlcs_note20": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 7,
+   "blocks": 7,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/hlcs_note20/hlcs_note20.pdf",
+   "pandoc_errors": ""
+  },
+  "ie643_lec03": {
+   "changes": 9,
+   "change_list": [
+    {
+     "page": "ie643_lec03_page001",
+     "from": "## Recap:",
+     "to": "# Recap:"
+    },
+    {
+     "page": "ie643_lec03_page005",
+     "from": "## Train a perceptron:",
+     "to": "# Train a perceptron:"
+    },
+    {
+     "page": "ie643_lec03_page007",
+     "from": "## Online learning",
+     "to": "# Online learning"
+    },
+    {
+     "page": "ie643_lec03_page008",
+     "from": "## finite-sample setup",
+     "to": "# finite-sample setup"
+    },
+    {
+     "page": "ie643_lec03_page009",
+     "from": "## Hyperplane:",
+     "to": "# Hyperplane:"
+    },
+    {
+     "page": "ie643_lec03_page009",
+     "from": "## Halfspaces",
+     "to": "# Halfspaces"
+    },
+    {
+     "page": "ie643_lec03_page010",
+     "from": "Dataset assumption:",
+     "to": "**Dataset assumption:**"
+    },
+    {
+     "page": "ie643_lec03_page011",
+     "from": "## Linear separability assumption:",
+     "to": "# Linear separability assumption:"
+    },
+    {
+     "page": "ie643_lec03_page012",
+     "from": "## Convergence of perceptron happens under linear separability assumption",
+     "to": "# Convergence of perceptron happens under linear separability assumption"
+    }
+   ],
+   "blocks_kept": 71,
+   "blocks": 71,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/ie643_lec03/ie643_lec03.pdf",
+   "pandoc_errors": ""
+  },
+  "ie643_lec09": {
+   "changes": 4,
+   "change_list": [
+    {
+     "page": "ie643_lec09_page001",
+     "from": "## Announcements:",
+     "to": "# Announcements:"
+    },
+    {
+     "page": "ie643_lec09_page002",
+     "from": "## Backward Pass (Recall)",
+     "to": "# Backward Pass (Recall)"
+    },
+    {
+     "page": "ie643_lec09_page004",
+     "from": "## MLP for multi-class case.",
+     "to": "# MLP for multi-class case."
+    },
+    {
+     "page": "ie643_lec09_page013",
+     "from": "## Soft-max function",
+     "to": "# Soft-max function"
+    }
+   ],
+   "blocks_kept": 79,
+   "blocks": 79,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/ie643_lec09/ie643_lec09.pdf",
+   "pandoc_errors": ""
+  },
+  "ie802_notes": {
+   "changes": 3,
+   "change_list": [
+    {
+     "page": "ie802_notes_page050",
+     "from": "Finding good upper bounds:",
+     "to": "**Finding good upper bounds:**"
+    },
+    {
+     "page": "ie802_notes_page051",
+     "from": "Neighbourhood search:",
+     "to": "**Neighbourhood search:**"
+    },
+    {
+     "page": "ie802_notes_page052",
+     "from": "Continuous Non-convex Quadratic Models:",
+     "to": "**Continuous Non-convex Quadratic Models:**"
+    }
+   ],
+   "blocks_kept": 147,
+   "blocks": 147,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/ie802_notes/ie802_notes.pdf",
+   "pandoc_errors": ""
+  },
+  "mlt_week03": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 92,
+   "blocks": 92,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/mlt_week03/mlt_week03.pdf",
+   "pandoc_errors": ""
+  },
+  "mlt_week09": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 114,
+   "blocks": 114,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/test/mlt_week09/mlt_week09.pdf",
+   "pandoc_errors": ""
+  }
+ }
+}

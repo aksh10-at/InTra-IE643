@@ -1,0 +1,27 @@
+# generated outputs: regenerate with the scripts in this folder (see NOTES.md)
+surya25/
+math/**/*.png
+math/**/*.jpg
+grounding/**/*.png
+grounding/**/*.jpg
+structure/
+pipeline_surya25*/
+pipeline_final/**/data/
+pipeline_final/**/figures/
+render_B/
+books/
+regrade/**/*.png
+regrade/**/*.jpg
+diagnostic/**/*.png
+*.bak_*
+*.aux
+*.log
+*.out
+poster/run_mlt07p5/
+poster/model_logs/
+report/report_v1_*
+math/norm/
+math/retrain_data/
+math/reread/*/
+grounding/*/
+*.pid

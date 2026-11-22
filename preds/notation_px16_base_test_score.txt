@@ -1,0 +1,5 @@
+
+=== BASELINE zero-shot (clean, test) ===
+scored 0 pages, 76 missing predictions
+source     n    CER    WER  textCER  eqMatch
+ALL        0    -      -        -        -  

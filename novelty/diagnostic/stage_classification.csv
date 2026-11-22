@@ -1,0 +1,28 @@
+split,page,desc,paired_box,intended_gt,outcome,stage,note
+val,041,D1,b1,D1,correct,-,IoU 0.42 only because the GT box includes the words "not possible"
+val,041,D2,b3,D2,partial,detection,Surya split the drawing into b3 (blob S) and b4 (line); no box has IoU>=0.5
+val,041,D3,b4,D3,wrong,matching,right box b10 exists (IoU 0.55) but the split box b4 took its slot in the order
+val,041,D4,b10,D4,wrong,matching,right box b12 exists (IoU 0.66); same one-step shift
+val,041,D5,b12,-,wrong,recognition,extra description: D5 and D6 both describe the split-cuts drawing (6 lines for 5 drawings)
+val,041,D6,b14,D5,partial,detection,right drawing but b14 cuts off its right side (IoU 0.54)
+val,042,D1,b5,D1,partial,detection,Surya split the drawing into b5 (blob) and b6 (oval with alpha x <= beta)
+val,042,D2,b6,D2,wrong,matching,right box b10 exists (IoU 0.87)
+val,042,D3,b10+b11+b14,D3,wrong,matching,merge rule glued three different drawings; b11 alone is right (IoU 0.93)
+val,042,D4,b17,D5,correct,-,IoU 0.90
+val,042,(none),b14,D4,missed,recognition,the model wrote no [Diagram] line for GT D4; Surya found it (IoU 0.79)
+val,044,D1,b13,X,correct,-,label file has no [Diagram] line here but the drawing is real and the model described it
+test,046,D1,b6,D1,correct,-,IoU 0.95 (old grade said wrong)
+test,046,D2,b10,label-D3,wrong,matching,right box b13 exists; caused by the missed drawing below
+test,046,D3,b13+b15,label-D4,wrong,matching,merge rule glued two drawings because there were 4 boxes for 3 lines
+test,046,(none),b10,label-D2,missed,recognition,the model wrote no [Diagram] line for "we still get same point"
+test,047,D1,b3,D1,partial,detection,b3 covers only the left half (IoU 0.49); "basic soln point" part cut off
+test,047,D2,b12,D2,wrong,matching,Surya reads b12 (right) before b15 (left); right box b15 exists (IoU 0.96)
+test,047,D3,b15,D3,wrong,matching,same order swap; right box b12 (IoU 0.39) is itself loose
+test,047,D4,b17,D4,correct,-,IoU 0.89 (old grade said wrong)
+test,047,D5,b22,D5,correct,-,IoU 0.60
+test,048,D1,b2,D1,correct,-,IoU 0.12 only because the GT box includes the text lines beside the drawing
+test,052,D1,b8,D1,correct,-,IoU 0.79
+test,052,D2,b25,D2,correct,-,IoU 0.88
+test,054,D1,b19,D1,correct,-,IoU 0.96
+test,055,D1,b4,D1,correct,-,IoU 0.57
+test,056,(none),-,X,missed,recognition+detection,small sketch: no [Diagram] line and no Surya box

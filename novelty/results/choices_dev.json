@@ -1,0 +1,451 @@
+{
+ "tau": 0.2,
+ "choices": {
+  "ie802_notes_page001": {
+   "A": [
+    [
+     944.89,
+     560.0,
+     1192.73,
+     830.0
+    ],
+    null
+   ],
+   "B": [
+    [
+     944.89,
+     560.0,
+     1192.73,
+     830.0
+    ],
+    [
+     946,
+     618,
+     1210,
+     838
+    ]
+   ],
+   "C": [
+    [
+     946,
+     618,
+     1210,
+     838
+    ],
+    [
+     946,
+     618,
+     1210,
+     838
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "qwen"
+   ],
+   "texts": [
+    "pt\u2460-related sketch \u2014 a circle intersected by lines, labeled \"pt\u2460 sqd\" (squared).",
+    "a rectangle with diagonal, labeled $F(\\hat{x})+\\nabla\\cdots$"
+   ]
+  },
+  "ie802_notes_page002": {
+   "A": [
+    [
+     35.443,
+     736.0,
+     448.431,
+     976.0
+    ],
+    [
+     257.347,
+     1524.0,
+     412.988,
+     1648.0
+    ]
+   ],
+   "B": [
+    [
+     35.443,
+     736.0,
+     448.431,
+     976.0
+    ],
+    [
+     257.347,
+     1524.0,
+     412.988,
+     1648.0
+    ]
+   ],
+   "C": [
+    [
+     80,
+     738,
+     462,
+     982
+    ],
+    [
+     254,
+     1529,
+     421,
+     1661
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya"
+   ],
+   "texts": [
+    "A square inscribed in a circle, corners labeled $(0,1)$, $(1,1)$, $(1,0)$, $(0,0)$, center $(1/2,1/2)$ \u2014 a sphere in which there are no integer points, made square as relaxation.",
+    "a circle containing a smaller shaded triangle/wedge shape."
+   ]
+  },
+  "ie802_notes_page003": {
+   "A": [
+    [
+     72.36,
+     1090.0,
+     410.04,
+     1350.0
+    ],
+    [
+     627.12,
+     570.0,
+     1342.68,
+     1510.0
+    ]
+   ],
+   "B": [
+    [
+     739.68,
+     570.0,
+     1318.56,
+     1000.0
+    ],
+    [
+     72.36,
+     1090.0,
+     410.04,
+     1350.0
+    ]
+   ],
+   "C": [
+    [
+     772,
+     577,
+     1378,
+     1005
+    ],
+    [
+     77,
+     1132,
+     520,
+     1328
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya"
+   ],
+   "texts": [
+    "A 2D region ($x_1,x_2$ axes) \u2014 a shaded triangular wedge above a line from origin, with point $y_1=0,x_1=0,x_2=0$ marked at origin, illustrating the disjunctive feasible region.",
+    "A shaded triangular region in $(y_1,x_1)$ space, \"Tight LP relaxation\" ***, followed by two more sketches of shaded triangular/quadrilateral relaxation regions, and a box: weaker LP relaxation \u2014 $-M\\leq x_1$, $x_1\\leq10y_1$, $y_1\\in\\{0,1\\}$, $x_1\\in[0,5]$ \u2192 we have to solve branches, \"c(hoos)e M big\"."
+   ]
+  },
+  "ie802_notes_page006": {
+   "A": [
+    [
+     196.107,
+     160.0,
+     1341.312,
+     1314.0
+    ]
+   ],
+   "B": [
+    [
+     196.107,
+     160.0,
+     1341.312,
+     708.0
+    ]
+   ],
+   "C": [
+    [
+     615,
+     167,
+     1351,
+     564
+    ]
+   ],
+   "B_how": [
+    "surya"
+   ],
+   "texts": [
+    "A curve with local minimum marked at $(-2,2)$ labeled \"Global optimal\", a saddle-like point at $(0,1)$, and another critical point at $(2,2)$ labeled \"local optimal\", with a red line through $(0,0)$ representing the level set \"$\\lambda$ of $x_1-2x_2=(0)$\"."
+   ]
+  },
+  "ie802_notes_page011": {
+   "A": [
+    [
+     326.346,
+     128.0,
+     631.734,
+     346.0
+    ],
+    [
+     700.596,
+     596.0,
+     1235.025,
+     1240.0
+    ],
+    [
+     314.37,
+     1350.0,
+     621.255,
+     1660.0
+    ]
+   ],
+   "B": [
+    [
+     326.346,
+     128.0,
+     631.734,
+     346.0
+    ],
+    [
+     790.416,
+     596.0,
+     1229.037,
+     792.0
+    ],
+    [
+     314.37,
+     1350.0,
+     621.255,
+     1660.0
+    ]
+   ],
+   "C": [
+    [
+     299,
+     122,
+     718,
+     364
+    ],
+    [
+     888,
+     620,
+     1030,
+     791
+    ],
+    [
+     317,
+     1340,
+     624,
+     1662
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya",
+    "surya"
+   ],
+   "texts": [
+    "A binary branching tree \u2014 root node $x_1\\leq5 \\;|\\; x_1\\geq5$ splitting into two children, each further split at $x_1\\leq2.5$ / $x_1\\geq2.5$ \u2014 \"Same branch & bound techniques & LP rules\".",
+    "An exponential curve $w_3=e^{w_2}$ rising from flat near 0 to steep, over axis $w_2$.",
+    "A small tree: $e^{w_3}$ \u2190 $-w_2$ \u2190 $x_2 - x_1^{()2}$, with leaves $x_1, x_2$."
+   ]
+  },
+  "ie802_notes_page017": {
+   "A": [
+    [
+     406.0,
+     679.42,
+     876.0,
+     892.108
+    ],
+    [
+     236.0,
+     1191.939,
+     882.0,
+     1417.92
+    ]
+   ],
+   "B": [
+    [
+     406.0,
+     679.42,
+     876.0,
+     892.108
+    ],
+    [
+     236.0,
+     1191.939,
+     882.0,
+     1417.92
+    ]
+   ],
+   "C": [
+    [
+     408,
+     679,
+     890,
+     1405
+    ],
+    [
+     244,
+     1192,
+     894,
+     1422
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya"
+   ],
+   "texts": [
+    "Two irregular boomerang-shaped regions labeled $g_1(x)\\leq0$ and $g_2(x)\\leq0$, overlapping in a small shaded intersection region, and a separate small quadrilateral shape.",
+    "A quadrilateral with a diamond cut out, and a tangled curve shape, labeled \"extremely big\"."
+   ]
+  },
+  "ie802_notes_page020": {
+   "A": [
+    [
+     239.52,
+     130.0,
+     583.83,
+     310.0
+    ],
+    [
+     209.58,
+     540.0,
+     576.345,
+     810.0
+    ],
+    [
+     838.32,
+     1140.0,
+     1287.42,
+     1340.0
+    ],
+    [
+     770.955,
+     1410.0,
+     1220.055,
+     1690.0
+    ]
+   ],
+   "B": [
+    [
+     239.52,
+     130.0,
+     583.83,
+     310.0
+    ],
+    [
+     209.58,
+     540.0,
+     576.345,
+     810.0
+    ],
+    [
+     246,
+     538,
+     560,
+     810
+    ],
+    [
+     770.955,
+     1410.0,
+     1220.055,
+     1690.0
+    ]
+   ],
+   "C": [
+    [
+     239,
+     131,
+     585,
+     314
+    ],
+    [
+     246,
+     538,
+     560,
+     810
+    ],
+    [
+     246,
+     538,
+     560,
+     810
+    ],
+    [
+     766,
+     1420,
+     1210,
+     1690
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya",
+    "qwen",
+    "surya"
+   ],
+   "texts": [
+    "two boomerang/cone shaped sketches.",
+    "A decreasing hyperbola-like curve in $(x_1,x_2)$ with shaded region above it, labeled \"we can validate $x\\geq1, y\\geq1$\".",
+    "A decreasing hyperbola with several tangent lines drawn along it.",
+    "A shaded quadrilateral wedge region with a red curve labeled \"Convex hull\" along its upper-right edge."
+   ]
+  },
+  "ie802_notes_page037": {
+   "A": [
+    [
+     160.286,
+     1128.0,
+     840.378,
+     1448.0
+    ],
+    null
+   ],
+   "B": [
+    [
+     160.286,
+     1220.0,
+     378.994,
+     1396.0
+    ],
+    [
+     537.782,
+     1128.0,
+     840.378,
+     1448.0
+    ]
+   ],
+   "C": [
+    [
+     150,
+     1225,
+     437,
+     1387
+    ],
+    [
+     542,
+     1132,
+     1070,
+     1458
+    ]
+   ],
+   "B_how": [
+    "surya",
+    "surya"
+   ],
+   "texts": [
+    "A hexagram-like star of crossing lines, \"This is not useful as not add any value.\"",
+    "An irregular capsule-shaped region with a red outline and a small shaded shape inside labeled \"quadratic\"."
+   ]
+  }
+ }
+}

@@ -1,0 +1,25 @@
+split,page,desc,description,box,grade,best_gt,best_iou,ious
+val,041,D1,"A squiggly ""S"" shape with ""$S$ not possible"" below.",b1,correct,D1,0.42,D1:0.42 D2:0.00 D3:0.00 D4:0.00 D5:0.00
+val,041,D2,"$S$ and $T$ separated by an arrow, labeled ""Separate $S$ from $T$ by a hyperplane... on linear.""",b3,partial,D2,0.08,D1:0.00 D2:0.08 D3:0.00 D4:0.00 D5:0.00
+val,041,D3,"A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separating line through the middle.",b4,not_drawing,D2,0.08,D1:0.00 D2:0.08 D3:0.00 D4:0.00 D5:0.00
+val,041,D4,"Two overlapping ""S1"" regions, each with a red separating line through them.",b10,correct,D3,0.55,D1:0.00 D2:0.00 D3:0.55 D4:0.00 D5:0.00
+val,041,D5,"A scatter plot of points with a red separating line, labeled ""minimize flat hat 2-norm"" — ""split cutg..."" — ""not necessary"" — ""no good"" — ""too big of separation"" — ""using convex hulls"" — ""shrink"" — ""and convex hull"".",b12,wrong,D4,0.66,D1:0.00 D2:0.00 D3:0.00 D4:0.66 D5:0.00
+val,041,D6,"A polygonal region with a red separating line through it, labeled ""split cutg..."" — ""this has been done before"" — ""(shrinkage needs more research)"".",b14,wrong,D5,0.54,D1:0.00 D2:0.00 D3:0.04 D4:0.00 D5:0.54
+val,042,D1,"A set $S$ split into two regions by a vertical line, labeled ""S"" on the left and ""$11$"" on the right.",b5,wrong,D1,0.26,D1:0.26 D2:0.00 D3:0.00 D4:0.00 D5:0.00
+val,042,D2,Two overlapping sets $S_1$ and $S_2$.,b6,partial,D1,0.10,D1:0.10 D2:0.00 D3:0.00 D4:0.00 D5:0.00
+val,042,D3,Two separate sets $S_1$ and $S_2$ each with a line $\alpha x \leq \beta$ through them.,b10+b11+b14,partial,D4,0.32,D1:0.00 D2:0.11 D3:0.23 D4:0.32 D5:0.00
+val,042,D4,"An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded region on the right.",b17,partial,D5,0.90,D1:0.00 D2:0.00 D3:0.00 D4:0.00 D5:0.90
+val,044,D1,"A red line (convex hull boundary) through a set of marked points on an oval curve, illustrating the convex hull concept.",b13,correct,X,0.92,X:0.92
+test,046,D1,"A polygon with vertices marked by ""x""s, one red dot labeled ""corner point"" at the bottom right.",b6,wrong,D1,0.95,D1:0.95 D3:0.00 D2:0.00 D4:0.00
+test,046,D2,"A cone with several ""x"" points inside and a few outside, an arrow from a point inside the cone to another point outside labeled ""yield cut for original problem too"", with a note ""has to get these cuts"".",b10,partial,D2,0.86,D1:0.00 D3:0.00 D2:0.86 D4:0.00
+test,046,D3,"A region with a red cross through it, labeled ""current plane"", and a note ""intersection of tiny region does not have any feasible point"".",b13+b15,partial,D3,0.40,D1:0.00 D3:0.40 D2:0.00 D4:0.13
+test,047,D1,"A polygon with a marked corner point, labeled ""basic Gom point"", and an arrow labeled ""cut off here as much deeper"".",b3,wrong,D1,0.49,D1:0.49 D2:0.00 D3:0.00 D4:0.00 D5:0.00 X:0.00
+test,047,D2,A square containing a smaller circle — a convex set.,b12,correct,D3,0.39,D1:0.00 D2:0.00 D3:0.39 D4:0.00 D5:0.00 X:0.00
+test,047,D3,"An irregular shape with a small circle inside, labeled ""we cant chop off the palm"".",b15,partial,D2,0.96,D1:0.00 D2:0.96 D3:0.00 D4:0.00 D5:0.00 X:0.00
+test,047,D4,"A rectangle with a red dot marked on one side, labeled ""not useful"".",b17,wrong,D4,0.89,D1:0.00 D2:0.00 D3:0.00 D4:0.89 D5:0.00 X:0.00
+test,047,D5,"A shaded region with a marked point, labeled ""Valid cut"".",b22,correct,D5,0.60,D1:0.00 D2:0.00 D3:0.00 D4:0.00 D5:0.60 X:0.06
+test,048,D1,"A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a corner point and cutting all the edge of infeasible region then draw a cut.",b2,correct,D1,0.12,D1:0.12
+test,052,D1,"A wavy curve with a local minimum marked at the start, and another point further along the curve.",b8,correct,D1,0.79,D1:0.79 D2:0.00
+test,052,D2,"A graph with nodes $x_1, x_2, x_3, x_4$ — $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an edge to $x_4$.",b25,correct,D2,0.88,D1:0.00 D2:0.88
+test,054,D1,"A tree with root node branching into two children, each of which branches further.",b19,correct,D1,0.96,D1:0.96
+test,055,D1,"A branching tree — root splits into two children, each of which splits further, one branch ending at a node labeled ""not useful"" with $y=6$, violating cardinality constraint.",b4,correct,D1,0.57,D1:0.57

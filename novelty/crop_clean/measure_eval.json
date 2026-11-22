@@ -1,0 +1,213 @@
+{
+ "params": {
+  "pad": 0.01,
+  "outside": 0.5,
+  "foreign_frac": 0.5,
+  "wide_text": 0.0,
+  "main": 0.4,
+  "edge": 0.95,
+  "max_removed": 0.35,
+  "foreign_edge": true
+ },
+ "summary": {
+  "n": 21,
+  "foreign_before": 0.0672581679254915,
+  "foreign_after": 0.05740817523692955,
+  "drawing_kept_mean": 0.9894220270369477,
+  "drawing_kept_min": 0.9055542535739395,
+  "crops_below_98pct_kept": 4,
+  "crops_changed": 10,
+  "reverted": 0
+ },
+ "rows": [
+  {
+   "page": "ie802_notes_page041",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page041",
+   "desc": "D2",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page041",
+   "desc": "D3",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page041",
+   "desc": "D6",
+   "foreign_before": 0.01580038607278187,
+   "foreign_after": 0.0008158421716235259,
+   "drawing_kept": 0.9786430335609473,
+   "reverted": false,
+   "pieces": 3
+  },
+  {
+   "page": "ie802_notes_page042",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page042",
+   "desc": "D2",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page042",
+   "desc": "D4",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9955535286740395,
+   "reverted": false,
+   "pieces": 1
+  },
+  {
+   "page": "ie802_notes_page044",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page046",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page046",
+   "desc": "D2",
+   "foreign_before": 0.5788319628926839,
+   "foreign_after": 0.5686121919584954,
+   "drawing_kept": 0.9989987985582699,
+   "reverted": false,
+   "pieces": 5
+  },
+  {
+   "page": "ie802_notes_page046",
+   "desc": "D3",
+   "foreign_before": 0.3402372813191233,
+   "foreign_after": 0.2569357943607745,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 10
+  },
+  {
+   "page": "ie802_notes_page047",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9308792372881356,
+   "reverted": false,
+   "pieces": 1
+  },
+  {
+   "page": "ie802_notes_page047",
+   "desc": "D2",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page047",
+   "desc": "D3",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9744976816074189,
+   "reverted": false,
+   "pieces": 1
+  },
+  {
+   "page": "ie802_notes_page047",
+   "desc": "D4",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page047",
+   "desc": "D5",
+   "foreign_before": 0.18104789901435242,
+   "foreign_after": 0.08270385434824715,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 2
+  },
+  {
+   "page": "ie802_notes_page048",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9941162626500353,
+   "reverted": false,
+   "pieces": 1
+  },
+  {
+   "page": "ie802_notes_page052",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9055542535739395,
+   "reverted": false,
+   "pieces": 4
+  },
+  {
+   "page": "ie802_notes_page052",
+   "desc": "D2",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 0.9996197718631179,
+   "reverted": false,
+   "pieces": 1
+  },
+  {
+   "page": "ie802_notes_page054",
+   "desc": "D1",
+   "foreign_before": 0.0,
+   "foreign_after": 0.0,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  },
+  {
+   "page": "ie802_notes_page055",
+   "desc": "D1",
+   "foreign_before": 0.2965039971363799,
+   "foreign_after": 0.2965039971363799,
+   "drawing_kept": 1.0,
+   "reverted": false,
+   "pieces": 0
+  }
+ ]
+}

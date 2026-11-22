@@ -1,0 +1,50 @@
+{
+ "grades": {
+  "v01": "same", "v02": "same", "v03": "right", "v04": "left", "v05": "same",
+  "v06": "left", "v07": "same", "v08": "left", "v09": "left", "v10": "left",
+  "v11": "same", "v12": "left", "v13": "same", "v14": "left", "v15": "left",
+  "v16": "right", "v17": "left", "v18": "same", "v19": "same"
+ },
+ "crop_grades": {
+  "v01": {"left": "correct", "right": "correct"},
+  "v02": {"left": "correct", "right": "correct"},
+  "v03": {"left": "loose", "right": "correct"},
+  "v04": {"left": "correct", "right": "correct"},
+  "v05": {"left": "correct", "right": "correct"},
+  "v06": {"left": "loose", "right": "partial"},
+  "v07": {"left": "correct", "right": "correct"},
+  "v08": {"left": "correct", "right": "partial"},
+  "v09": {"left": "correct", "right": "partial"},
+  "v10": {"left": "correct", "right": "partial"},
+  "v11": {"left": "correct", "right": "correct"},
+  "v12": {"left": "correct", "right": "partial"},
+  "v13": {"left": "correct", "right": "correct"},
+  "v14": {"left": "partial", "right": "partial"},
+  "v15": {"left": "correct", "right": "partial"},
+  "v16": {"left": "partial", "right": "correct"},
+  "v17": {"left": "correct", "right": "loose"},
+  "v18": {"left": "correct", "right": "correct"},
+  "v19": {"left": "partial", "right": "partial"}
+ },
+ "reasons": {
+  "v01": "Identical crops of the two overlapping sets.",
+  "v02": "Both show the full neuron column with labels; only margin differs.",
+  "v03": "Right isolates the line plot; left adds the vector equation and a second small diagram.",
+  "v04": "Both complete; right picks up more stray text fragments from neighbouring labels.",
+  "v05": "Essentially identical crops of the scatter plot.",
+  "v06": "Left keeps the full polygon cut drawing with the 'split cuts' label; right cuts off its top/right side.",
+  "v07": "Identical tree crops.",
+  "v08": "Right omits the 'we cant chop off the palm' label.",
+  "v09": "Both show the full circle/w* diagram, but right cuts off the green annotation text on the right.",
+  "v10": "Right cuts off the alpha-x <= beta label and the side note.",
+  "v11": "Identical crops.",
+  "v12": "Right cuts off the Cluster 2 label and mu_2.",
+  "v13": "Both show the full shaded region with cut; only margin differs.",
+  "v14": "Left keeps the 'No linear separator' caption; right drops both captions.",
+  "v15": "Left keeps the mu^0 labels; right cuts them off.",
+  "v16": "Left clips the y label and formula at the right edge; right is complete.",
+  "v17": "Left shows the first plot with its dataset; right adds the second plot and cut text.",
+  "v18": "Essentially identical graph crops.",
+  "v19": "Identical crops; both omit the 'S not possible' caption."
+ }
+}

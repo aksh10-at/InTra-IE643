@@ -1,0 +1,76 @@
+{
+ "unit": "ie802_notes",
+ "run_id": "novelty-structure",
+ "pages": [
+  {
+   "page": "ie802_notes_page041",
+   "descriptions": 6,
+   "surya_figures": 6,
+   "merged_from": 6,
+   "matched": 6,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "ie802_notes_page042",
+   "descriptions": 4,
+   "surya_figures": 4,
+   "merged_from": 5,
+   "matched": 4,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "ie802_notes_page043",
+   "descriptions": 0,
+   "surya_figures": 0,
+   "merged_from": 0,
+   "matched": 0,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  },
+  {
+   "page": "ie802_notes_page044",
+   "descriptions": 1,
+   "surya_figures": 1,
+   "merged_from": 1,
+   "matched": 1,
+   "extra_figures_added": 0,
+   "descriptions_without_figure": 0
+  }
+ ],
+ "missing_pages": [],
+ "expected_pages": 4,
+ "input_directory": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/pages_md",
+ "outline_sections": 3,
+ "requested_format": "pdf",
+ "outline": "3 sections",
+ "reviewed_figure_links": [],
+ "outline_unapplied_starts": [],
+ "preservation": {
+  "blocks": 39,
+  "missing": 0,
+  "missing_list": [],
+  "scope": "ordered occurrences in Markdown before math fallback; not PDF accuracy"
+ },
+ "math": {
+  "equations": 60,
+  "failed": 0,
+  "failed_list": [],
+  "reviewed_repairs": [],
+  "remaining_failed": 0,
+  "status": "completed",
+  "checked_with": "xelatex",
+  "error": null
+ },
+ "output": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/ie802_notes/ie802_notes.pdf",
+ "pandoc_errors": "",
+ "pandoc_warnings": "[WARNING] Missing character: There is no \u2460 (U+2460) (U+2460) in font DejaVu Serif Bold/OT:script=l\n[WARNING] Missing character: There is no \u2461 (U+2461) (U+2461) in font DejaVu Serif Bold/OT:script=l\n[WARNING] Missing character: There is no \u2462 (U+2462) (U+2462) in font DejaVu Serif Bold/OT:script=l\n",
+ "pdf_audit": {
+  "status": "completed",
+  "pages": 6,
+  "outside_words": 0,
+  "examples": [],
+  "scope": "word bounds only; not overlap, glyph or semantic correctness"
+ }
+}

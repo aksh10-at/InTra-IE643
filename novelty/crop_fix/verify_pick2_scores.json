@@ -1,0 +1,6053 @@
+{
+ "gt": [
+  {
+   "set": "dev",
+   "page": "ie802_notes_page001",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "pt\u2460-related sketch \u2014 a circle intersected by lines, labeled \"pt\u2460 sqd\" (squared).",
+   "cands": {
+    "B25": [
+     907,
+     618,
+     1212,
+     829
+    ],
+    "Q": [
+     907,
+     618,
+     1212,
+     829
+    ],
+    "B2": [
+     944.89,
+     560.0,
+     1192.73,
+     830.0
+    ],
+    "U": [
+     907,
+     618,
+     1212,
+     829
+    ]
+   },
+   "gt_box": [
+    957,
+    562,
+    1197,
+    826
+   ],
+   "others": [
+    [
+     664,
+     1069,
+     889,
+     1294
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9466,
+     "p_complete": 0.133
+    },
+    "Q": {
+     "p_match": 0.9466,
+     "p_complete": 0.133
+    },
+    "U": {
+     "p_match": 0.9466,
+     "p_complete": 0.133
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page001",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "a rectangle with diagonal, labeled $F(\\hat{x})+\\nabla\\cdots$",
+   "cands": {
+    "B25": [
+     607,
+     1086,
+     1437,
+     1293
+    ],
+    "Q": [
+     607,
+     1086,
+     1437,
+     1293
+    ],
+    "B2": [
+     607,
+     1086,
+     1437,
+     1293
+    ],
+    "U": [
+     607,
+     1086,
+     1437,
+     1293
+    ]
+   },
+   "gt_box": [
+    664,
+    1069,
+    889,
+    1294
+   ],
+   "others": [
+    [
+     957,
+     562,
+     1197,
+     826
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.3775,
+     "p_complete": 0.0159
+    },
+    "Q": {
+     "p_match": 0.3775,
+     "p_complete": 0.0159
+    },
+    "B2": {
+     "p_match": 0.3775,
+     "p_complete": 0.0159
+    },
+    "U": {
+     "p_match": 0.3775,
+     "p_complete": 0.0159
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page002",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A square inscribed in a circle, corners labeled $(0,1)$, $(1,1)$, $(1,0)$, $(0,0)$, center $(1/2,1/2)$ \u2014 a sphere in which there are no integer points, made square as relaxation.",
+   "cands": {
+    "B25": [
+     80,
+     738,
+     462,
+     982
+    ],
+    "Q": [
+     80,
+     738,
+     462,
+     982
+    ],
+    "B2": [
+     35.443,
+     736.0,
+     448.431,
+     976.0
+    ],
+    "U": [
+     80,
+     738,
+     462,
+     982
+    ]
+   },
+   "gt_box": [
+    40,
+    740,
+    348,
+    978
+   ],
+   "others": [
+    [
+     256,
+     1524,
+     413,
+     1651
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.7058,
+     "p_complete": 0.1067
+    },
+    "Q": {
+     "p_match": 0.7058,
+     "p_complete": 0.1067
+    },
+    "B2": {
+     "p_match": 0.8176,
+     "p_complete": 0.1192
+    },
+    "U": {
+     "p_match": 0.7058,
+     "p_complete": 0.1067
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page002",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "a circle containing a smaller shaded triangle/wedge shape.",
+   "cands": {
+    "B25": [
+     254.265,
+     1520.0,
+     411.447,
+     1648.0
+    ],
+    "Q": [
+     254,
+     1529,
+     421,
+     1661
+    ],
+    "B2": [
+     257.347,
+     1524.0,
+     412.988,
+     1648.0
+    ],
+    "U": [
+     254,
+     1520.0,
+     421,
+     1661
+    ]
+   },
+   "gt_box": [
+    256,
+    1524,
+    413,
+    1651
+   ],
+   "others": [
+    [
+     40,
+     740,
+     348,
+     978
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.2451
+    },
+    "Q": {
+     "p_match": 0.9876,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.9876,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9876,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page003",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A 2D region ($x_1,x_2$ axes) \u2014 a shaded triangular wedge above a line from origin, with point $y_1=0,x_1=0,x_2=0$ marked at origin, illustrating the disjunctive feasible region.",
+   "cands": {
+    "B25": [
+     741.288,
+     574.0,
+     1313.736,
+     1000.0
+    ],
+    "Q": [
+     772,
+     577,
+     1378,
+     1005
+    ],
+    "B2": [
+     739.68,
+     570.0,
+     1318.56,
+     1000.0
+    ],
+    "U": [
+     741.288,
+     574.0,
+     1378,
+     1005
+    ]
+   },
+   "gt_box": [
+    753,
+    574,
+    1325,
+    1002
+   ],
+   "others": [
+    [
+     65,
+     1099,
+     513,
+     1441
+    ],
+    [
+     679,
+     1309,
+     951,
+     1514
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.982,
+     "p_complete": 0.3486
+    },
+    "Q": {
+     "p_match": 0.9797,
+     "p_complete": 0.2942
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9669,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page003",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "A shaded triangular region in $(y_1,x_1)$ space, \"Tight LP relaxation\" ***, followed by two more sketches of shaded triangular/quadrilateral relaxation regions, and a box: weaker LP relaxation \u2014 $-M\\leq x_1$, $x_1\\leq10y_1$, $y_1\\in\\{0,1\\}$, $x_1\\in[0,5]$ \u2192 we have to solve branches, \"c(hoos)e M big\".",
+   "cands": {
+    "B25": [
+     120.6,
+     1128.0,
+     406.824,
+     1340.0
+    ],
+    "Q": [
+     77,
+     1132,
+     520,
+     1328
+    ],
+    "B2": [
+     72.36,
+     1090.0,
+     410.04,
+     1350.0
+    ],
+    "U": [
+     77,
+     1128.0,
+     520,
+     1340.0
+    ]
+   },
+   "gt_box": [
+    65,
+    1099,
+    513,
+    1441
+   ],
+   "others": [
+    [
+     753,
+     574,
+     1325,
+     1002
+    ],
+    [
+     679,
+     1309,
+     951,
+     1514
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.4073,
+     "p_complete": 0.0851
+    },
+    "Q": {
+     "p_match": 0.5,
+     "p_complete": 0.1067
+    },
+    "B2": {
+     "p_match": 0.2942,
+     "p_complete": 0.0759
+    },
+    "U": {
+     "p_match": 0.5,
+     "p_complete": 0.0953
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page006",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A curve with local minimum marked at $(-2,2)$ labeled \"Global optimal\", a saddle-like point at $(0,1)$, and another critical point at $(2,2)$ labeled \"local optimal\", with a red line through $(0,0)$ representing the level set \"$\\lambda$ of $x_1-2x_2=(0)$\".",
+   "cands": {
+    "B25": [
+     196.107,
+     160.0,
+     1335.324,
+     712.0
+    ],
+    "Q": [
+     615,
+     167,
+     1351,
+     564
+    ],
+    "B2": [
+     196.107,
+     160.0,
+     1341.312,
+     708.0
+    ],
+    "U": [
+     196.107,
+     160.0,
+     1351,
+     712.0
+    ]
+   },
+   "gt_box": [
+    569,
+    161,
+    1339,
+    579
+   ],
+   "others": [
+    [
+     205,
+     458,
+     665,
+     715
+    ],
+    [
+     282,
+     876,
+     792,
+     1277
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9466,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.9526,
+     "p_complete": 0.2689
+    },
+    "U": {
+     "p_match": 0.8933,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page011",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A binary branching tree \u2014 root node $x_1\\leq5 \\;|\\; x_1\\geq5$ splitting into two children, each further split at $x_1\\leq2.5$ / $x_1\\geq2.5$ \u2014 \"Same branch & bound techniques & LP rules\".",
+   "cands": {
+    "B25": [
+     324.849,
+     126.0,
+     628.74,
+     344.0
+    ],
+    "Q": [
+     299,
+     122,
+     718,
+     364
+    ],
+    "B2": [
+     326.346,
+     128.0,
+     631.734,
+     346.0
+    ],
+    "U": [
+     299,
+     122,
+     718,
+     364
+    ]
+   },
+   "gt_box": [
+    334,
+    129,
+    695,
+    342
+   ],
+   "others": [
+    [
+     799,
+     624,
+     1138,
+     787
+    ],
+    [
+     708,
+     923,
+     1229,
+     1237
+    ],
+    [
+     299,
+     1349,
+     621,
+     1658
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9579,
+     "p_complete": 0.1192
+    },
+    "Q": {
+     "p_match": 0.9903,
+     "p_complete": 0.1645
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9903,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page011",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "An exponential curve $w_3=e^{w_2}$ rising from flat near 0 to steep, over axis $w_2$.",
+   "cands": {
+    "B25": [
+     888,
+     620,
+     1030,
+     791
+    ],
+    "Q": [
+     888,
+     620,
+     1030,
+     791
+    ],
+    "B2": [
+     790.416,
+     596.0,
+     1229.037,
+     792.0
+    ],
+    "U": [
+     888,
+     620,
+     1030,
+     791
+    ]
+   },
+   "gt_box": [
+    799,
+    624,
+    1138,
+    787
+   ],
+   "others": [
+    [
+     334,
+     129,
+     695,
+     342
+    ],
+    [
+     708,
+     923,
+     1229,
+     1237
+    ],
+    [
+     299,
+     1349,
+     621,
+     1658
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.8355,
+     "p_complete": 0.023
+    },
+    "Q": {
+     "p_match": 0.8355,
+     "p_complete": 0.023
+    },
+    "U": {
+     "p_match": 0.8355,
+     "p_complete": 0.023
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page011",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D3",
+   "text": "A small tree: $e^{w_3}$ \u2190 $-w_2$ \u2190 $x_2 - x_1^{()2}$, with leaves $x_1, x_2$.",
+   "cands": {
+    "B25": [
+     315.867,
+     1348.0,
+     619.758,
+     1656.0
+    ],
+    "Q": [
+     317,
+     1340,
+     624,
+     1662
+    ],
+    "B2": [
+     314.37,
+     1350.0,
+     621.255,
+     1660.0
+    ],
+    "U": [
+     315.867,
+     1340,
+     624,
+     1662
+    ]
+   },
+   "gt_box": [
+    299,
+    1349,
+    621,
+    1658
+   ],
+   "others": [
+    [
+     334,
+     129,
+     695,
+     342
+    ],
+    [
+     799,
+     624,
+     1138,
+     787
+    ],
+    [
+     708,
+     923,
+     1229,
+     1237
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.5927,
+     "p_complete": 0.1192
+    },
+    "Q": {
+     "p_match": 0.5312,
+     "p_complete": 0.1067
+    },
+    "B2": {
+     "p_match": 0.8355,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.5622,
+     "p_complete": 0.0953
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page017",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D2",
+   "text": "Two irregular boomerang-shaped regions labeled $g_1(x)\\leq0$ and $g_2(x)\\leq0$, overlapping in a small shaded intersection region, and a separate small quadrilateral shape.",
+   "cands": {
+    "B25": [
+     406.0,
+     676.466,
+     876.0,
+     970.389
+    ],
+    "Q": [
+     408,
+     679,
+     890,
+     1405
+    ],
+    "B2": [
+     406.0,
+     679.42,
+     876.0,
+     892.108
+    ],
+    "U": [
+     406.0,
+     676.466,
+     890,
+     1405
+    ]
+   },
+   "gt_box": [
+    410,
+    678,
+    874,
+    912
+   ],
+   "others": [
+    [
+     1094,
+     62,
+     1822,
+     237
+    ],
+    [
+     239,
+     1192,
+     886,
+     1422
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9964,
+     "p_complete": 0.4378
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page017",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D3",
+   "text": "A quadrilateral with a diamond cut out, and a tangled curve shape, labeled \"extremely big\".",
+   "cands": {
+    "B25": [
+     234.0,
+     1191.939,
+     880.0,
+     1414.966
+    ],
+    "Q": [
+     244,
+     1192,
+     894,
+     1422
+    ],
+    "B2": [
+     236.0,
+     1191.939,
+     882.0,
+     1417.92
+    ],
+    "U": [
+     234.0,
+     1191.939,
+     894,
+     1422
+    ]
+   },
+   "gt_box": [
+    239,
+    1192,
+    886,
+    1422
+   ],
+   "others": [
+    [
+     1094,
+     62,
+     1822,
+     237
+    ],
+    [
+     410,
+     678,
+     874,
+     912
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9924,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9954,
+     "p_complete": 0.3486
+    },
+    "B2": {
+     "p_match": 0.9924,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9933,
+     "p_complete": 0.3486
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page020",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "two boomerang/cone shaped sketches.",
+   "cands": {
+    "B25": [
+     239.52,
+     126.0,
+     583.83,
+     308.0
+    ],
+    "Q": [
+     239,
+     131,
+     585,
+     314
+    ],
+    "B2": [
+     239.52,
+     130.0,
+     583.83,
+     310.0
+    ],
+    "U": [
+     239,
+     126.0,
+     585,
+     314
+    ]
+   },
+   "gt_box": [
+    485,
+    129,
+    611,
+    317
+   ],
+   "others": [
+    [
+     210,
+     569,
+     896,
+     809
+    ],
+    [
+     849,
+     1144,
+     1158,
+     1332
+    ],
+    [
+     779,
+     1384,
+     1229,
+     1691
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9707,
+     "p_complete": 0.4378
+    },
+    "Q": {
+     "p_match": 0.9669,
+     "p_complete": 0.4073
+    },
+    "B2": {
+     "p_match": 0.9627,
+     "p_complete": 0.4378
+    },
+    "U": {
+     "p_match": 0.9669,
+     "p_complete": 0.4378
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page020",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "A decreasing hyperbola-like curve in $(x_1,x_2)$ with shaded region above it, labeled \"we can validate $x\\geq1, y\\geq1$\".",
+   "cands": {
+    "B25": [
+     212.574,
+     540.0,
+     568.86,
+     804.0
+    ],
+    "Q": [
+     248,
+     547,
+     560,
+     805
+    ],
+    "B2": [
+     209.58,
+     540.0,
+     576.345,
+     810.0
+    ],
+    "U": [
+     212.574,
+     540.0,
+     568.86,
+     805
+    ]
+   },
+   "gt_box": [
+    210,
+    569,
+    896,
+    809
+   ],
+   "others": [
+    [
+     485,
+     129,
+     611,
+     317
+    ],
+    [
+     849,
+     1144,
+     1158,
+     1332
+    ],
+    [
+     779,
+     1384,
+     1229,
+     1691
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.7773,
+     "p_complete": 0.0759
+    },
+    "B2": {
+     "p_match": 0.7311,
+     "p_complete": 0.0759
+    },
+    "U": {
+     "p_match": 0.7549,
+     "p_complete": 0.0675
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page020",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D3",
+   "text": "A decreasing hyperbola with several tangent lines drawn along it.",
+   "cands": {
+    "B25": [
+     842.811,
+     1144.0,
+     1128.738,
+     1330.0
+    ],
+    "Q": [
+     770,
+     1146,
+     1108,
+     1334
+    ],
+    "B2": [
+     838.32,
+     1140.0,
+     1287.42,
+     1340.0
+    ],
+    "U": [
+     770,
+     1144.0,
+     1128.738,
+     1334
+    ]
+   },
+   "gt_box": [
+    849,
+    1144,
+    1158,
+    1332
+   ],
+   "others": [
+    [
+     485,
+     129,
+     611,
+     317
+    ],
+    [
+     210,
+     569,
+     896,
+     809
+    ],
+    [
+     779,
+     1384,
+     1229,
+     1691
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9841,
+     "p_complete": 0.0851
+    },
+    "Q": {
+     "p_match": 0.9876,
+     "p_complete": 0.0331
+    },
+    "B2": {
+     "p_match": 0.9797,
+     "p_complete": 0.0534
+    },
+    "U": {
+     "p_match": 0.974,
+     "p_complete": 0.026
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page020",
+   "i": 3,
+   "desc": "D4",
+   "gt": "D4",
+   "text": "A shaded quadrilateral wedge region with a red curve labeled \"Convex hull\" along its upper-right edge.",
+   "cands": {
+    "B25": [
+     776.943,
+     1422.0,
+     1218.558,
+     1680.0
+    ],
+    "Q": [
+     766,
+     1420,
+     1210,
+     1690
+    ],
+    "B2": [
+     770.955,
+     1410.0,
+     1220.055,
+     1690.0
+    ],
+    "U": [
+     766,
+     1420,
+     1218.558,
+     1690
+    ]
+   },
+   "gt_box": [
+    779,
+    1384,
+    1229,
+    1691
+   ],
+   "others": [
+    [
+     485,
+     129,
+     611,
+     317
+    ],
+    [
+     210,
+     569,
+     896,
+     809
+    ],
+    [
+     849,
+     1144,
+     1158,
+     1332
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9903,
+     "p_complete": 0.3486
+    },
+    "Q": {
+     "p_match": 0.9924,
+     "p_complete": 0.3486
+    },
+    "B2": {
+     "p_match": 0.9933,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.989,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page037",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D2",
+   "text": "A hexagram-like star of crossing lines, \"This is not useful as not add any value.\"",
+   "cands": {
+    "B25": [
+     161.784,
+     1222.0,
+     378.994,
+     1396.0
+    ],
+    "Q": [
+     150,
+     1225,
+     437,
+     1387
+    ],
+    "B2": [
+     160.286,
+     1220.0,
+     378.994,
+     1396.0
+    ],
+    "U": [
+     150,
+     1222.0,
+     437,
+     1396.0
+    ]
+   },
+   "gt_box": [
+    109,
+    1223,
+    383,
+    1528
+   ],
+   "others": [
+    [
+     359,
+     221,
+     864,
+     393
+    ],
+    [
+     542,
+     1130,
+     1070,
+     1447
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.3775,
+     "p_complete": 0.1824
+    },
+    "Q": {
+     "p_match": 0.2451,
+     "p_complete": 0.133
+    },
+    "B2": {
+     "p_match": 0.3486,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.5,
+     "p_complete": 0.1824
+    }
+   }
+  },
+  {
+   "set": "dev",
+   "page": "ie802_notes_page037",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D3",
+   "text": "An irregular capsule-shaped region with a red outline and a small shaded shape inside labeled \"quadratic\".",
+   "cands": {
+    "B25": [
+     534.786,
+     1126.0,
+     835.884,
+     1448.0
+    ],
+    "Q": [
+     542,
+     1132,
+     1070,
+     1458
+    ],
+    "B2": [
+     537.782,
+     1128.0,
+     840.378,
+     1448.0
+    ],
+    "U": [
+     534.786,
+     1126.0,
+     1070,
+     1458
+    ]
+   },
+   "gt_box": [
+    542,
+    1130,
+    1070,
+    1447
+   ],
+   "others": [
+    [
+     359,
+     221,
+     864,
+     393
+    ],
+    [
+     109,
+     1223,
+     383,
+     1528
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9047,
+     "p_complete": 0.4688
+    },
+    "Q": {
+     "p_match": 0.9954,
+     "p_complete": 0.4688
+    },
+    "B2": {
+     "p_match": 0.9241,
+     "p_complete": 0.5312
+    },
+    "U": {
+     "p_match": 0.9954,
+     "p_complete": 0.5312
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page041",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A squiggly \"S\" shape with \"$S$ not possible\" below.",
+   "cands": {
+    "B25": [
+     241.9,
+     78.0,
+     452.825,
+     204.0
+    ],
+    "Q": [
+     242,
+     70,
+     455,
+     202
+    ],
+    "B2": [
+     243.375,
+     76.0,
+     454.3,
+     206.0
+    ],
+    "U": [
+     241.9,
+     70,
+     455,
+     204.0
+    ]
+   },
+   "gt_box": [
+    241,
+    73,
+    518,
+    310
+   ],
+   "others": [
+    [
+     738,
+     56,
+     1264,
+     399
+    ],
+    [
+     31,
+     449,
+     910,
+     893
+    ],
+    [
+     6,
+     916,
+     366,
+     1306
+    ],
+    [
+     507,
+     806,
+     1217,
+     1261
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.7311,
+     "p_complete": 0.2689
+    },
+    "Q": {
+     "p_match": 0.7549,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.7058,
+     "p_complete": 0.2689
+    },
+    "U": {
+     "p_match": 0.7311,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page041",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "$S$ and $T$ separated by an arrow, labeled \"Separate $S$ from $T$ by a hyperplane... on linear.\"",
+   "cands": {
+    "B25": [
+     764,
+     52,
+     1191,
+     416
+    ],
+    "Q": [
+     764,
+     52,
+     1191,
+     416
+    ],
+    "B2": [
+     759.625,
+     60.0,
+     1019.225,
+     218.0
+    ],
+    "U": [
+     764,
+     52,
+     1191,
+     416
+    ]
+   },
+   "gt_box": [
+    738,
+    56,
+    1264,
+    399
+   ],
+   "others": [
+    [
+     241,
+     73,
+     518,
+     310
+    ],
+    [
+     31,
+     449,
+     910,
+     893
+    ],
+    [
+     6,
+     916,
+     366,
+     1306
+    ],
+    [
+     507,
+     806,
+     1217,
+     1261
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page041",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D3",
+   "text": "A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separating line through the middle.",
+   "cands": {
+    "B25": [
+     44.25,
+     448.0,
+     536.9,
+     886.0
+    ],
+    "Q": [
+     18,
+     397,
+     541,
+     892
+    ],
+    "B2": [
+     47.2,
+     452.0,
+     536.9,
+     888.0
+    ],
+    "U": [
+     18,
+     397,
+     541,
+     892
+    ]
+   },
+   "gt_box": [
+    31,
+    449,
+    910,
+    893
+   ],
+   "others": [
+    [
+     241,
+     73,
+     518,
+     310
+    ],
+    [
+     738,
+     56,
+     1264,
+     399
+    ],
+    [
+     6,
+     916,
+     366,
+     1306
+    ],
+    [
+     507,
+     806,
+     1217,
+     1261
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9948,
+     "p_complete": 0.3208
+    },
+    "Q": {
+     "p_match": 0.9972,
+     "p_complete": 0.4073
+    },
+    "B2": {
+     "p_match": 0.9978,
+     "p_complete": 0.4378
+    },
+    "U": {
+     "p_match": 0.9972,
+     "p_complete": 0.4073
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page041",
+   "i": 3,
+   "desc": "D4",
+   "gt": "D4",
+   "text": "Two overlapping \"S1\" regions, each with a red separating line through them.",
+   "cands": {
+    "B25": [
+     18,
+     920,
+     281,
+     1280
+    ],
+    "Q": [
+     18,
+     920,
+     281,
+     1280
+    ],
+    "B2": [
+     14.75,
+     920.0,
+     272.875,
+     1280.0
+    ],
+    "U": [
+     18,
+     920,
+     281,
+     1280
+    ]
+   },
+   "gt_box": [
+    6,
+    916,
+    366,
+    1306
+   ],
+   "others": [
+    [
+     241,
+     73,
+     518,
+     310
+    ],
+    [
+     738,
+     56,
+     1264,
+     399
+    ],
+    [
+     31,
+     449,
+     910,
+     893
+    ],
+    [
+     507,
+     806,
+     1217,
+     1261
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.974,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page041",
+   "i": 5,
+   "desc": "D6",
+   "gt": "D5",
+   "text": "A polygonal region with a red separating line through it, labeled \"split cutg...\" \u2014 \"this has been done before\" \u2014 \"(shrinkage needs more research)\".",
+   "cands": {
+    "B25": [
+     541,
+     862,
+     959,
+     1258
+    ],
+    "Q": [
+     541,
+     862,
+     959,
+     1258
+    ],
+    "B2": [
+     413.0,
+     840.0,
+     973.5,
+     1260.0
+    ],
+    "U": [
+     541,
+     862,
+     959,
+     1258
+    ]
+   },
+   "gt_box": [
+    507,
+    806,
+    1217,
+    1261
+   ],
+   "others": [
+    [
+     241,
+     73,
+     518,
+     310
+    ],
+    [
+     738,
+     56,
+     1264,
+     399
+    ],
+    [
+     31,
+     449,
+     910,
+     893
+    ],
+    [
+     6,
+     916,
+     366,
+     1306
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    },
+    "Q": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.9579,
+     "p_complete": 0.1067
+    },
+    "U": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page042",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A set $S$ split into two regions by a vertical line, labeled \"S\" on the left and \"$11$\" on the right.",
+   "cands": {
+    "B25": [
+     855.358,
+     208.0,
+     1048.6,
+     356.0
+    ],
+    "Q": [
+     861,
+     209,
+     1063,
+     361
+    ],
+    "B2": [
+     859.852,
+     210.0,
+     1048.6,
+     360.0
+    ],
+    "U": [
+     855.358,
+     208.0,
+     1063,
+     361
+    ]
+   },
+   "gt_box": [
+    857,
+    209,
+    1398,
+    412
+   ],
+   "others": [
+    [
+     246,
+     627,
+     441,
+     804
+    ],
+    [
+     382,
+     791,
+     733,
+     1012
+    ],
+    [
+     204,
+     1032,
+     646,
+     1310
+    ],
+    [
+     246,
+     1334,
+     761,
+     1620
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.4378
+    },
+    "Q": {
+     "p_match": 0.9797,
+     "p_complete": 0.4378
+    },
+    "B2": {
+     "p_match": 0.982,
+     "p_complete": 0.4073
+    },
+    "U": {
+     "p_match": 0.9903,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page042",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "Two overlapping sets $S_1$ and $S_2$.",
+   "cands": {
+    "B25": [
+     244.174,
+     630.0,
+     434.42,
+     784.0
+    ],
+    "Q": [
+     244,
+     631,
+     437,
+     789
+    ],
+    "B2": [
+     247.17,
+     630.0,
+     434.42,
+     790.0
+    ],
+    "U": [
+     244,
+     630.0,
+     437,
+     789
+    ]
+   },
+   "gt_box": [
+    246,
+    627,
+    441,
+    804
+   ],
+   "others": [
+    [
+     857,
+     209,
+     1398,
+     412
+    ],
+    [
+     382,
+     791,
+     733,
+     1012
+    ],
+    [
+     204,
+     1032,
+     646,
+     1310
+    ],
+    [
+     246,
+     1334,
+     761,
+     1620
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9914,
+     "p_complete": 0.2942
+    },
+    "B2": {
+     "p_match": 0.9903,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9914,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page042",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D3",
+   "text": "Two separate sets $S_1$ and $S_2$ each with a line $\\alpha x \\leq \\beta$ through them.",
+   "cands": {
+    "B25": [
+     387.982,
+     790.0,
+     719.04,
+     1010.0
+    ],
+    "Q": [
+     389,
+     780,
+     610,
+     923
+    ],
+    "B2": [
+     389.48,
+     790.0,
+     719.04,
+     1010.0
+    ],
+    "U": [
+     387.982,
+     780,
+     719.04,
+     1010.0
+    ]
+   },
+   "gt_box": [
+    382,
+    791,
+    733,
+    1012
+   ],
+   "others": [
+    [
+     857,
+     209,
+     1398,
+     412
+    ],
+    [
+     246,
+     627,
+     441,
+     804
+    ],
+    [
+     204,
+     1032,
+     646,
+     1310
+    ],
+    [
+     246,
+     1334,
+     761,
+     1620
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9841,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.9859,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page042",
+   "i": 3,
+   "desc": "D4",
+   "gt": "D5",
+   "text": "An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded region on the right.",
+   "cands": {
+    "B25": [
+     244.174,
+     1336.0,
+     1113.014,
+     1616.0
+    ],
+    "Q": [
+     246,
+     1340,
+     722,
+     1568
+    ],
+    "B2": [
+     247.17,
+     1340.0,
+     719.04,
+     1620.0
+    ],
+    "U": [
+     244.174,
+     1336.0,
+     1113.014,
+     1616.0
+    ]
+   },
+   "gt_box": [
+    246,
+    1334,
+    761,
+    1620
+   ],
+   "others": [
+    [
+     857,
+     209,
+     1398,
+     412
+    ],
+    [
+     246,
+     627,
+     441,
+     804
+    ],
+    [
+     382,
+     791,
+     733,
+     1012
+    ],
+    [
+     204,
+     1032,
+     646,
+     1310
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9627,
+     "p_complete": 0.1192
+    },
+    "U": {
+     "p_match": 0.9627,
+     "p_complete": 0.1192
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page044",
+   "i": 0,
+   "desc": "D1",
+   "gt": "X",
+   "text": "A red line (convex hull boundary) through a set of marked points on an oval curve, illustrating the convex hull concept.",
+   "cands": {
+    "B25": [
+     860.775,
+     756.0,
+     1278.438,
+     976.0
+    ],
+    "Q": [
+     855,
+     758,
+     1294,
+     991
+    ],
+    "B2": [
+     862.272,
+     754.0,
+     1278.438,
+     976.0
+    ],
+    "U": [
+     855,
+     756.0,
+     1294,
+     991
+    ]
+   },
+   "gt_box": [
+    850,
+    755,
+    1288,
+    983
+   ],
+   "others": [],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.982,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.982,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9707,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page046",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A polygon with vertices marked by \"x\"s, one red dot labeled \"corner point\" at the bottom right.",
+   "cands": {
+    "B25": [
+     898.2,
+     440.0,
+     1390.713,
+     722.0
+    ],
+    "Q": [
+     855,
+     441,
+     1419,
+     725
+    ],
+    "B2": [
+     898.2,
+     438.0,
+     1392.21,
+     720.0
+    ],
+    "U": [
+     855,
+     440.0,
+     1419,
+     725
+    ]
+   },
+   "gt_box": [
+    892,
+    438,
+    1397,
+    727
+   ],
+   "others": [
+    [
+     397,
+     1258,
+     1169,
+     1532
+    ],
+    [
+     518,
+     884,
+     1162,
+     1059
+    ],
+    [
+     310,
+     1650,
+     724,
+     1832
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9983,
+     "p_complete": 0.4688
+    },
+    "Q": {
+     "p_match": 0.9981,
+     "p_complete": 0.5312
+    },
+    "B2": {
+     "p_match": 0.9985,
+     "p_complete": 0.5
+    },
+    "U": {
+     "p_match": 0.9981,
+     "p_complete": 0.5312
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page046",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D3",
+   "text": "A cone with several \"x\" points inside and a few outside, an arrow from a point inside the cone to another point outside labeled \"yield cut for original problem too\", with a note \"has to get these cuts\".",
+   "cands": {
+    "B25": [
+     414.669,
+     878.0,
+     1169.157,
+     1528.0
+    ],
+    "Q": [
+     371,
+     895,
+     1210,
+     1538
+    ],
+    "B2": [
+     419.16,
+     880.0,
+     1175.145,
+     1530.0
+    ],
+    "U": [
+     371,
+     878.0,
+     1210,
+     1538
+    ]
+   },
+   "gt_box": [
+    397,
+    1258,
+    1169,
+    1532
+   ],
+   "others": [
+    [
+     892,
+     438,
+     1397,
+     727
+    ],
+    [
+     518,
+     884,
+     1162,
+     1059
+    ],
+    [
+     310,
+     1650,
+     724,
+     1832
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9669,
+     "p_complete": 0.148
+    },
+    "Q": {
+     "p_match": 0.9466,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9707,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page046",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D4",
+   "text": "A region with a red cross through it, labeled \"current plane\", and a note \"intersection of tiny region does not have any feasible point\".",
+   "cands": {
+    "B25": [
+     350.298,
+     1644.0,
+     717.063,
+     1886.0
+    ],
+    "Q": [
+     321,
+     1646,
+     1301,
+     1927
+    ],
+    "B2": [
+     351.795,
+     1640.0,
+     726.045,
+     1890.0
+    ],
+    "U": [
+     321,
+     1644.0,
+     1301,
+     1927
+    ]
+   },
+   "gt_box": [
+    310,
+    1650,
+    724,
+    1832
+   ],
+   "others": [
+    [
+     892,
+     438,
+     1397,
+     727
+    ],
+    [
+     397,
+     1258,
+     1169,
+     1532
+    ],
+    [
+     518,
+     884,
+     1162,
+     1059
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9526,
+     "p_complete": 0.1645
+    },
+    "B2": {
+     "p_match": 0.9047,
+     "p_complete": 0.0759
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page047",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A polygon with a marked corner point, labeled \"basic Gom point\", and an arrow labeled \"cut off here as much deeper\".",
+   "cands": {
+    "B25": [
+     703.59,
+     326.0,
+     1261.971,
+     502.0
+    ],
+    "Q": [
+     704,
+     321,
+     1354,
+     500
+    ],
+    "B2": [
+     705.087,
+     328.0,
+     986.523,
+     502.0
+    ],
+    "U": [
+     703.59,
+     321,
+     1354,
+     502.0
+    ]
+   },
+   "gt_box": [
+    706,
+    330,
+    1267,
+    500
+   ],
+   "others": [
+    [
+     355,
+     698,
+     578,
+     903
+    ],
+    [
+     896,
+     751,
+     1350,
+     956
+    ],
+    [
+     912,
+     974,
+     1107,
+     1156
+    ],
+    [
+     879,
+     1285,
+     1077,
+     1500
+    ],
+    [
+     784,
+     1404,
+     875,
+     1440
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9941,
+     "p_complete": 0.3208
+    },
+    "Q": {
+     "p_match": 0.9924,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.9933,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page047",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "A square containing a smaller circle \u2014 a convex set.",
+   "cands": {
+    "B25": [
+     353.292,
+     700.0,
+     571.854,
+     902.0
+    ],
+    "Q": [
+     353,
+     702,
+     561,
+     899
+    ],
+    "B2": [
+     353.292,
+     700.0,
+     573.351,
+     902.0
+    ],
+    "U": [
+     353,
+     700.0,
+     571.854,
+     902.0
+    ]
+   },
+   "gt_box": [
+    355,
+    698,
+    578,
+    903
+   ],
+   "others": [
+    [
+     706,
+     330,
+     1267,
+     500
+    ],
+    [
+     896,
+     751,
+     1350,
+     956
+    ],
+    [
+     912,
+     974,
+     1107,
+     1156
+    ],
+    [
+     879,
+     1285,
+     1077,
+     1500
+    ],
+    [
+     784,
+     1404,
+     875,
+     1440
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    },
+    "Q": {
+     "p_match": 0.8808,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.9797,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page047",
+   "i": 2,
+   "desc": "D3",
+   "gt": "D3",
+   "text": "An irregular shape with a small circle inside, labeled \"we cant chop off the palm\".",
+   "cands": {
+    "B25": [
+     893.709,
+     750.0,
+     1092.81,
+     934.0
+    ],
+    "Q": [
+     888,
+     749,
+     1347,
+     948
+    ],
+    "B2": [
+     893.709,
+     750.0,
+     1098.798,
+     932.0
+    ],
+    "U": [
+     888,
+     749,
+     1347,
+     948
+    ]
+   },
+   "gt_box": [
+    896,
+    751,
+    1350,
+    956
+   ],
+   "others": [
+    [
+     706,
+     330,
+     1267,
+     500
+    ],
+    [
+     355,
+     698,
+     578,
+     903
+    ],
+    [
+     912,
+     974,
+     1107,
+     1156
+    ],
+    [
+     879,
+     1285,
+     1077,
+     1500
+    ],
+    [
+     784,
+     1404,
+     875,
+     1440
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.2018,
+     "p_complete": 0.0759
+    },
+    "Q": {
+     "p_match": 0.9149,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.2689,
+     "p_complete": 0.0759
+    },
+    "U": {
+     "p_match": 0.9149,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page047",
+   "i": 3,
+   "desc": "D4",
+   "gt": "D4",
+   "text": "A rectangle with a red dot marked on one side, labeled \"not useful\".",
+   "cands": {
+    "B25": [
+     907.182,
+     976.0,
+     1088.319,
+     1150.0
+    ],
+    "Q": [
+     907,
+     976,
+     1101,
+     1155
+    ],
+    "B2": [
+     910.176,
+     976.0,
+     1094.307,
+     1150.0
+    ],
+    "U": [
+     907,
+     976.0,
+     1101,
+     1155
+    ]
+   },
+   "gt_box": [
+    912,
+    974,
+    1107,
+    1156
+   ],
+   "others": [
+    [
+     706,
+     330,
+     1267,
+     500
+    ],
+    [
+     355,
+     698,
+     578,
+     903
+    ],
+    [
+     896,
+     751,
+     1350,
+     956
+    ],
+    [
+     879,
+     1285,
+     1077,
+     1500
+    ],
+    [
+     784,
+     1404,
+     875,
+     1440
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.3775,
+     "p_complete": 0.0203
+    },
+    "Q": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    },
+    "B2": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    },
+    "U": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page047",
+   "i": 4,
+   "desc": "D5",
+   "gt": "D5",
+   "text": "A shaded region with a marked point, labeled \"Valid cut\".",
+   "cands": {
+    "B25": [
+     778.44,
+     1280.0,
+     1068.858,
+     1482.0
+    ],
+    "Q": [
+     888,
+     1282,
+     1078,
+     1493
+    ],
+    "B2": [
+     779.937,
+     1280.0,
+     1071.852,
+     1484.0
+    ],
+    "U": [
+     778.44,
+     1280.0,
+     1078,
+     1493
+    ]
+   },
+   "gt_box": [
+    879,
+    1285,
+    1077,
+    1500
+   ],
+   "others": [
+    [
+     706,
+     330,
+     1267,
+     500
+    ],
+    [
+     355,
+     698,
+     578,
+     903
+    ],
+    [
+     896,
+     751,
+     1350,
+     956
+    ],
+    [
+     912,
+     974,
+     1107,
+     1156
+    ],
+    [
+     784,
+     1404,
+     875,
+     1440
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9841,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.9797,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9841,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page048",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a corner point and cutting all the edge of infeasible region then draw a cut.",
+   "cands": {
+    "B25": [
+     73.92,
+     218.0,
+     331.1,
+     458.0
+    ],
+    "Q": [
+     71,
+     207,
+     417,
+     461
+    ],
+    "B2": [
+     77.0,
+     220.0,
+     338.8,
+     440.0
+    ],
+    "U": [
+     71,
+     207,
+     417,
+     461
+    ]
+   },
+   "gt_box": [
+    42,
+    124,
+    1398,
+    466
+   ],
+   "others": [],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.8808,
+     "p_complete": 0.0759
+    },
+    "Q": {
+     "p_match": 0.8933,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.9241,
+     "p_complete": 0.133
+    },
+    "U": {
+     "p_match": 0.8933,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page052",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A wavy curve with a local minimum marked at the start, and another point further along the curve.",
+   "cands": {
+    "B25": [
+     394.97,
+     514.0,
+     803.935,
+     738.0
+    ],
+    "Q": [
+     365,
+     516,
+     812,
+     743
+    ],
+    "B2": [
+     396.525,
+     516.0,
+     805.49,
+     700.0
+    ],
+    "U": [
+     365,
+     514.0,
+     812,
+     743
+    ]
+   },
+   "gt_box": [
+    400,
+    518,
+    806,
+    745
+   ],
+   "others": [
+    [
+     334,
+     1436,
+     810,
+     1665
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9579,
+     "p_complete": 0.1192
+    },
+    "Q": {
+     "p_match": 0.9325,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9325,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page052",
+   "i": 1,
+   "desc": "D2",
+   "gt": "D2",
+   "text": "A graph with nodes $x_1, x_2, x_3, x_4$ \u2014 $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an edge to $x_4$.",
+   "cands": {
+    "B25": [
+     331.215,
+     1452.0,
+     802.38,
+     1656.0
+    ],
+    "Q": [
+     331,
+     1445,
+     810,
+     1673
+    ],
+    "B2": [
+     331.215,
+     1452.0,
+     802.38,
+     1658.0
+    ],
+    "U": [
+     331,
+     1445,
+     810,
+     1673
+    ]
+   },
+   "gt_box": [
+    334,
+    1436,
+    810,
+    1665
+   ],
+   "others": [
+    [
+     400,
+     518,
+     806,
+     745
+    ]
+   ],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.4378,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9841,
+     "p_complete": 0.6225
+    },
+    "B2": {
+     "p_match": 0.3775,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9841,
+     "p_complete": 0.6225
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page054",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A tree with root node branching into two children, each of which branches further.",
+   "cands": {
+    "B25": [
+     125.748,
+     1346.0,
+     359.28,
+     1572.0
+    ],
+    "Q": [
+     121,
+     1347,
+     365,
+     1575
+    ],
+    "B2": [
+     125.748,
+     1348.0,
+     360.777,
+     1574.0
+    ],
+    "U": [
+     121,
+     1346.0,
+     365,
+     1575
+    ]
+   },
+   "gt_box": [
+    127,
+    1349,
+    365,
+    1577
+   ],
+   "others": [],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.8933,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9047,
+     "p_complete": 0.1824
+    },
+    "B2": {
+     "p_match": 0.8933,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.8808,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "set": "eval",
+   "page": "ie802_notes_page055",
+   "i": 0,
+   "desc": "D1",
+   "gt": "D1",
+   "text": "A branching tree \u2014 root splits into two children, each of which splits further, one branch ending at a node labeled \"not useful\" with $y=6$, violating cardinality constraint.",
+   "cands": {
+    "B25": [
+     129.54,
+     194.0,
+     504.444,
+     552.0
+    ],
+    "Q": [
+     235,
+     193,
+     627,
+     552
+    ],
+    "B2": [
+     129.54,
+     194.0,
+     507.492,
+     552.0
+    ],
+    "U": [
+     129.54,
+     193,
+     627,
+     552.0
+    ]
+   },
+   "gt_box": [
+    287,
+    198,
+    510,
+    551
+   ],
+   "others": [],
+   "kind": "gt",
+   "scores": {
+    "B25": {
+     "p_match": 0.9579,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.989,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9876,
+     "p_complete": 0.1645
+    }
+   }
+  }
+ ],
+ "all": [
+  {
+   "page": "ie643_lec07_page002",
+   "i": 0,
+   "text": "A chain of $N_1 \\to N_2 \\to \\cdots \\to N_{L-1} \\to N_L$ boxes, labeled \"Input layer\" (input vector $x \\in \\mathbb{R}^{n_d}$) on the left, \"Output layer\" on the right.",
+   "cands": {
+    "B25": [
+     249.875,
+     192.32,
+     1839.08,
+     847.41
+    ],
+    "Q": [
+     261,
+     173,
+     1842,
+     720
+    ],
+    "B2": [
+     249.875,
+     192.32,
+     1839.08,
+     853.42
+    ],
+    "U": [
+     249.875,
+     173,
+     1842,
+     847.41
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9859,
+     "p_complete": 0.4688
+    },
+    "B2": {
+     "p_match": 0.9876,
+     "p_complete": 0.4378
+    },
+    "U": {
+     "p_match": 0.9797,
+     "p_complete": 0.3775
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page003",
+   "i": 0,
+   "text": "A wavy error curve with a local minimum marked at $(w_1,w_2)$, labeled \"NP-hard\" and \"local minimum\".",
+   "cands": {
+    "B25": [
+     1173.413,
+     34.974,
+     1983.008,
+     647.622
+    ],
+    "Q": [
+     1174,
+     40,
+     1988,
+     635
+    ],
+    "B2": [
+     1173.413,
+     34.974,
+     1983.008,
+     647.622
+    ],
+    "U": [
+     1173.413,
+     34.974,
+     1988,
+     647.622
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9948,
+     "p_complete": 0.3775
+    },
+    "Q": {
+     "p_match": 0.9941,
+     "p_complete": 0.2942
+    },
+    "B2": {
+     "p_match": 0.9948,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9948,
+     "p_complete": 0.3775
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page004",
+   "i": 0,
+   "text": "A wavy error curve with local minima marked at $w_1$, $w_2$, etc., labeled \"local optimum points\" \u2014 one of these is the global optimum point.",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     1287.356,
+     886.2
+    ],
+    "Q": [
+     55,
+     16,
+     1306,
+     898
+    ],
+    "B2": [
+     0.0,
+     0.0,
+     1291.354,
+     886.2
+    ],
+    "U": [
+     0.0,
+     0.0,
+     1306,
+     898
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9981,
+     "p_complete": 0.3486
+    },
+    "Q": {
+     "p_match": 0.9964,
+     "p_complete": 0.3208
+    },
+    "B2": {
+     "p_match": 0.9983,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9975,
+     "p_complete": 0.3208
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page004",
+   "i": 1,
+   "text": "A funnel-shaped bowl (loss surface) with a ball rolling down from $w$ to $w+\\Delta w$.",
+   "cands": {
+    "B25": [
+     1279.36,
+     493.74,
+     1993.003,
+     1266.0
+    ],
+    "Q": [
+     1288,
+     493,
+     1999,
+     1260
+    ],
+    "B2": [
+     1291.354,
+     493.74,
+     1999.0,
+     1257.138
+    ],
+    "U": [
+     1279.36,
+     493,
+     1999,
+     1266.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9526,
+     "p_complete": 0.0953
+    },
+    "Q": {
+     "p_match": 0.9526,
+     "p_complete": 0.1192
+    },
+    "B2": {
+     "p_match": 0.9627,
+     "p_complete": 0.133
+    },
+    "U": {
+     "p_match": 0.9526,
+     "p_complete": 0.1192
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page007",
+   "i": 0,
+   "text": "A 3D surface with level curves (contours of $f$) labeled $w_1$, $w_2$, and an arrow pointing downward into the minimum, illustrating a descent direction.",
+   "cands": {
+    "B25": [
+     1014.0,
+     15.353,
+     2000.0,
+     1169.19
+    ],
+    "Q": [
+     1022,
+     62,
+     1750,
+     889
+    ],
+    "B2": [
+     1022.0,
+     12.991,
+     2000.0,
+     1169.19
+    ],
+    "U": [
+     1014.0,
+     15.353,
+     2000.0,
+     1169.19
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.989,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.989,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page008",
+   "i": 0,
+   "text": "A wavy curve with an arrow pointing left from a marked point, labeled \"step length/learning rate.\"",
+   "cands": {
+    "B25": [
+     0.0,
+     320.0,
+     1010.0,
+     980.0
+    ],
+    "Q": [
+     4,
+     320,
+     1123,
+     970
+    ],
+    "B2": [
+     0.0,
+     320.0,
+     1120.0,
+     985.0
+    ],
+    "U": [
+     0.0,
+     320.0,
+     1123,
+     980.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9241,
+     "p_complete": 0.148
+    },
+    "Q": {
+     "p_match": 0.852,
+     "p_complete": 0.133
+    },
+    "B2": {
+     "p_match": 0.8933,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9325,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page017",
+   "i": 0,
+   "text": "A chain of neurons \u2014 input layer neuron \u2192 $j^{th}$ neuron in layer $l-1$ \u2192 $i^{th}$ neuron in layer $l$.",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     2000.0,
+     1353.984
+    ],
+    "Q": [
+     63,
+     17,
+     689,
+     1303
+    ],
+    "B2": [
+     0.0,
+     0.0,
+     2000.0,
+     1376.0
+    ],
+    "U": [
+     0.0,
+     0.0,
+     2000.0,
+     1353.984
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9241,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.9325,
+     "p_complete": 0.1824
+    },
+    "U": {
+     "p_match": 0.9241,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page018",
+   "i": 0,
+   "text": "A neuron $a^l_i$ (layer $l$ input) feeding into multiple neurons of layer $l+1$, labeled $z_m^{l+1}$ and $a_m^{l+1}$.",
+   "cands": {
+    "B25": [
+     1250.0,
+     107.358,
+     1984.0,
+     883.544
+    ],
+    "Q": [
+     1267,
+     101,
+     1984,
+     886
+    ],
+    "B2": [
+     1260.0,
+     111.06,
+     1980.0,
+     888.48
+    ],
+    "U": [
+     1250.0,
+     101,
+     1984.0,
+     886
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9981,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9981,
+     "p_complete": 0.2942
+    },
+    "B2": {
+     "p_match": 0.9975,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.9978,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "page": "ie643_lec07_page020",
+   "i": 0,
+   "text": "A hexagonal grid of small circles, each with a dot at its center, arranged in a repeating pattern across the page.",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     2000.0,
+     1332.0
+    ],
+    "Q": null,
+    "B2": null
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.7311,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 0,
+   "text": "A squiggly \"S\" shape with \"$S$ not possible\" below.",
+   "cands": {
+    "B25": [
+     241.9,
+     78.0,
+     452.825,
+     204.0
+    ],
+    "Q": [
+     242,
+     70,
+     455,
+     202
+    ],
+    "B2": [
+     243.375,
+     76.0,
+     454.3,
+     206.0
+    ],
+    "U": [
+     241.9,
+     70,
+     455,
+     204.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.7311,
+     "p_complete": 0.2689
+    },
+    "Q": {
+     "p_match": 0.7549,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.7058,
+     "p_complete": 0.2689
+    },
+    "U": {
+     "p_match": 0.7311,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 1,
+   "text": "$S$ and $T$ separated by an arrow, labeled \"Separate $S$ from $T$ by a hyperplane... on linear.\"",
+   "cands": {
+    "B25": [
+     764,
+     52,
+     1191,
+     416
+    ],
+    "Q": [
+     764,
+     52,
+     1191,
+     416
+    ],
+    "B2": [
+     759.625,
+     60.0,
+     1019.225,
+     218.0
+    ],
+    "U": [
+     764,
+     52,
+     1191,
+     416
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9526,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 2,
+   "text": "A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separating line through the middle.",
+   "cands": {
+    "B25": [
+     44.25,
+     448.0,
+     536.9,
+     886.0
+    ],
+    "Q": [
+     18,
+     397,
+     541,
+     892
+    ],
+    "B2": [
+     47.2,
+     452.0,
+     536.9,
+     888.0
+    ],
+    "U": [
+     18,
+     397,
+     541,
+     892
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9948,
+     "p_complete": 0.3208
+    },
+    "Q": {
+     "p_match": 0.9972,
+     "p_complete": 0.4073
+    },
+    "B2": {
+     "p_match": 0.9978,
+     "p_complete": 0.4378
+    },
+    "U": {
+     "p_match": 0.9972,
+     "p_complete": 0.4073
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 3,
+   "text": "Two overlapping \"S1\" regions, each with a red separating line through them.",
+   "cands": {
+    "B25": [
+     18,
+     920,
+     281,
+     1280
+    ],
+    "Q": [
+     18,
+     920,
+     281,
+     1280
+    ],
+    "B2": [
+     14.75,
+     920.0,
+     272.875,
+     1280.0
+    ],
+    "U": [
+     18,
+     920,
+     281,
+     1280
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.974,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 4,
+   "text": "A scatter plot of points with a red separating line, labeled \"minimize flat hat 2-norm\" \u2014 \"split cutg...\" \u2014 \"not necessary\" \u2014 \"no good\" \u2014 \"too big of separation\" \u2014 \"using convex hulls\" \u2014 \"shrink\" \u2014 \"and convex hull\".",
+   "cands": {
+    "B25": [
+     14.75,
+     796.0,
+     1209.5,
+     1276.0
+    ],
+    "Q": [
+     0,
+     866,
+     953,
+     1282
+    ],
+    "B2": [
+     0,
+     866,
+     953,
+     1282
+    ],
+    "U": [
+     0,
+     796.0,
+     1209.5,
+     1282
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.5622,
+     "p_complete": 0.0421
+    },
+    "U": {
+     "p_match": 0.6792,
+     "p_complete": 0.0534
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page041",
+   "i": 5,
+   "text": "A polygonal region with a red separating line through it, labeled \"split cutg...\" \u2014 \"this has been done before\" \u2014 \"(shrinkage needs more research)\".",
+   "cands": {
+    "B25": [
+     541,
+     862,
+     959,
+     1258
+    ],
+    "Q": [
+     541,
+     862,
+     959,
+     1258
+    ],
+    "B2": [
+     413.0,
+     840.0,
+     973.5,
+     1260.0
+    ],
+    "U": [
+     541,
+     862,
+     959,
+     1258
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    },
+    "Q": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.9579,
+     "p_complete": 0.1067
+    },
+    "U": {
+     "p_match": 0.974,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page042",
+   "i": 0,
+   "text": "A set $S$ split into two regions by a vertical line, labeled \"S\" on the left and \"$11$\" on the right.",
+   "cands": {
+    "B25": [
+     855.358,
+     208.0,
+     1048.6,
+     356.0
+    ],
+    "Q": [
+     861,
+     209,
+     1063,
+     361
+    ],
+    "B2": [
+     859.852,
+     210.0,
+     1048.6,
+     360.0
+    ],
+    "U": [
+     855.358,
+     208.0,
+     1063,
+     361
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.4378
+    },
+    "Q": {
+     "p_match": 0.9797,
+     "p_complete": 0.4378
+    },
+    "B2": {
+     "p_match": 0.982,
+     "p_complete": 0.4073
+    },
+    "U": {
+     "p_match": 0.9903,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page042",
+   "i": 1,
+   "text": "Two overlapping sets $S_1$ and $S_2$.",
+   "cands": {
+    "B25": [
+     244.174,
+     630.0,
+     434.42,
+     784.0
+    ],
+    "Q": [
+     244,
+     631,
+     437,
+     789
+    ],
+    "B2": [
+     247.17,
+     630.0,
+     434.42,
+     790.0
+    ],
+    "U": [
+     244,
+     630.0,
+     437,
+     789
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.989,
+     "p_complete": 0.2942
+    },
+    "Q": {
+     "p_match": 0.9914,
+     "p_complete": 0.2942
+    },
+    "B2": {
+     "p_match": 0.9903,
+     "p_complete": 0.2942
+    },
+    "U": {
+     "p_match": 0.9914,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page042",
+   "i": 2,
+   "text": "Two separate sets $S_1$ and $S_2$ each with a line $\\alpha x \\leq \\beta$ through them.",
+   "cands": {
+    "B25": [
+     387.982,
+     790.0,
+     719.04,
+     1010.0
+    ],
+    "Q": [
+     389,
+     780,
+     610,
+     923
+    ],
+    "B2": [
+     389.48,
+     790.0,
+     719.04,
+     1010.0
+    ],
+    "U": [
+     387.982,
+     780,
+     719.04,
+     1010.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9841,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.9859,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page042",
+   "i": 3,
+   "text": "An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded region on the right.",
+   "cands": {
+    "B25": [
+     244.174,
+     1336.0,
+     1113.014,
+     1616.0
+    ],
+    "Q": [
+     246,
+     1340,
+     722,
+     1568
+    ],
+    "B2": [
+     247.17,
+     1340.0,
+     719.04,
+     1620.0
+    ],
+    "U": [
+     244.174,
+     1336.0,
+     1113.014,
+     1616.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9627,
+     "p_complete": 0.1192
+    },
+    "U": {
+     "p_match": 0.9627,
+     "p_complete": 0.1192
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page044",
+   "i": 0,
+   "text": "A red line (convex hull boundary) through a set of marked points on an oval curve, illustrating the convex hull concept.",
+   "cands": {
+    "B25": [
+     860.775,
+     756.0,
+     1278.438,
+     976.0
+    ],
+    "Q": [
+     855,
+     758,
+     1294,
+     991
+    ],
+    "B2": [
+     862.272,
+     754.0,
+     1278.438,
+     976.0
+    ],
+    "U": [
+     855,
+     756.0,
+     1294,
+     991
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.982,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.9669,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.982,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9707,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "mlt_week06_page002",
+   "i": 0,
+   "text": "A horizontal bar divided into two parts labeled \"training set\" (left) and \"validation set\" (right).",
+   "cands": {
+    "B25": [
+     466.5,
+     1810.0,
+     1100.94,
+     1902.0
+    ],
+    "Q": [
+     466,
+     1866,
+     1159,
+     1934
+    ],
+    "B2": [
+     464.945,
+     1810.0,
+     1100.94,
+     1904.0
+    ],
+    "U": [
+     466,
+     1810.0,
+     1159,
+     1934
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9978,
+     "p_complete": 0.4073
+    },
+    "B2": {
+     "p_match": 0.9978,
+     "p_complete": 0.4378
+    },
+    "U": {
+     "p_match": 0.9981,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "page": "mlt_week06_page003",
+   "i": 0,
+   "text": "A row of boxes labeled $F_1, F_2, \\dots, F_k$, with a line through the middle of the last box.",
+   "cands": {
+    "B25": [
+     314,
+     617,
+     943,
+     713
+    ],
+    "Q": [
+     314,
+     617,
+     943,
+     713
+    ],
+    "B2": [
+     314,
+     617,
+     943,
+     713
+    ],
+    "U": [
+     314,
+     617,
+     943,
+     713
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9914,
+     "p_complete": 0.5927
+    },
+    "Q": {
+     "p_match": 0.9914,
+     "p_complete": 0.5927
+    },
+    "B2": {
+     "p_match": 0.9914,
+     "p_complete": 0.5927
+    },
+    "U": {
+     "p_match": 0.9914,
+     "p_complete": 0.5927
+    }
+   }
+  },
+  {
+   "page": "ie643_lec03_page002",
+   "i": 0,
+   "text": "A perceptron neuron \u2014 inputs $x_1, x_2, \\dots, x_d$ each with weight $w_1, w_2, \\dots, w_d$, feeding into a dot-product sum $\\sum_{j=1}^{d} w_j x_j$. The output branch splits: $\\geq\\theta \\to +1$, $<\\theta \\to -1$.",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     1480.0,
+     1038.78
+    ],
+    "Q": null,
+    "B2": [
+     0.0,
+     0.0,
+     1500.0,
+     716.4
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9995,
+     "p_complete": 0.5622
+    }
+   }
+  },
+  {
+   "page": "ie643_lec03_page004",
+   "i": 0,
+   "text": "A line $x_1 - 2x_2 = 3$ (offset/bias) plotted on axes $x_1, x_2$, with a point $(x_1, x_2)$ marked near the line, showing its projection onto the normal vector $\\vec{n}$ of the line.",
+   "cands": {
+    "B25": [
+     554.0,
+     519.498,
+     1448.0,
+     1079.694
+    ],
+    "Q": [
+     708,
+     521,
+     1688,
+     1080
+    ],
+    "B2": [
+     40.0,
+     514.71,
+     2000.0,
+     1197.0
+    ],
+    "U": [
+     554.0,
+     519.498,
+     1688,
+     1080
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9399,
+     "p_complete": 0.2689
+    },
+    "U": {
+     "p_match": 0.9579,
+     "p_complete": 0.133
+    }
+   }
+  },
+  {
+   "page": "ie643_lec03_page007",
+   "i": 0,
+   "text": "A chain of boxes labeled $w^t$, $(x^t,y^t)$, $w^{t+1}$, $(x^{t+1},y^{t+1})$, $\\hat{y}^t$, $\\hat{y}^{t+1}$, $w^{t+2}$, illustrating the online learning process over time.",
+   "cands": {
+    "B25": [
+     1044.0,
+     253.552,
+     1984.0,
+     1182.43
+    ],
+    "Q": [
+     1006,
+     242,
+     1987,
+     1200
+    ],
+    "B2": [
+     1050.0,
+     254.771,
+     1982.0,
+     1179.992
+    ],
+    "U": [
+     1006,
+     242,
+     1987,
+     1200
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9975,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.9964,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.9954,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9964,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "page": "ie643_lec03_page010",
+   "i": 0,
+   "text": "A scatter plot of overlapping \"+\" and \"-\" data points with many crossing lines (hyperplanes) drawn through them.",
+   "cands": {
+    "B25": [
+     208.0,
+     37.324,
+     1072.0,
+     951.16
+    ],
+    "Q": [
+     208,
+     41,
+     1087,
+     984
+    ],
+    "B2": [
+     208.0,
+     36.12,
+     1076.0,
+     977.648
+    ],
+    "U": [
+     208.0,
+     37.324,
+     1087,
+     984
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9964,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9992,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.9968,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9992,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page002",
+   "i": 0,
+   "text": "A chain of nodes $a_j^{l-1}$ feeding into $z_i^l$, which feeds into $a_i^l$.",
+   "cands": {
+    "B25": [
+     472,
+     250,
+     943,
+     857
+    ],
+    "Q": [
+     472,
+     250,
+     943,
+     857
+    ],
+    "B2": [
+     472,
+     250,
+     943,
+     857
+    ],
+    "U": [
+     472,
+     250,
+     943,
+     857
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.5927,
+     "p_complete": 0.023
+    },
+    "Q": {
+     "p_match": 0.5927,
+     "p_complete": 0.023
+    },
+    "B2": {
+     "p_match": 0.5927,
+     "p_complete": 0.023
+    },
+    "U": {
+     "p_match": 0.5927,
+     "p_complete": 0.023
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page005",
+   "i": 0,
+   "text": "A chain of fully-connected layers \u2014 input layer (a $d$-dim vector) \u2192 several hidden layers \u2192 output layer ($C$ neurons, one per class).",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     1979.01,
+     981.96
+    ],
+    "Q": [
+     54,
+     57,
+     1292,
+     825
+    ],
+    "B2": [
+     0.0,
+     0.0,
+     1999.0,
+     1002.0
+    ],
+    "U": [
+     0.0,
+     0.0,
+     1979.01,
+     981.96
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9983,
+     "p_complete": 0.4688
+    },
+    "B2": {
+     "p_match": 0.9981,
+     "p_complete": 0.4688
+    },
+    "U": {
+     "p_match": 0.9983,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page006",
+   "i": 0,
+   "text": "A column of $C$-dimensional vectors, each with a single 1 in the $k^{th}$ position and 0s elsewhere, labeled \"1st component\".",
+   "cands": {
+    "B25": [
+     1371,
+     642,
+     1552,
+     1153
+    ],
+    "Q": [
+     1371,
+     642,
+     1552,
+     1153
+    ],
+    "B2": [
+     1371,
+     642,
+     1552,
+     1153
+    ],
+    "U": [
+     1371,
+     642,
+     1552,
+     1153
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8933,
+     "p_complete": 0.1067
+    },
+    "Q": {
+     "p_match": 0.8933,
+     "p_complete": 0.1067
+    },
+    "B2": {
+     "p_match": 0.8933,
+     "p_complete": 0.1067
+    },
+    "U": {
+     "p_match": 0.8933,
+     "p_complete": 0.1067
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page013",
+   "i": 0,
+   "text": "A column of output neurons $\\hat{y}_1, \\hat{y}_2, \\dots, \\hat{y}_C$, each connected to a separate box (layer input).",
+   "cands": {
+    "B25": [
+     0.0,
+     38.67,
+     1108.0,
+     1263.22
+    ],
+    "Q": [
+     16,
+     49,
+     510,
+     765
+    ],
+    "B2": [
+     16,
+     49,
+     510,
+     765
+    ],
+    "U": [
+     0.0,
+     38.67,
+     1108.0,
+     1263.22
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9669,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9669,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page014",
+   "i": 0,
+   "text": "A chain of fully-connected layers (left) vs. a fully-connected layer feeding into a single output neuron (right).",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     1580.0,
+     581.0
+    ],
+    "Q": null,
+    "B2": [
+     0.0,
+     0.0,
+     2000.0,
+     749.49
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.7058,
+     "p_complete": 0.0759
+    },
+    "B2": {
+     "p_match": 0.6514,
+     "p_complete": 0.1192
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page015",
+   "i": 0,
+   "text": "A chain of neurons labeled $a_1^L, a_2^L, \\dots, a_C^L$, each feeding into the next.",
+   "cands": {
+    "B25": [
+     608.0,
+     39.42,
+     962.0,
+     897.9
+    ],
+    "Q": [
+     609,
+     57,
+     930,
+     898
+    ],
+    "B2": [
+     609,
+     57,
+     930,
+     898
+    ],
+    "U": [
+     608.0,
+     39.42,
+     962.0,
+     898
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9876,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.9876,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "ie643_lec09_page016",
+   "i": 0,
+   "text": "A feedforward neural network with input layer nodes $a_1, a_2, \\dots, a_c$, fully connecting to an output layer node (neuron) computing $\\hat{y}_j$ for each of $c$ outputs.",
+   "cands": {
+    "B25": [
+     0.0,
+     0.0,
+     826.0,
+     979.215
+    ],
+    "Q": [
+     0,
+     0,
+     828,
+     984
+    ],
+    "B2": [
+     0.0,
+     0.0,
+     830.0,
+     982.125
+    ],
+    "U": [
+     0.0,
+     0.0,
+     828,
+     984
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9466,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9149,
+     "p_complete": 0.1645
+    },
+    "B2": {
+     "p_match": 0.8808,
+     "p_complete": 0.148
+    },
+    "U": {
+     "p_match": 0.9149,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page046",
+   "i": 0,
+   "text": "A polygon with vertices marked by \"x\"s, one red dot labeled \"corner point\" at the bottom right.",
+   "cands": {
+    "B25": [
+     898.2,
+     440.0,
+     1390.713,
+     722.0
+    ],
+    "Q": [
+     855,
+     441,
+     1419,
+     725
+    ],
+    "B2": [
+     898.2,
+     438.0,
+     1392.21,
+     720.0
+    ],
+    "U": [
+     855,
+     440.0,
+     1419,
+     725
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9983,
+     "p_complete": 0.4688
+    },
+    "Q": {
+     "p_match": 0.9981,
+     "p_complete": 0.5312
+    },
+    "B2": {
+     "p_match": 0.9985,
+     "p_complete": 0.5
+    },
+    "U": {
+     "p_match": 0.9981,
+     "p_complete": 0.5312
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page046",
+   "i": 1,
+   "text": "A cone with several \"x\" points inside and a few outside, an arrow from a point inside the cone to another point outside labeled \"yield cut for original problem too\", with a note \"has to get these cuts\".",
+   "cands": {
+    "B25": [
+     414.669,
+     878.0,
+     1169.157,
+     1528.0
+    ],
+    "Q": [
+     371,
+     895,
+     1210,
+     1538
+    ],
+    "B2": [
+     419.16,
+     880.0,
+     1175.145,
+     1530.0
+    ],
+    "U": [
+     371,
+     878.0,
+     1210,
+     1538
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9669,
+     "p_complete": 0.148
+    },
+    "Q": {
+     "p_match": 0.9466,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.977,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9707,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page046",
+   "i": 2,
+   "text": "A region with a red cross through it, labeled \"current plane\", and a note \"intersection of tiny region does not have any feasible point\".",
+   "cands": {
+    "B25": [
+     350.298,
+     1644.0,
+     717.063,
+     1886.0
+    ],
+    "Q": [
+     321,
+     1646,
+     1301,
+     1927
+    ],
+    "B2": [
+     351.795,
+     1640.0,
+     726.045,
+     1890.0
+    ],
+    "U": [
+     321,
+     1644.0,
+     1301,
+     1927
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9526,
+     "p_complete": 0.1645
+    },
+    "B2": {
+     "p_match": 0.9047,
+     "p_complete": 0.0759
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page047",
+   "i": 0,
+   "text": "A polygon with a marked corner point, labeled \"basic Gom point\", and an arrow labeled \"cut off here as much deeper\".",
+   "cands": {
+    "B25": [
+     703.59,
+     326.0,
+     1261.971,
+     502.0
+    ],
+    "Q": [
+     704,
+     321,
+     1354,
+     500
+    ],
+    "B2": [
+     705.087,
+     328.0,
+     986.523,
+     502.0
+    ],
+    "U": [
+     703.59,
+     321,
+     1354,
+     502.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9941,
+     "p_complete": 0.3208
+    },
+    "Q": {
+     "p_match": 0.9924,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.9933,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page047",
+   "i": 1,
+   "text": "A square containing a smaller circle \u2014 a convex set.",
+   "cands": {
+    "B25": [
+     353.292,
+     700.0,
+     571.854,
+     902.0
+    ],
+    "Q": [
+     353,
+     702,
+     561,
+     899
+    ],
+    "B2": [
+     353.292,
+     700.0,
+     573.351,
+     902.0
+    ],
+    "U": [
+     353,
+     700.0,
+     571.854,
+     902.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    },
+    "Q": {
+     "p_match": 0.8808,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.9797,
+     "p_complete": 0.3208
+    },
+    "U": {
+     "p_match": 0.977,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page047",
+   "i": 2,
+   "text": "An irregular shape with a small circle inside, labeled \"we cant chop off the palm\".",
+   "cands": {
+    "B25": [
+     893.709,
+     750.0,
+     1092.81,
+     934.0
+    ],
+    "Q": [
+     888,
+     749,
+     1347,
+     948
+    ],
+    "B2": [
+     893.709,
+     750.0,
+     1098.798,
+     932.0
+    ],
+    "U": [
+     888,
+     749,
+     1347,
+     948
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.2018,
+     "p_complete": 0.0759
+    },
+    "Q": {
+     "p_match": 0.9149,
+     "p_complete": 0.2689
+    },
+    "B2": {
+     "p_match": 0.2689,
+     "p_complete": 0.0759
+    },
+    "U": {
+     "p_match": 0.9149,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page047",
+   "i": 3,
+   "text": "A rectangle with a red dot marked on one side, labeled \"not useful\".",
+   "cands": {
+    "B25": [
+     907.182,
+     976.0,
+     1088.319,
+     1150.0
+    ],
+    "Q": [
+     907,
+     976,
+     1101,
+     1155
+    ],
+    "B2": [
+     910.176,
+     976.0,
+     1094.307,
+     1150.0
+    ],
+    "U": [
+     907,
+     976.0,
+     1101,
+     1155
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.3775,
+     "p_complete": 0.0203
+    },
+    "Q": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    },
+    "B2": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    },
+    "U": {
+     "p_match": 0.5312,
+     "p_complete": 0.0373
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page047",
+   "i": 4,
+   "text": "A shaded region with a marked point, labeled \"Valid cut\".",
+   "cands": {
+    "B25": [
+     778.44,
+     1280.0,
+     1068.858,
+     1482.0
+    ],
+    "Q": [
+     888,
+     1282,
+     1078,
+     1493
+    ],
+    "B2": [
+     779.937,
+     1280.0,
+     1071.852,
+     1484.0
+    ],
+    "U": [
+     778.44,
+     1280.0,
+     1078,
+     1493
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9841,
+     "p_complete": 0.2018
+    },
+    "B2": {
+     "p_match": 0.9797,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.9841,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page048",
+   "i": 0,
+   "text": "A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a corner point and cutting all the edge of infeasible region then draw a cut.",
+   "cands": {
+    "B25": [
+     73.92,
+     218.0,
+     331.1,
+     458.0
+    ],
+    "Q": [
+     71,
+     207,
+     417,
+     461
+    ],
+    "B2": [
+     77.0,
+     220.0,
+     338.8,
+     440.0
+    ],
+    "U": [
+     71,
+     207,
+     417,
+     461
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8808,
+     "p_complete": 0.0759
+    },
+    "Q": {
+     "p_match": 0.8933,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.9241,
+     "p_complete": 0.133
+    },
+    "U": {
+     "p_match": 0.8933,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page052",
+   "i": 0,
+   "text": "A wavy curve with a local minimum marked at the start, and another point further along the curve.",
+   "cands": {
+    "B25": [
+     394.97,
+     514.0,
+     803.935,
+     738.0
+    ],
+    "Q": [
+     365,
+     516,
+     812,
+     743
+    ],
+    "B2": [
+     396.525,
+     516.0,
+     805.49,
+     700.0
+    ],
+    "U": [
+     365,
+     514.0,
+     812,
+     743
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9579,
+     "p_complete": 0.1192
+    },
+    "Q": {
+     "p_match": 0.9325,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9325,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page052",
+   "i": 1,
+   "text": "A graph with nodes $x_1, x_2, x_3, x_4$ \u2014 $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an edge to $x_4$.",
+   "cands": {
+    "B25": [
+     331.215,
+     1452.0,
+     802.38,
+     1656.0
+    ],
+    "Q": [
+     331,
+     1445,
+     810,
+     1673
+    ],
+    "B2": [
+     331.215,
+     1452.0,
+     802.38,
+     1658.0
+    ],
+    "U": [
+     331,
+     1445,
+     810,
+     1673
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.4378,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9841,
+     "p_complete": 0.6225
+    },
+    "B2": {
+     "p_match": 0.3775,
+     "p_complete": 0.2018
+    },
+    "U": {
+     "p_match": 0.9841,
+     "p_complete": 0.6225
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page054",
+   "i": 0,
+   "text": "A tree with root node branching into two children, each of which branches further.",
+   "cands": {
+    "B25": [
+     125.748,
+     1346.0,
+     359.28,
+     1572.0
+    ],
+    "Q": [
+     121,
+     1347,
+     365,
+     1575
+    ],
+    "B2": [
+     125.748,
+     1348.0,
+     360.777,
+     1574.0
+    ],
+    "U": [
+     121,
+     1346.0,
+     365,
+     1575
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8933,
+     "p_complete": 0.2227
+    },
+    "Q": {
+     "p_match": 0.9047,
+     "p_complete": 0.1824
+    },
+    "B2": {
+     "p_match": 0.8933,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.8808,
+     "p_complete": 0.2018
+    }
+   }
+  },
+  {
+   "page": "ie802_notes_page055",
+   "i": 0,
+   "text": "A branching tree \u2014 root splits into two children, each of which splits further, one branch ending at a node labeled \"not useful\" with $y=6$, violating cardinality constraint.",
+   "cands": {
+    "B25": [
+     129.54,
+     194.0,
+     504.444,
+     552.0
+    ],
+    "Q": [
+     235,
+     193,
+     627,
+     552
+    ],
+    "B2": [
+     129.54,
+     194.0,
+     507.492,
+     552.0
+    ],
+    "U": [
+     129.54,
+     193,
+     627,
+     552.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9579,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.989,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9876,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page007",
+   "i": 0,
+   "text": "A 2D scatter plot showing two clusters \u2014 yellow shaded region labeled \"Cluster 1 region\" on the left, green shaded region labeled \"Cluster 2 region\" on the right. A dashed line from $\\mu_1$ to $\\mu_2$ is shown, with an arrow pointing right labeled \"$(x_2-\\mu_1)$\". The line $x^T(\\mu_2-\\mu_1)=0$ is marked at the bottom.",
+   "cands": {
+    "B25": [
+     0.0,
+     1146.0,
+     1239.489,
+     1696.0
+    ],
+    "Q": [
+     88,
+     1202,
+     1076,
+     1714
+    ],
+    "B2": [
+     15.83,
+     1150.0,
+     870.65,
+     1700.0
+    ],
+    "U": [
+     0.0,
+     1146.0,
+     1239.489,
+     1714
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9981,
+     "p_complete": 0.4688
+    },
+    "U": {
+     "p_match": 0.9985,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page008",
+   "i": 0,
+   "text": "A central point with radii drawn to three cluster centers $\\mu_1$, $\\mu_2$, $\\mu_3$. Each radius defines a \"cluster region\" \u2014 yellow for Cluster 1, green for Cluster 2, purple for Cluster 3 \u2014 as the area closer than its respective center.",
+   "cands": {
+    "B25": [
+     185.504,
+     183.908,
+     1069.64,
+     807.596
+    ],
+    "Q": [
+     175,
+     185,
+     898,
+     813
+    ],
+    "B2": [
+     187.0,
+     183.908,
+     1074.128,
+     811.594
+    ],
+    "U": [
+     175,
+     183.908,
+     1069.64,
+     813
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9954,
+     "p_complete": 0.4688
+    },
+    "B2": {
+     "p_match": 0.9933,
+     "p_complete": 0.4073
+    },
+    "U": {
+     "p_match": 0.9959,
+     "p_complete": 0.4688
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page010",
+   "i": 0,
+   "text": "A scatter plot showing a red dot at $(7,4)$, with several other points scattered around it.",
+   "cands": {
+    "B25": [
+     590.64,
+     282.0,
+     1021.2,
+     584.0
+    ],
+    "Q": [
+     540,
+     281,
+     1035,
+     628
+    ],
+    "B2": [
+     590.64,
+     286.0,
+     1025.34,
+     582.0
+    ],
+    "U": [
+     540,
+     281,
+     1035,
+     628
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8933,
+     "p_complete": 0.1824
+    },
+    "Q": {
+     "p_match": 0.9466,
+     "p_complete": 0.1824
+    },
+    "B2": {
+     "p_match": 0.9149,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.9466,
+     "p_complete": 0.1824
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page010",
+   "i": 1,
+   "text": "A scatter plot showing a green dot at $(3,3)$, with a red dot at $(7,4)$ and several other points scattered around them.",
+   "cands": {
+    "B25": [
+     590.64,
+     1190.0,
+     1021.2,
+     1488.0
+    ],
+    "Q": [
+     571,
+     1194,
+     1057,
+     1556
+    ],
+    "B2": [
+     590.64,
+     1194.0,
+     1025.34,
+     1490.0
+    ],
+    "U": [
+     571,
+     1190.0,
+     1057,
+     1556
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.867,
+     "p_complete": 0.1824
+    },
+    "Q": {
+     "p_match": 0.7549,
+     "p_complete": 0.133
+    },
+    "B2": {
+     "p_match": 0.867,
+     "p_complete": 0.1645
+    },
+    "U": {
+     "p_match": 0.867,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page011",
+   "i": 0,
+   "text": "A scatter plot showing three red dots at $(5,9)$, $(8,3)$, and $(10,1)$, two blue dots at $(3,3)$, and one green dot at $(1,3)$, labeled $\\mu_1^0$, $\\mu_2^0$, $\\mu_3^0$.",
+   "cands": {
+    "B25": [
+     534.254,
+     468.0,
+     1009.42,
+     824.0
+    ],
+    "Q": [
+     534,
+     517,
+     1000,
+     810
+    ],
+    "B2": [
+     539.178,
+     472.0,
+     1015.575,
+     814.0
+    ],
+    "U": [
+     534,
+     468.0,
+     1009.42,
+     824.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.6225,
+     "p_complete": 0.148
+    },
+    "B2": {
+     "p_match": 0.5312,
+     "p_complete": 0.1192
+    },
+    "U": {
+     "p_match": 0.6225,
+     "p_complete": 0.148
+    }
+   }
+  },
+  {
+   "page": "mlt_week03_page013",
+   "i": 0,
+   "text": "A plot of objective function vs. $k$, with a red dashed line showing the objective, a blue solid line showing $\\text{penalty}(k)$, and their sum (purple) crossing at $k^*$.",
+   "cands": {
+    "B25": [
+     0.0,
+     9.995,
+     1033.956,
+     499.75
+    ],
+    "Q": [
+     139,
+     17,
+     1055,
+     411
+    ],
+    "B2": [
+     0.0,
+     0.0,
+     1035.448,
+     499.75
+    ],
+    "U": [
+     0.0,
+     9.995,
+     1055,
+     499.75
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9975,
+     "p_complete": 0.3775
+    },
+    "B2": {
+     "p_match": 0.9972,
+     "p_complete": 0.4073
+    },
+    "U": {
+     "p_match": 0.9975,
+     "p_complete": 0.4073
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page001",
+   "i": 0,
+   "text": "Two scatter plots \u2014 one with a clear linear separator (left, \"Linear separate exists\"), the other with overlapping clusters (right, \"No linear separator\").",
+   "cands": {
+    "B25": [
+     78.822,
+     572.0,
+     1065.456,
+     1000.0
+    ],
+    "Q": [
+     80,
+     575,
+     1136,
+     1030
+    ],
+    "B2": [
+     82.899,
+     574.0,
+     1066.815,
+     1000.0
+    ],
+    "U": [
+     78.822,
+     572.0,
+     1136,
+     1030
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9964,
+     "p_complete": 0.3208
+    },
+    "Q": {
+     "p_match": 0.9968,
+     "p_complete": 0.5
+    },
+    "B2": {
+     "p_match": 0.9964,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9975,
+     "p_complete": 0.5
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page003",
+   "i": 0,
+   "text": "Two scatter plots of data points with a dashed decision boundary line, showing an initial misclassified point near the origin being corrected by the update rule, resulting in a new, more accurate boundary.",
+   "cands": {
+    "B25": [
+     189.789,
+     1214.0,
+     1414.931,
+     1656.0
+    ],
+    "Q": [
+     139,
+     1232,
+     667,
+     1650
+    ],
+    "B2": [
+     192.875,
+     1214.0,
+     668.119,
+     1642.0
+    ],
+    "U": [
+     139,
+     1214.0,
+     1414.931,
+     1656.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9933,
+     "p_complete": 0.1192
+    },
+    "U": {
+     "p_match": 0.9876,
+     "p_complete": 0.1067
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page004",
+   "i": 0,
+   "text": "A line through the origin with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1)$ on one side labeled $+1$, and $(\\begin{bmatrix}-1\\\\0\\end{bmatrix},+1)$, $(\\begin{bmatrix}0\\\\-1\\end{bmatrix},+1)$ on the other side.",
+   "cands": {
+    "B25": [
+     265.33,
+     217.891,
+     1263.85,
+     679.66
+    ],
+    "Q": [
+     259,
+     225,
+     1031,
+     1353
+    ],
+    "B2": [
+     268.47,
+     221.889,
+     879.2,
+     617.691
+    ],
+    "U": [
+     259,
+     217.891,
+     1263.85,
+     1353
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.4378,
+     "p_complete": 0.2227
+    },
+    "U": {
+     "p_match": 0.7773,
+     "p_complete": 0.2451
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page004",
+   "i": 1,
+   "text": "Same line through the origin, but now with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1)$ on the \"wrong\" side (below the line) labeled $+1$, and $(\\begin{bmatrix}-1\\\\0\\end{bmatrix},+1)$, $(\\begin{bmatrix}0\\\\-1\\end{bmatrix},+1)$ still on the \"correct\" side above the line.",
+   "cands": {
+    "B25": [
+     376.8,
+     869.565,
+     1014.22,
+     1287.356
+    ],
+    "Q": [
+     259,
+     903,
+     1031,
+     1353
+    ],
+    "B2": [
+     379.94,
+     873.563,
+     1017.36,
+     1291.354
+    ],
+    "U": [
+     259,
+     869.565,
+     1031,
+     1353
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.5622,
+     "p_complete": 0.2018
+    },
+    "Q": {
+     "p_match": 0.6792,
+     "p_complete": 0.2451
+    },
+    "B2": {
+     "p_match": 0.7058,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.6792,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page004",
+   "i": 2,
+   "text": "A scatter plot of points $\\begin{bmatrix}0\\\\1\\end{bmatrix}$, $\\begin{bmatrix}-1\\\\1/2\\end{bmatrix}$, $\\begin{bmatrix}-1\\\\-1\\end{bmatrix}$, $\\begin{bmatrix}1\\\\-1\\end{bmatrix}$, all labeled $+1$. A separating line through the origin is shown, with an arrow from $\\begin{bmatrix}-1\\\\1/2\\end{bmatrix}$ to $\\begin{bmatrix}1\\\\1/2\\end{bmatrix}=w^*$, and another arrow from $\\begin{bmatrix}-1\\\\-1\\end{bmatrix}$ to $\\begin{bmatrix}1\\\\-1\\end{bmatrix}=w^*$.",
+   "cands": {
+    "B25": [
+     105.19,
+     1469.265,
+     645.27,
+     1903.048
+    ],
+    "Q": null,
+    "B2": [
+     108.33,
+     1475.262,
+     646.84,
+     1905.047
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.852,
+     "p_complete": 0.3208
+    },
+    "B2": {
+     "p_match": 0.7311,
+     "p_complete": 0.2689
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page005",
+   "i": 0,
+   "text": "Two overlapping green and yellow regions separated by a margin band, labeled $\\{x:w^Tx\\geq\\gamma\\}$ and $\\{x:w^Tx\\leq-\\gamma\\}$, with a separating line $w$ through the origin, and a shaded gap between them.",
+   "cands": {
+    "B25": [
+     531.65,
+     1134.0,
+     1230.7,
+     1700.0
+    ],
+    "Q": [
+     621,
+     1141,
+     1259,
+     1704
+    ],
+    "B2": [
+     536.3,
+     1136.0,
+     1233.8,
+     1700.0
+    ],
+    "U": [
+     531.65,
+     1134.0,
+     1259,
+     1704
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9924,
+     "p_complete": 0.3775
+    },
+    "B2": {
+     "p_match": 0.9914,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9941,
+     "p_complete": 0.4378
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page006",
+   "i": 0,
+   "text": "A circle of radius $R$ centered at the origin with several data points (green crosses and red dots) inside it, each labeled with an arrow pointing from the origin.",
+   "cands": {
+    "B25": [
+     506.506,
+     324.0,
+     800.657,
+     600.0
+    ],
+    "Q": [
+     460,
+     321,
+     857,
+     659
+    ],
+    "B2": [
+     509.652,
+     322.0,
+     802.23,
+     596.0
+    ],
+    "U": [
+     460,
+     321,
+     857,
+     659
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9975,
+     "p_complete": 0.3486
+    },
+    "Q": {
+     "p_match": 0.9903,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.9983,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9903,
+     "p_complete": 0.2227
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page006",
+   "i": 1,
+   "text": "A dot product decision boundary around the origin \u2014 a circle of radius $y'/\\|w^*\\|$ \u2014 with a green vector $w^*$ inside it, and two sets of data points ($+$'s and $-$'s) on either side of the boundary.",
+   "cands": {
+    "B25": [
+     138.424,
+     752.0,
+     1074.359,
+     1312.0
+    ],
+    "Q": [
+     134,
+     755,
+     1051,
+     1159
+    ],
+    "B2": [
+     136.851,
+     750.0,
+     1080.651,
+     1314.0
+    ],
+    "U": [
+     134,
+     752.0,
+     1074.359,
+     1312.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9959,
+     "p_complete": 0.3208
+    },
+    "B2": {
+     "p_match": 0.9941,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.9948,
+     "p_complete": 0.2942
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page008",
+   "i": 0,
+   "text": "A point $y$ on the axis with a dashed line to an off-axis point labeled $x$, and a dot at the origin.",
+   "cands": {
+    "B25": [
+     209.984,
+     616.0,
+     605.248,
+     872.0
+    ],
+    "Q": [
+     212,
+     632,
+     587,
+     870
+    ],
+    "B2": [
+     211.528,
+     612.0,
+     606.792,
+     872.0
+    ],
+    "U": [
+     209.984,
+     616.0,
+     605.248,
+     872.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8176,
+     "p_complete": 0.1645
+    },
+    "B2": {
+     "p_match": 0.867,
+     "p_complete": 0.1824
+    },
+    "U": {
+     "p_match": 0.8176,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page010",
+   "i": 0,
+   "text": "A 2D plot showing a line through the origin (normal vector $w$) with several points $x_1, x_2, x_3, x_4$ marked on either side, labeled $\\{x:w^Tx=-15\\}$, $\\{x:w^Tx=-5\\}$, $\\{x:w^Tx=0\\}$, $\\{x:w^Tx=1\\}$, $\\{x:w^Tx=100\\}$, illustrating the decision boundary.",
+   "cands": {
+    "B25": [
+     112.606,
+     660.0,
+     1468.636,
+     1300.0
+    ],
+    "Q": null,
+    "B2": [
+     112.606,
+     652.0,
+     1479.738,
+     1302.0
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.982,
+     "p_complete": 0.4378
+    },
+    "B2": {
+     "p_match": 0.9707,
+     "p_complete": 0.4073
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page011",
+   "i": 0,
+   "text": "A sigmoid curve labeled $g(z)=1/e^{z^2}$, with asymptotes at $y=0$ and $y=1$, crossing through $(0,0.5)$, and increasing steeply from left to right.",
+   "cands": {
+    "B25": [
+     297.024,
+     642.0,
+     1143.012,
+     1008.0
+    ],
+    "Q": [
+     299,
+     674,
+     1150,
+     1012
+    ],
+    "B2": [
+     297.024,
+     640.0,
+     1144.338,
+     1008.0
+    ],
+    "U": [
+     297.024,
+     642.0,
+     1150,
+     1012
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.8933,
+     "p_complete": 0.2689
+    },
+    "Q": {
+     "p_match": 0.7982,
+     "p_complete": 0.2227
+    },
+    "B2": {
+     "p_match": 0.852,
+     "p_complete": 0.2451
+    },
+    "U": {
+     "p_match": 0.6225,
+     "p_complete": 0.1645
+    }
+   }
+  },
+  {
+   "page": "mlt_week09_page013",
+   "i": 0,
+   "text": "A green box containing $x_i$, an arrow to $y_i$, an arrow to $\\theta_i \\in \\mathbb{R}^d$, an arrow back to the green box via $g(w_t^T x_i)$, with a label $\\{0,1\\}$ near $y_i$.",
+   "cands": {
+    "B25": [
+     721,
+     723,
+     1320,
+     1058
+    ],
+    "Q": [
+     721,
+     723,
+     1320,
+     1058
+    ],
+    "B2": [
+     721,
+     723,
+     1320,
+     1058
+    ],
+    "U": [
+     721,
+     723,
+     1320,
+     1058
+    ]
+   },
+   "kind": "all",
+   "scores": {
+    "B25": {
+     "p_match": 0.9859,
+     "p_complete": 0.3775
+    },
+    "Q": {
+     "p_match": 0.9859,
+     "p_complete": 0.3775
+    },
+    "B2": {
+     "p_match": 0.9859,
+     "p_complete": 0.3775
+    },
+    "U": {
+     "p_match": 0.9859,
+     "p_complete": 0.3775
+    }
+   }
+  }
+ ]
+}

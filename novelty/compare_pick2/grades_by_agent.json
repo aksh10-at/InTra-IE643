@@ -1,0 +1,21 @@
+{
+  "grades": {"v01": "same", "v02": "right", "v03": "same", "v04": "left", "v05": "same", "v06": "left", "v07": "same"},
+  "crop_grades": {
+    "v01": {"left": "correct", "right": "correct"},
+    "v02": {"left": "partial", "right": "correct"},
+    "v03": {"left": "correct", "right": "correct"},
+    "v04": {"left": "partial", "right": "partial"},
+    "v05": {"left": "correct", "right": "correct"},
+    "v06": {"left": "correct", "right": "partial"},
+    "v07": {"left": "correct", "right": "correct"}
+  },
+  "reasons": {
+    "v01": "Both crops are virtually identical and show the full labeled bar.",
+    "v02": "Right includes the 'we cant chop off the palm' label and arrow; left omits the label.",
+    "v03": "Both show the full curve with start and marked points; differences are only margin.",
+    "v04": "Left includes the 'No linear separator' label while right has neither caption label; both miss 'Linear separate exists'.",
+    "v05": "Both show the complete four-node graph with equivalent margins.",
+    "v06": "Left keeps the full cut line with its arrowheads; right cuts off the cut line at the bottom right.",
+    "v07": "Both show the full polygon with x marks and the labeled red corner point."
+  }
+}

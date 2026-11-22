@@ -1,0 +1,642 @@
+[
+ {
+  "page": "ie643_lec07_page002",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of $N_1 \\to N_2 \\to \\cdots \\to N_{L-1} \\to N_L$ boxes, labeled \"Input layer\" (inpu"
+ },
+ {
+  "page": "ie643_lec07_page003",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A wavy error curve with a local minimum marked at $(w_1,w_2)$, labeled \"NP-hard\" and \"loca"
+ },
+ {
+  "page": "ie643_lec07_page004",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A wavy error curve with local minima marked at $w_1$, $w_2$, etc., labeled \"local optimum "
+ },
+ {
+  "page": "ie643_lec07_page004",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A funnel-shaped bowl (loss surface) with a ball rolling down from $w$ to $w+\\Delta w$."
+ },
+ {
+  "page": "ie643_lec07_page007",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A 3D surface with level curves (contours of $f$) labeled $w_1$, $w_2$, and an arrow pointi"
+ },
+ {
+  "page": "ie643_lec07_page008",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A wavy curve with an arrow pointing left from a marked point, labeled \"step length/learnin"
+ },
+ {
+  "page": "ie643_lec07_page017",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of neurons \u2014 input layer neuron \u2192 $j^{th}$ neuron in layer $l-1$ \u2192 $i^{th}$ neuron"
+ },
+ {
+  "page": "ie643_lec07_page018",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A neuron $a^l_i$ (layer $l$ input) feeding into multiple neurons of layer $l+1$, labeled $"
+ },
+ {
+  "page": "ie643_lec07_page020",
+  "desc": "D1",
+  "same": false,
+  "how2": "fallback A",
+  "how25": "fallback A",
+  "le2": null,
+  "le25": null,
+  "text": "A hexagonal grid of small circles, each with a dot at its center, arranged in a repeating "
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.5823203704549955,
+  "le25": 0.5951720513640726,
+  "text": "A squiggly \"S\" shape with \"$S$ not possible\" below."
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D2",
+  "same": false,
+  "how2": "surya+",
+  "how25": "qwen",
+  "le2": 0.7726568302497534,
+  "le25": 0.22664941785252268,
+  "text": "$S$ and $T$ separated by an arrow, labeled \"Separate $S$ from $T$ by a hyperplane... on li"
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D3",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.45292767169900283,
+  "le25": 0.4490651949689414,
+  "text": "A wavy line graph with two labeled regions $S1$ (above) and $S2$ (below), with a red separ"
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D4",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": 1.0,
+  "le25": 1.0,
+  "text": "Two overlapping \"S1\" regions, each with a red separating line through them."
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D5",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot of points with a red separating line, labeled \"minimize flat hat 2-norm\" \u2014 "
+ },
+ {
+  "page": "ie802_notes_page041",
+  "desc": "D6",
+  "same": false,
+  "how2": "surya",
+  "how25": "qwen",
+  "le2": 0.4595481753234215,
+  "le25": 0.4876087292988701,
+  "text": "A polygonal region with a red separating line through it, labeled \"split cutg...\" \u2014 \"this "
+ },
+ {
+  "page": "ie802_notes_page042",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.7422015424819939,
+  "le25": 0.7445509795894736,
+  "text": "A set $S$ split into two regions by a vertical line, labeled \"S\" on the left and \"$11$\" on"
+ },
+ {
+  "page": "ie802_notes_page042",
+  "desc": "D2",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": 0.18060918060918063,
+  "le25": 0.18060918060918063,
+  "text": "Two overlapping sets $S_1$ and $S_2$."
+ },
+ {
+  "page": "ie802_notes_page042",
+  "desc": "D3",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 1.0,
+  "le25": 1.0,
+  "text": "Two separate sets $S_1$ and $S_2$ each with a line $\\alpha x \\leq \\beta$ through them."
+ },
+ {
+  "page": "ie802_notes_page042",
+  "desc": "D4",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.1029696517075156,
+  "le25": 0.4146900617457334,
+  "text": "An oval region split by a red line into two halves, labeled $R_1$ on the left and a shaded"
+ },
+ {
+  "page": "ie802_notes_page044",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.0828427029129567,
+  "le25": 0.07989005046863717,
+  "text": "A red line (convex hull boundary) through a set of marked points on an oval curve, illustr"
+ },
+ {
+  "page": "mlt_week06_page002",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A horizontal bar divided into two parts labeled \"training set\" (left) and \"validation set\""
+ },
+ {
+  "page": "mlt_week06_page003",
+  "desc": "D1",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": null,
+  "le25": null,
+  "text": "A row of boxes labeled $F_1, F_2, \\dots, F_k$, with a line through the middle of the last "
+ },
+ {
+  "page": "ie643_lec03_page002",
+  "desc": "D1",
+  "same": false,
+  "how2": "fallback A",
+  "how25": "fallback A",
+  "le2": null,
+  "le25": null,
+  "text": "A perceptron neuron \u2014 inputs $x_1, x_2, \\dots, x_d$ each with weight $w_1, w_2, \\dots, w_d"
+ },
+ {
+  "page": "ie643_lec03_page004",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A line $x_1 - 2x_2 = 3$ (offset/bias) plotted on axes $x_1, x_2$, with a point $(x_1, x_2)"
+ },
+ {
+  "page": "ie643_lec03_page007",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya+",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of boxes labeled $w^t$, $(x^t,y^t)$, $w^{t+1}$, $(x^{t+1},y^{t+1})$, $\\hat{y}^t$, "
+ },
+ {
+  "page": "ie643_lec03_page010",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot of overlapping \"+\" and \"-\" data points with many crossing lines (hyperplane"
+ },
+ {
+  "page": "ie643_lec09_page002",
+  "desc": "D1",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of nodes $a_j^{l-1}$ feeding into $z_i^l$, which feeds into $a_i^l$."
+ },
+ {
+  "page": "ie643_lec09_page005",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of fully-connected layers \u2014 input layer (a $d$-dim vector) \u2192 several hidden layers"
+ },
+ {
+  "page": "ie643_lec09_page006",
+  "desc": "D1",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": null,
+  "le25": null,
+  "text": "A column of $C$-dimensional vectors, each with a single 1 in the $k^{th}$ position and 0s "
+ },
+ {
+  "page": "ie643_lec09_page013",
+  "desc": "D1",
+  "same": false,
+  "how2": "qwen",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A column of output neurons $\\hat{y}_1, \\hat{y}_2, \\dots, \\hat{y}_C$, each connected to a s"
+ },
+ {
+  "page": "ie643_lec09_page014",
+  "desc": "D1",
+  "same": false,
+  "how2": "fallback A",
+  "how25": "fallback A",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of fully-connected layers (left) vs. a fully-connected layer feeding into a single"
+ },
+ {
+  "page": "ie643_lec09_page015",
+  "desc": "D1",
+  "same": false,
+  "how2": "qwen",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A chain of neurons labeled $a_1^L, a_2^L, \\dots, a_C^L$, each feeding into the next."
+ },
+ {
+  "page": "ie643_lec09_page016",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A feedforward neural network with input layer nodes $a_1, a_2, \\dots, a_c$, fully connecti"
+ },
+ {
+  "page": "ie802_notes_page046",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.045456713145362926,
+  "le25": 0.048349268560074266,
+  "text": "A polygon with vertices marked by \"x\"s, one red dot labeled \"corner point\" at the bottom r"
+ },
+ {
+  "page": "ie802_notes_page046",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya+",
+  "how25": "surya+",
+  "le2": 0.5912382626027641,
+  "le25": 0.5912517570840231,
+  "text": "A cone with several \"x\" points inside and a few outside, an arrow from a point inside the "
+ },
+ {
+  "page": "ie802_notes_page046",
+  "desc": "D3",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.33041561368634076,
+  "le25": 0.3143445717120733,
+  "text": "A region with a red cross through it, labeled \"current plane\", and a note \"intersection of"
+ },
+ {
+  "page": "ie802_notes_page047",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.506586246422358,
+  "le25": 0.046554187952775106,
+  "text": "A polygon with a marked corner point, labeled \"basic Gom point\", and an arrow labeled \"cut"
+ },
+ {
+  "page": "ie802_notes_page047",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.04240367610814555,
+  "le25": 0.04896889310676722,
+  "text": "A square containing a smaller circle \u2014 a convex set."
+ },
+ {
+  "page": "ie802_notes_page047",
+  "desc": "D3",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.608212914623754,
+  "le25": 0.6155740979289701,
+  "text": "An irregular shape with a small circle inside, labeled \"we cant chop off the palm\"."
+ },
+ {
+  "page": "ie802_notes_page047",
+  "desc": "D4",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.11410939466773518,
+  "le25": 0.15549367914827472,
+  "text": "A rectangle with a red dot marked on one side, labeled \"not useful\"."
+ },
+ {
+  "page": "ie802_notes_page047",
+  "desc": "D5",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.39793419561944177,
+  "le25": 0.414059002315595,
+  "text": "A shaded region with a marked point, labeled \"Valid cut\"."
+ },
+ {
+  "page": "ie802_notes_page048",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.8758043091997447,
+  "le25": 0.8669047249391916,
+  "text": "A shaded region with a cut through it, illustrating the idea of traveling 2 sides of a cor"
+ },
+ {
+  "page": "ie802_notes_page052",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.2116514931037966,
+  "le25": 0.0636298863088206,
+  "text": "A wavy curve with a local minimum marked at the start, and another point further along the"
+ },
+ {
+  "page": "ie802_notes_page052",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.11947165167076401,
+  "le25": 0.12797614430091442,
+  "text": "A graph with nodes $x_1, x_2, x_3, x_4$ \u2014 $x_1$ has edges to $x_2$ and $x_4$, $x_3$ has an"
+ },
+ {
+  "page": "ie802_notes_page054",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.03981151838997998,
+  "le25": 0.06236631982105789,
+  "text": "A tree with root node branching into two children, each of which branches further."
+ },
+ {
+  "page": "ie802_notes_page055",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": 0.42850096929235404,
+  "le25": 0.4363380867092731,
+  "text": "A branching tree \u2014 root splits into two children, each of which splits further, one branch"
+ },
+ {
+  "page": "mlt_week03_page007",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A 2D scatter plot showing two clusters \u2014 yellow shaded region labeled \"Cluster 1 region\" o"
+ },
+ {
+  "page": "mlt_week03_page008",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A central point with radii drawn to three cluster centers $\\mu_1$, $\\mu_2$, $\\mu_3$. Each "
+ },
+ {
+  "page": "mlt_week03_page010",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot showing a red dot at $(7,4)$, with several other points scattered around it"
+ },
+ {
+  "page": "mlt_week03_page010",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot showing a green dot at $(3,3)$, with a red dot at $(7,4)$ and several other"
+ },
+ {
+  "page": "mlt_week03_page011",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot showing three red dots at $(5,9)$, $(8,3)$, and $(10,1)$, two blue dots at "
+ },
+ {
+  "page": "mlt_week03_page013",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A plot of objective function vs. $k$, with a red dashed line showing the objective, a blue"
+ },
+ {
+  "page": "mlt_week09_page001",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya+",
+  "how25": "surya+",
+  "le2": null,
+  "le25": null,
+  "text": "Two scatter plots \u2014 one with a clear linear separator (left, \"Linear separate exists\"), th"
+ },
+ {
+  "page": "mlt_week09_page003",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "Two scatter plots of data points with a dashed decision boundary line, showing an initial "
+ },
+ {
+  "page": "mlt_week09_page004",
+  "desc": "D1",
+  "same": false,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A line through the origin with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1)$ on one si"
+ },
+ {
+  "page": "mlt_week09_page004",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "Same line through the origin, but now with a point $(\\begin{bmatrix}1\\\\1/2\\end{bmatrix},-1"
+ },
+ {
+  "page": "mlt_week09_page004",
+  "desc": "D3",
+  "same": true,
+  "how2": "fallback A",
+  "how25": "fallback A",
+  "le2": null,
+  "le25": null,
+  "text": "A scatter plot of points $\\begin{bmatrix}0\\\\1\\end{bmatrix}$, $\\begin{bmatrix}-1\\\\1/2\\end{b"
+ },
+ {
+  "page": "mlt_week09_page005",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "Two overlapping green and yellow regions separated by a margin band, labeled $\\{x:w^Tx\\geq"
+ },
+ {
+  "page": "mlt_week09_page006",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A circle of radius $R$ centered at the origin with several data points (green crosses and "
+ },
+ {
+  "page": "mlt_week09_page006",
+  "desc": "D2",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A dot product decision boundary around the origin \u2014 a circle of radius $y'/\\|w^*\\|$ \u2014 with"
+ },
+ {
+  "page": "mlt_week09_page008",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A point $y$ on the axis with a dashed line to an off-axis point labeled $x$, and a dot at "
+ },
+ {
+  "page": "mlt_week09_page010",
+  "desc": "D1",
+  "same": true,
+  "how2": "fallback A",
+  "how25": "fallback A",
+  "le2": null,
+  "le25": null,
+  "text": "A 2D plot showing a line through the origin (normal vector $w$) with several points $x_1, "
+ },
+ {
+  "page": "mlt_week09_page011",
+  "desc": "D1",
+  "same": true,
+  "how2": "surya",
+  "how25": "surya",
+  "le2": null,
+  "le25": null,
+  "text": "A sigmoid curve labeled $g(z)=1/e^{z^2}$, with asymptotes at $y=0$ and $y=1$, crossing thr"
+ },
+ {
+  "page": "mlt_week09_page013",
+  "desc": "D1",
+  "same": true,
+  "how2": "qwen",
+  "how25": "qwen",
+  "le2": null,
+  "le25": null,
+  "text": "A green box containing $x_i$, an arrow to $y_i$, an arrow to $\\theta_i \\in \\mathbb{R}^d$, "
+ }
+]

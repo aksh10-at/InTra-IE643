@@ -1,0 +1,24 @@
+% Extra style for novelty/structure.py, loaded after 04_reconstruction/style.tex.
+% Three visible heading sizes only: section, sub-heading, label.
+\usepackage{needspace}
+% The renderer puts float, fvextra and cancel in the YAML header-includes, but pandoc drops
+% header-includes when --include-in-header is also given (which the renderer does). Load them here.
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{cancel}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\}}
+\titleformat{\section}{\Large\bfseries\color{accent}}{}{0pt}{}[{\color{rule}\titlerule[0.6pt]}]
+\titleformat{\subsection}{\large\bfseries\color{accent}}{}{0pt}{}
+\titleformat{\subsubsection}{\large\bfseries\color{accent}}{}{0pt}{}
+\titleformat{\paragraph}[hang]{\normalsize\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.6\baselineskip}{0.6\baselineskip}
+\titlespacing*{\subsection}{0pt}{1.1\baselineskip}{0.35\baselineskip}
+\titlespacing*{\subsubsection}{0pt}{1.1\baselineskip}{0.35\baselineskip}
+\titlespacing*{\paragraph}{0pt}{0.8\baselineskip}{0.2\baselineskip}
+% figures: a little air around them, caption at most as wide as a reading line
+\captionsetup{width=0.85\linewidth}
+\setlength{\intextsep}{0.9\baselineskip}
+% the "drawing not extracted" note: smaller text in the light-green bar box
+\let\oldquote\quote\let\endoldquote\endquote
+\renewenvironment{quote}{\oldquote\small}{\endoldquote}

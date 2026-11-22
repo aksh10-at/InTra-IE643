@@ -1,0 +1,6 @@
+label_name,bbox_x,bbox_y,bbox_width,bbox_height,image_name,image_width,image_height
+D1,400,518,406,227,ie802_notes_page052.jpg,1555,2000
+D2,334,1436,476,229,ie802_notes_page052.jpg,1555,2000
+D1,127,1349,238,228,ie802_notes_page054.jpg,1497,2000
+D1,287,198,223,353,ie802_notes_page055.jpg,1524,2000
+X,934,354,217,114,ie802_notes_page056.jpg,1497,2000

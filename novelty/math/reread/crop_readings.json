@@ -1,0 +1,365 @@
+{
+ "ie643_lec03_page001": {
+  "1": "$$D = \\{(x^i, y^i)\\}_{i=1}^{N<\\infty}, \\quad x^i = \\begin{bmatrix} x_1^i \\\\ x_2^i \\\\ \\vdots \\\\ x_d^i \\end{bmatrix} \\in \\mathbb{R}^d := X$$\n\n**Binary categorization/Classification**\n\n$$y^i \\in \\{+1,-1\\} =: Y$$",
+  "3": "$$y^i \\in \\{+1,-1\\} =: y$$",
+  "5": "$$h: X \\rightarrow Y$$"
+ },
+ "ie643_lec03_page002": {
+  "1": "$$\\tilde{W} = \\begin{bmatrix} w_1 \\\\ w_2 \\\\ w_3 \\\\ \\vdots \\\\ w_d \\\\ -\\theta \\end{bmatrix}$$"
+ },
+ "ie643_lec03_page003": {
+  "1": "$$\\tilde{u} = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_d \\\\ 1 \\end{bmatrix}$$",
+  "2": "$$\\sum_{j=1}^{d} w_j x_j \\geq 0 \\; \\text{or} \\; < 0 \\quad \\text{(decision rule)}$$",
+  "3": "$$d+1$$",
+  "4": "$$\\vec{w} = \\begin{bmatrix} w_1 \\\\ w_2 \\\\ \\vdots \\\\ w_d \\end{bmatrix}$$",
+  "5": "$$\\vec{x} = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_d \\end{bmatrix}$$",
+  "6": "$$\\langle \\vec{w}, \\vec{x} \\rangle - \\theta \\geq 0 \\quad \\| \\quad \\langle \\vec{w}, \\vec{x} \\rangle - \\theta < 0$$",
+  "7": "$$\\langle \\tilde{w}, \\tilde{x} \\rangle \\geq 0$$\n$$\\langle \\tilde{w}, \\tilde{x} \\rangle = 0$$"
+ },
+ "ie643_lec03_page005": {
+  "1": "$$D = \\{(x^t, y^t)\\}_{t=1}^{n} \\quad (\\text{Online learning})$$",
+  "5": "$$\\rightarrow \\quad \\tilde{x}^t = \\begin{bmatrix} x^t \\\\ 1 \\end{bmatrix}$$",
+  "6": "$$\\rightarrow \\hat{y}^t = \\text{Perceptron}(\\tilde{x}^t; w^t) \\quad \\text{(Prediction)}$$",
+  "10": "$$\\tilde{w}^{t+1} = \\tilde{w}^t$$",
+  "11": "**Rule:**\n\n$$\\tilde{w}^{t+1} = \\tilde{w}^t + y^t \\tilde{x}^t$$"
+ },
+ "ie643_lec03_page006": {
+  "1": "$$x_1 + x_2 = 4$$\n\n$$\\vec{w} = \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$$\n\n$$\\langle \\begin{bmatrix} w_1 \\\\ w_2 \\end{bmatrix}, \\begin{bmatrix} x_1 \\\\ x_2 \\end{bmatrix} \\rangle = 4$$\n\n$$= 0$$\n\n$$\\text{sign}(z) = +1, z \\geq 0$$\n$$= -1, \\text{otherwise}$$\n\n$$\\tilde{w} = \\tilde{w} + y \\tilde{x}$$",
+  "2": "$$\\vec{w} = \\begin{bmatrix} 1 \\\\ 1 \\end{bmatrix}$$",
+  "3": "$$\\tilde{w} = w + y \\tilde{x}$$",
+  "4": "$$\\tilde{w} = \\begin{bmatrix} 1 \\\\ 1 \\\\ -4 \\end{bmatrix}, \\quad (x,y) \\rightarrow \\left(\\begin{bmatrix}2\\\\1\\end{bmatrix},+1\\right)$$\n\n$$\\tilde{x} = \\begin{bmatrix}2\\\\1\\\\1\\end{bmatrix}$$\n\n$$= \\begin{bmatrix}-1\\\\-4\\end{bmatrix} + \\begin{bmatrix}2\\\\1\\end{bmatrix}$$\n\n$$\\text{Perceptron}(\\tilde{x}) = \\text{sign}\\langle\\tilde{w}|\\tilde{x}\\rangle = -1$$"
+ },
+ "ie643_lec03_page009": {
+  "3": "$$\\langle w,x \\rangle - b \\geq 0$$",
+  "4": "$$\\langle w, x \\rangle - b < 0$$"
+ },
+ "ie643_lec03_page011": {
+  "1": "## Linear Separability Assumption:\n\n$$D = \\{(x^t, y^t)\\}_{t=1,2,\\dots} \\quad (x^t \\in \\mathbb{R}^d, y^t \\in \\{+1,-1\\})$$\n\nis called linearly separable",
+  "4": "such that:\n\n$$y^t \\leq w^*, x^t \\geq y \\rightarrow \\langle w^*, x^t \\rangle > \\gamma \\text{ if } y^t = +1$$\n\n$$\\langle w^*, x^t \\rangle < -\\gamma \\text{ if } y^t = -1$$"
+ },
+ "ie643_lec03_page013": {
+  "1": "$$\\hat{y}^t \\neq y^t \\rightarrow \\langle w^{t+1}, w^* \\rangle$$",
+  "2": "$$w^{t+1} = w^t + y^t x^t \\quad \\leftarrow \\text{after mistake}$$\n\n$$= \\langle w^t + y^t x^t, w^* \\rangle$$\n$$= \\langle w^t, w^* \\rangle + \\langle y^t x^t, w^* \\rangle$$\n$$= \\langle w^t, w^* \\rangle + y^t \\langle x^t, w^* \\rangle$$"
+ },
+ "ie643_lec03_page014": {
+  "1": "$$\\langle \\alpha \\vec{u} + \\beta \\vec{v}, \\vec{z} \\rangle = \\alpha \\langle \\vec{u}, \\vec{z} \\rangle + \\beta \\langle \\vec{v}, \\vec{z} \\rangle$$",
+  "2": "$$\\langle w^{t+1}, w^* \\rangle - \\langle w^t, w^* \\rangle = y^t \\langle x^t, w^* \\rangle > \\gamma$$\n\n$$\\langle w^{t+1}, w^* \\rangle - \\langle w^t, w^* \\rangle > \\gamma$$"
+ },
+ "ie643_lec03_page015": {
+  "0": "$$\\sum_{t=0}^{T} \\langle w^{t+1}, w^* \\rangle - \\langle w^t, w^* \\rangle = ?$$"
+ },
+ "ie643_lec07_page002": {
+  "9": "$$\\hat{y} = \\vec{a}^L = \\phi(W^3 \\phi(W^2 \\phi(W^1 x)))$$"
+ },
+ "ie643_lec07_page005": {
+  "2": "$$f'(x;u) = \\lim_{\\alpha \\downarrow 0} \\frac{f(x+\\alpha u)-f(x)}{\\alpha}$$"
+ },
+ "ie643_lec07_page006": {
+  "1": "$$\\nabla f(x) = \\begin{bmatrix} \\frac{\\partial f}{\\partial x_1} \\\\ \\frac{\\partial f}{\\partial x_2} \\\\ \\vdots \\\\ \\frac{\\partial f}{\\partial x_d} \\end{bmatrix}$$",
+  "2": "$$f'(x;u) = \\langle \\nabla f(x), u \\rangle$$",
+  "3": "$$u = -\\nabla f(x)$$\n\n$$= -\\|\\nabla f(x)\\|$$",
+  "5": "$$f'(x;u) = \\langle \\nabla f(x), -\\nabla f(x) \\rangle$$"
+ },
+ "ie643_lec07_page007": {
+  "3": "$$f'(x;u) < 0$$"
+ },
+ "ie643_lec07_page008": {
+  "3": "rate.\n\n$$f'(x;u) = \\lim_{\\alpha \\downarrow 0} \\frac{f(x+\\alpha u)-f(x)}{\\alpha}$$\n\n[Diagram: A curve with a tangent line drawn at a point on it, illustrating the derivative as the slope of the tangent.]"
+ },
+ "ie643_lec07_page010": {
+  "1": "$$\\min_{x \\in \\mathbb{R}^n} f(x)$$"
+ },
+ "ie643_lec07_page012": {
+  "2": "$$\\mathcal{D} = \\{(x_i, y_i)\\}_{i=1}^{N}$$"
+ },
+ "ie643_lec07_page013": {
+  "4": "$$B_k \\subseteq \\{1, 2, \\dots, N\\}$$"
+ },
+ "ie643_lec07_page014": {
+  "1": "$$m_k = \\alpha \\cdot \\text{grad}_k + (1-\\alpha) m_{k-1}$$",
+  "4": "$$u^k = \\alpha \\left(\\text{mini-batch gradient}\\right) + (1-\\alpha) \\cdot \\text{past gradients}$$",
+  "6": "$$w^{k+1} \\leftarrow w^k + \\eta_k$$\n\nAMSgrad",
+  "7": "$$\\frac{- \\text{running avg of gradients}}{\\sqrt{\\text{running avg of sq. comp of gradients}}} + \\epsilon$$"
+ },
+ "ie643_lec07_page015": {
+  "2": "$$w^{k+1} \\leftarrow w^k + \\eta_k \\left( -\\frac{m_k}{\\sqrt{v_k}+\\epsilon} \\right)$$",
+  "4": "$$\\nabla e(y^j, \\hat{y}^j)$$"
+ },
+ "ie643_lec07_page016": {
+  "1": "$$\\hat{y}^j = \\phi(w^L \\cdot \\phi(w^2 \\phi(w^1 x^j)) \\cdots)$$",
+  "2": "$$\\nabla_w e(y^j, \\hat{y}^j)$$\n\n$$w_1, w_2, w_3, \\dots, w_L$$"
+ },
+ "ie643_lec07_page017": {
+  "1": "[Diagram: A chain of neurons \u2014 input layer neuron \u2192 $j^{th}$ neuron in layer $l-1$ \u2192 $i^{th}$ neuron in layer $l$.]\n\n$i^{th}$ neuron in layer $l$, $j^{th}$ neuron in layer $l-1$: $w_{ij}^l$\n\n$$\\frac{\\partial e}{\\partial w_{ij}^l} = \\frac{\\partial e}{\\partial z_i^l} \\cdot \\boxed{\\frac{\\partial z_i^l}{\\partial w_{ij}^l}}$$\n\nforward chain rule:\n$$z_i^l = \\sum_{k=1}^{N_{l-1}} w_{ik}^l a_k^{l-1}$$\n$$a_i^l = \\phi(z_i^l)$$\n$$= \\frac{\\partial e}{\\partial z_i^l} a_j^{l-1}$$"
+ },
+ "ie643_lec07_page018": {
+  "1": "$$\\frac{\\partial e}{\\partial z_i^l} = \\frac{\\partial e}{\\partial a_i^l} \\left(\\frac{\\partial a_i^l}{\\partial z_i^l}\\right)$$\n\n$$= \\frac{\\partial e}{\\partial a_i^l} \\cdot \\phi'(z_i^l)$$",
+  "2": "$$\\frac{\\partial e}{\\partial a_i^l} = \\sum_{m=1}^{N_{l+1}} \\frac{\\partial e}{\\partial z_m^{l+1}}$$",
+  "4": "$$= \\sum_{m=1}^{N^{\\ell+1}} \\frac{y_k}{\\partial z_m^{\\ell+1}} \\cdot w_{m}^{\\ell+1}$$"
+ },
+ "ie643_lec07_page019": {
+  "1": "$$\\frac{\\partial e}{\\partial a_i^l} = \\sum_{m=1}^{N_{l+1}} \\frac{\\partial e}{\\partial z_m^{l+1}} \\cdot w_{mi}^{l+1}$$",
+  "2": "$$= \\sum_{m=1}^{N_{l+1}} \\frac{\\partial e}{\\partial a_m^{l+1}} \\cdot \\frac{\\partial a_m^{l+1}}{\\partial z_m^{l+1}} \\cdot w_{ml}^{l+1} = \\sum_{m=1}^{N_{l+1}} \\frac{\\partial e}{\\partial a_m^{l+1}} \\phi'(z_m^{l+1}) \\cdot w_{ml}^{l+1}$$"
+ },
+ "ie643_lec09_page002": {
+  "1": "$$\\frac{\\partial e}{\\partial w_{ij}^l} = \\frac{\\partial e}{\\partial z_i^l} \\cdot \\left(\\frac{\\partial z_i^l}{\\partial w_{ij}^l}\\right)$$\n\n$$\\Rightarrow \\frac{\\partial e}{\\partial a_i^l} = a_{j}^{l-1} \\cdot \\phi'(z_i^l)$$",
+  "2": "$$\\frac{\\partial e}{\\partial a_i^l} = \\sum_{m} \\frac{\\partial e}{\\partial z_m^{l+1}} \\cdot w_{mi}^{l+1}$$\n\n[Diagram: A circle labeled \"$z_m^{l+1}$\" with an arrow pointing left to \"$a_i^l$\", illustrating the chain rule connection.]",
+  "3": "$$\\frac{\\partial e}{\\partial a_i} = \\sum_{m} \\frac{\\partial e}{\\partial a_m^{l+1}} \\phi'(z_m^{l+1}) w_{mi}^l$$"
+ },
+ "ie643_lec09_page003": {
+  "1": "$$\\left[\\frac{\\partial e}{\\partial a_1^{l+1}}, \\dots, \\frac{\\partial e}{\\partial a_{N_{l+1}}^{l+1}}\\right]$$"
+ },
+ "ie643_lec09_page008": {
+  "2": "$$\\text{KL}(p \\parallel q) = \\sum_{j=1}^{C} p_j \\log \\frac{p_j}{q_j}$$",
+  "5": "$$= E \\left( p \\right) \\log \\frac{p}{q}$$\n\n[Diagram: A box labeled \"$p$\" with an arrow pointing into it.]"
+ },
+ "ie643_lec09_page009": {
+  "1": "$$\\text{KL}(q \\rightarrow p) = \\text{KL}(q \\| p)$$\n\n$$= \\sum_{j=1}^{n} q_j \\log \\frac{q_j}{p_j}$$",
+  "2": "$$\\text{KL}(p \\parallel q) = -\\sum_{j=1}^{n} p_j \\log p_j \\rightarrow \\text{negative entropy}$$",
+  "3": "$$-\\sum_{j=1}^{n} p_j \\log q_j$$",
+  "4": "$$\\gamma \\in q, \\; KL \\downarrow 0 \\Rightarrow KL \\uparrow +\\infty$$"
+ },
+ "ie643_lec09_page010": {
+  "2": "$p_1, p_2, \\dots, p_c$",
+  "3": "$$KL = NE + CE$$",
+  "5": "$$D = \\{(x^i, y^i)\\}_{i=1}^{N} \\in \\mathbb{R}^{p+q}$$",
+  "6": "$$y^i = \\begin{bmatrix} 0 \\\\ 0 \\\\ \\vdots \\\\ 0 \\\\ 1 \\\\ 0 \\\\ \\vdots \\\\ 0 \\end{bmatrix} \\in \\mathbb{R}^{C}$$",
+  "7": "$$\\hat{y}^i = \\begin{bmatrix} \\hat{y}_1^i \\\\ \\hat{y}_2^i \\\\ \\vdots \\\\ \\hat{y}_c^i \\end{bmatrix}$$"
+ },
+ "ie643_lec09_page011": {
+  "1": "$$e(y^i,\\hat{y}^i) = KL(y^i,\\hat{y}^i)$$",
+  "7": "$$E[y|x=x]$$"
+ },
+ "ie643_lec09_page013": {
+  "2": "## Soft-max function",
+  "3": "$$\\hat{y}_j = \\frac{\\exp(a_j^L)}{\\sum_{k=1}^{K} \\exp(a_k^L)}$$\n\n**Softmax**"
+ },
+ "ie643_lec09_page014": {
+  "2": "$$\\delta^l = (W^{l+1})^T \\text{diag}(\\phi'^{l+1}), \\quad \\delta^{l+1} \\rightarrow \\delta^l$$"
+ },
+ "ie643_lec09_page015": {
+  "2": "$$e^i = -\\sum_{j=1}^{C} \\hat{y}_j^i \\log \\hat{y}_j^i$$\n\n$$\\frac{\\partial e^i}{\\partial a_k^L} = \\sum_{k=1}^{C} \\frac{\\partial e^i}{\\partial \\hat{y}_k^i} \\cdot \\frac{\\partial \\hat{y}_k^i}{\\partial a_j^L}$$"
+ },
+ "ie643_lec09_page016": {
+  "2": "$$\\frac{\\partial e}{\\partial a_j} = \\sum_{k=1}^{c} \\frac{\\partial e}{\\partial \\hat{y}_k} \\cdot \\frac{\\partial \\hat{y}_k}{\\partial a_j}$$",
+  "3": "$$= \\sum_{k=1}^{C} -\\frac{y_k}{\\hat{y}_k} \\left(\\frac{\\partial \\hat{y}_k}{\\partial a_j}\\right)$$",
+  "4": "$$e = -\\sum_{j=1}^{C} y_j \\log \\hat{y}_j$$"
+ },
+ "ie643_lec09_page019": {
+  "0": "$$\\left(\\frac{\\partial e}{\\partial a_1}, \\frac{\\partial e}{\\partial a_2}, \\dots, \\frac{\\partial e}{\\partial a_C}\\right) = \\nabla e$$",
+  "1": "$$\\begin{bmatrix} \\hat{y}_1 - y_1 \\\\ \\hat{y}_2 - y_2 \\\\ \\vdots \\\\ \\hat{y}_C - y_C \\end{bmatrix}$$"
+ },
+ "ie802_notes_page043": {
+  "5": "$$S = \\{(x,y) : x \\in \\mathbb{R}^n, y \\in \\mathbb{Z}^p, g_i(x,y) \\leq 0, i=1,2,\\dots,m\\}$$",
+  "6": "$$R = \\{(x,y): x \\in \\mathbb{R}^n, y \\in \\mathbb{R}^p, g_i(x,y) \\leq 0, i=1,2,\\dots,m\\}$$",
+  "14": "$$S_1 = \\{(x,y): x \\in \\mathbb{R}^n, y \\in \\mathbb{Z}^p, g_i(x,y) \\leq 0, i=1,2,\\dots,m, y_1 \\leq 1\\}$$",
+  "15": "$$S_2 = \\{y_1 \\geq 2\\}$$",
+  "19": "Relax $\\rightarrow R_1$ and $R_2$\n\n$$R_1 = \\{(x,y) \\in \\mathbb{R}^n \\times \\mathbb{R}^p \\mid y_i \\leq 1, \\; i=1,\\dots,p\\}$$\n\n$$R_2 = \\{(y) \\in \\mathbb{R}^p \\mid y_1 \\geq 2\\}$$"
+ },
+ "ie802_notes_page044": {
+  "7": "$(x^1,y^1) \\in \\mathbb{R}_1$",
+  "8": "$(x^2, y^2) \\in \\mathbb{R}_2$",
+  "9": "$$(x,y) = \\lambda^1(x^1y^1) + \\lambda^2(x^2y^2)$$",
+  "10": "with $\\lambda^1 + \\lambda^2 = 1$",
+  "11": "$$\\lambda^1 \\geq 0, \\quad \\lambda^2 \\geq 0$$",
+  "14": "$$m = \\begin{bmatrix} x_1^1 y_1^1 & x_2^2 y_2^2 & \\lambda_1 \\; \\lambda_2^2 \\\\ g_1(x',y') \\leq 0 & & \\end{bmatrix}, \\dots$$",
+  "24": "$$a = x_1 + x^2$$",
+  "25": "$$a = x_1 + x_2$$\n$$y = y_1 + y_2$$"
+ },
+ "ie802_notes_page045": {
+  "1": "$$M_{\\text{convex}} = \\left\\{ \\begin{array}{l} \\bar{x}^1, \\bar{y}^1, \\bar{x}^2, \\bar{y}^2, x, y, \\lambda^1, \\lambda^2 \\\\ \\lambda^1 g_1(\\frac{\\bar{x}^1}{\\lambda^1}, \\frac{\\bar{y}^1}{\\lambda^1}) \\leq 0 \\\\ \\lambda^2 g_1(\\frac{\\bar{x}^2}{\\lambda^2}, \\frac{\\bar{y}^2}{\\lambda^2}) \\leq 0 \\\\ \\lambda^1 + \\lambda^2 = 1 \\\\ y \\geq 0 \\end{array} \\right.$$\n\n$\\rightarrow$ all are convex now..",
+  "2": "$$x = x_1^1 + x_2^1$$\n$$y = y_1^2 + y_2^1$$",
+  "3": "## Perspective Function\n\n$$y = y_1 + y_2$$\n\n$$p(x) = \\begin{cases} x^1 g_1\\left(\\frac{x^1}{x^1}, \\frac{y^1}{x^1}\\right) & x^1 > 0 \\\\ 0 & x^1 = 0 \\end{cases}$$"
+ },
+ "ie802_notes_page046": {
+  "4": "$$\\min_{y} c^T y$$\n$$Ay \\leq b$$\n$$y \\in \\mathbb{Z}^p$$"
+ },
+ "ie802_notes_page047": {
+  "5": "$$g_1(x,y) \\leq 0$$",
+  "8": "$$-x_1^2 - x_2^2 \\leq -1$$"
+ },
+ "ie802_notes_page048": {
+  "9": "$$x^TQ'x\\leq b_1 \\quad \\text{if } Q \\text{ is PD if it convex}$$\n\n$$\\text{ip } Q \\text{ is ND} \\rightarrow \\text{convex}$$",
+  "12": "$$x^T(a^{1+}-a^{1-}) \\leq b_1$$",
+  "17": "$$x^T \\alpha^{1+} x - w \\leq b_1 \\rightarrow \\text{convex}$$",
+  "18": "concave,\n\n$$w = x^T Q^{-1} x \\leq 0$$"
+ },
+ "ie802_notes_page049": {
+  "5": "$$x_{ij} = x_i x_j \\quad \\forall i,j$$",
+  "6": "$$y_1 = x_1^2 \\quad y_1$$",
+  "11": "$$\\text{st} \\qquad x_1^0 = x_1^* x_0^*$$",
+  "12": "$$x_i \\in \\{0,1\\}^{n_1}$$"
+ },
+ "ie802_notes_page050": {
+  "2": "$$\\min_{x,y} f(x,y)$$",
+  "3": "$$g_i(x,y) \\leq 0, \\; i=1,2,\\dots m$$",
+  "4": "$$\\sigma_1(x,y) \\qquad x \\in \\mathbb{R}^n$$",
+  "5": "$$x \\in \\mathbb{R}^n$$\n$$y \\in \\mathbb{Z}^p$$"
+ },
+ "ie802_notes_page051": {
+  "8": "[Diagram: A decreasing curve labeled \"we see\" with an arrow pointing right to the vector $y = \\begin{bmatrix}0.6 \\\\ 0.4 \\\\ 0.2 \\\\ 0.5\\end{bmatrix}$]",
+  "10": "$$0 \\leq x \\leq 1$$",
+  "11": "$$0 \\leq x \\leq 1$$\n$$y \\in \\{0,1\\}^p$$",
+  "12": "$$\\min_{p} f(x,y)$$",
+  "13": "$$\\sum_{i=1}^{p} y_i = k$$",
+  "14": "$$\\sum_{i=1}^{n} x_i^2$$",
+  "15": "$$i=1 \\qquad y_i \\in \\{0,1\\} \\qquad i=1,\\dots,p$$"
+ },
+ "ie802_notes_page052": {
+  "2": "$$\\min \\frac{1}{2} x^T Q x + c^T x$$",
+  "3": "$$\\text{st } \\frac{1}{2} x^T Q_i x + a_i^T x \\leq b_i$$",
+  "4": "$$l \\leq x \\leq u$$",
+  "13": "$$x_1^2 + 5x_1x_2 + 7x_3x_4 + x_1x_3 - 2x_1x_4 \\leq 1$$"
+ },
+ "ie802_notes_page053": {
+  "5": "$$\\min c^Tx$$\n$$Ax \\leq b$$\n$$x \\in \\{0,1\\}^n$$",
+  "7": "$$\\min_{x} c^Tx \\quad Ax \\leq b \\quad 0 \\leq x \\leq 1$$",
+  "10": "Simple rounding of $\\vec{x} = \\begin{bmatrix} \\lfloor x_1 \\rfloor & \\text{if } x_1 < 0.5 \\\\ \\vdots \\\\ \\lfloor x_i \\rfloor & \\text{or} & \\lceil x_i \\rceil \\end{bmatrix}$ $\\Rightarrow$ min $\\|\\vec{x}-\\vec{x}\\|_1$, $\\vec{x} \\in \\{0,1\\}^n$, $\\forall c \\leq b$",
+  "16": "$$Ax \\leq b$$\n$$0 \\leq x \\leq 1$$",
+  "17": "$$\\hat{x} = \\begin{bmatrix} 0 \\\\ 1 \\\\ 0.4 \\\\ 0.6 \\\\ 0.48 \\\\ 0.1 \\end{bmatrix}$$",
+  "23": "$$\\min x_1 + (1-x_2) + x_3 + (1-x_4) + (1-x_5) + x_6$$"
+ },
+ "ie802_notes_page054": {
+  "1": "$$\\min c^Tx + d^Ty$$",
+  "2": "$$g_i(x,y) \\leq 0$$",
+  "3": "$$x \\in \\mathbb{R}^n$$",
+  "4": "$$x \\in \\mathbb{R}^n$$\n$$y \\in \\{0,1\\}^p$$",
+  "9": "\u2461 min $\\sum_{i=1}^{p}|y_i-\\text{round}(\\hat{y}_i)|$\n\nst $g_i(x,y)\\leq0$\n$0\\leq y\\leq1$",
+  "10": "$$\\min \\sum |y_i - \\text{round}(y_i)|$$\n\nst $\\nabla$ inequalities at $(\\bar{x}, \\bar{y})$\n\n$$0 \\leq y \\leq 1$$"
+ },
+ "ie802_notes_page055": {
+  "9": "$$[3y_1+y_2-y_3 \\leq 7] \\rightarrow y_1 \\text{ should be small}$$\n$$[-y_1+2y_2+y_3 \\geq 9] \\rightarrow y_1 \\text{ should be small}$$\n\n$$y_2+y_3+y_4=5$$\n$$y_3-y_4+y_6\\leq8$$\n$$0\\leq y\\leq10$$\n\n$\\hookrightarrow$ set $y_1=0$"
+ },
+ "mlt_week03_page001": {
+  "9": "$$F(z_1,\\dots,z_n) = \\sum_{i=1}^{n} \\|x_i - \\mu_{z_i}\\|_2^2 \\quad \\text{(sum of distance of each point from cluster mean)}$$\n\n$\\hookrightarrow$ Mean/average of $z_i^{th}$ cluster",
+  "10": "$$\\mu_k = \\frac{\\sum_{i=1}^{n} x_i I(z_i=k)}{n}$$\n\n(average of all data points which go to the $k^{th}$ cluster)"
+ },
+ "mlt_week03_page002": {
+  "1": "$$\\frac{\\sum_{i=1}^{n} 1(z_i=k)}{n}$$",
+  "5": "$$\\{x_1, x_2, x_3, x_4, x_5\\}, \\quad k=2$$",
+  "6": "$$z_1=1, z_2=2, z_3=1, z_4=1, z_5=2$$",
+  "9": "$$\\mu_1 = \\frac{x_1 + x_3 + x_4}{3}, \\quad \\mu_2 = \\frac{x_2 + x_5}{2}$$",
+  "11": "$$= (x_1-\\mu_1)^2 + (x_2-\\mu_2)^2 + (x_3-\\mu_1)^2 + (x_4-\\mu_1)^2 + (x_5-\\mu_2)^2$$",
+  "13": "Goal: $\\min_{(z_1,\\dots,z_n)} \\sum_{i=1}^{n} \\|x_i - \\mu_{z_i}\\|_2^2$"
+ },
+ "mlt_week03_page005": {
+  "4": "$$v^* = \\arg\\min_{v \\in \\mathbb{R}^d} \\sum_{i=1}^{l} \\|x_i - v\\|^2$$",
+  "6": "$$v^* = \\frac{1}{l} \\sum_{i=1}^{l} x_i$$",
+  "8": "$$z_1^t, z_2^t, \\dots, z_n^t \\in \\{1,\\dots,k\\}$$",
+  "11": "$$z_1^{t+1}, z_2^{t+1}, \\dots, z_n^{t+1} \\in \\{1,\\dots,k\\}$$"
+ },
+ "mlt_week03_page006": {
+  "2": "$$\\sum_{i=1}^{n}\\|x_i - \\mu_{z_i}^{t+1}\\|^2 \\leq \\sum_{i=1}^{n}\\|x_i - \\mu_{z_i}^{t,t+1}\\|^2 = F(z_1^{t+1}, \\dots, z_n^{t+1})$$",
+  "3": "$$\\Rightarrow \\sum_{i=1}^{n}\\sum_{k=1}^{K}\\|x_i-\\mu_k^{t+1}\\|^21(z_i^{t+1}=k)$$",
+  "5": "$$F(z_1^{t+1}, \\dots, z_n^{t+1}) < F(z_1^t, \\dots, z_n^t)$$"
+ },
+ "mlt_week03_page007": {
+  "4": "$$= \\|x\\|^2 + \\|\\mu_1\\|^2 - 2x^T\\mu_1 \\leq \\|x\\|^2 + \\|\\mu_2\\|^2 - 2x^T\\mu_2$$",
+  "5": "$$= \\|u_2\\|^2 - \\|u_1\\|^2 \\geq 2x^T(u_2 - u_1)$$",
+  "6": "$$= x^T(\\mu_2 - \\mu_1) \\leq \\frac{\\|\\mu_2\\|^2 - \\|\\mu_1\\|^2}{2}$$"
+ },
+ "mlt_week03_page009": {
+  "7": "$$S(x) = \\min_{j=1,\\dots,l-1} \\|x - u_j^0\\|^2 \\quad \\forall x$$"
+ },
+ "mlt_week03_page012": {
+  "2": "$$F(z_1,\\dots,z_n) = \\sum_{i=1}^{n} \\|x_i - \\mu_{z_i}\\|^2$$"
+ },
+ "mlt_week03_page013": {
+  "3": "$$\\left[2k - 2\\log(L(\\theta^*))\\right]$$",
+  "5": "$$\\left[K(\\log n) - 2 \\log(L(o^*))\\right]$$"
+ },
+ "mlt_week06_page001": {
+  "2": "$$w = w_{ML}$$\n\n$$\\left[(Xx^T)^+ X y\\right]$$",
+  "4": "$$= E\\left[\\|\\hat{w}_{M2} - w\\|^2\\right] \\quad \\text{(Expected value of the norm of estimator $\\hat{w}$ & $w \\in \\mathbb{R}^d$, over randomness in $y$)}$$\n\n$$= \\sigma^2 \\cdot \\text{trace}\\left[(XX^T)^+\\right]$$"
+ },
+ "mlt_week06_page002": {
+  "4": "Mean Squared Error ($\\hat{w}_{ML}$) = $E[\\|\\hat{w}_{ML} - w\\|^2]$\n\n= $\\sigma^2 \\sum_{i=1}^{d} \\frac{1}{\\lambda_i}$",
+  "6": "$$\\text{trace}\\left((XX^T + \\lambda I)^{-1}\\right) = \\left(\\sum_{i=1}^{d} \\frac{1}{\\lambda_i + \\lambda}\\right)$$"
+ },
+ "mlt_week06_page003": {
+  "6": "$$\\hat{w}_{new} = (XX^T + \\lambda I)^{-1}Xy$$"
+ },
+ "mlt_week06_page004": {
+  "4": "We know,\n\n$$P[w/\\{(x_1,y_1),\\dots,(x_n,y_n)\\}] \\propto P[(x_1,y_1),\\dots,(x_n,y_n)/w] \\cdot P(w)$$\n\n$$\\propto \\left[\\prod_{i=1}^{n} e^{-\\frac{(y_i-w^T x_i)^2}{2}}\\right] \\left[\\prod_{i=1}^{d} e^{-\\frac{(w_i-0)^2}{2\\gamma^2}}\\right]$$\n\n$$\\propto \\left[\\prod_{i=1}^{n} e^{-\\frac{(y_i-w^T x_i)^2}{2}}\\right] \\left[e^{\\frac{1}{2\\gamma^2}\\left(-\\sum_{i=1}^{d} w_i^2\\right)}\\right] = e^{-\\frac{\\|w\\|^2}{2\\gamma^2}}$$",
+  "5": "$$\\hat{w}_{MAP} = \\max_w \\sum_{i=1}^{n} -\\frac{(y_i-w^Tx_i)^2}{2} - \\frac{\\|w\\|^2}{2\\gamma^2}$$\n\n$$= \\min_w \\sum_{i=1}^{n} \\frac{(y_i-w^Tx_i)^2}{2} + \\frac{\\|w\\|^2}{2\\gamma^2} \\quad f(w)$$"
+ },
+ "mlt_week06_page005": {
+  "0": "$$\\nabla f(w) = (XX^T)w - XY + \\frac{w}{\\gamma^2}$$",
+  "1": "$$\\text{MAP } \\hat{W} = (XX^T + \\frac{\\Sigma}{\\sigma^2})^{-1} X y$$"
+ },
+ "mlt_week06_page006": {
+  "1": "$$\\hat{w}_R = \\argmin_w \\sum_{i=1}^{n}(w^Tx_i-y_i)^2 + \\lambda \\|w\\|^2$$\n\n**L > Ridge**\n\n$$\\underbrace{\\text{Loss}}_{\\text{Loss}} \\qquad \\underbrace{\\lambda \\|w\\|^2}_{\\text{Regularizer}}$$"
+ },
+ "mlt_week09_page001": {
+  "10": "## Goal:\n\n$$\\min_{h \\in H_{\\text{linear}}} \\sum_{i=1}^{n} I(h(x_i) \\neq y_i)$$\n\n$$H_{\\text{linear}} = \\{ h_w : h_w(w) = \\text{sign}(w^T x) \\}$$"
+ },
+ "mlt_week09_page002": {
+  "1": "$$y_i \\in \\{+1, -1\\}$$",
+  "2": "Iteration\n\n$$w^0 = 0 \\in \\mathbb{R}^d$$\n\n$$y_i \\in \\{+1, -1\\}$$\n\n$$[0 \\; 0 \\; 0 \\; \\dots \\; 0]$$",
+  "6": "$$w^{t+1} = w^t + x_i y_i \\leftarrow \\text{update rule}$$"
+ },
+ "mlt_week09_page003": {
+  "6": "$$w^{t+1} = w^t + x_i y_i$$\n\n$$(w^{t+1})^T x_i = (w^t + x_i y_i)^T x_i$$\n\n$$= w^T x_i + y_i \\|x_i\\|^2 \\quad \\text{---} \\; y \\geq 0, \\; \\|x_i\\|^2 > 0$$\n\n$$y \\leq 0 \\rightarrow \\text{Negative}$$",
+  "7": "$$(w^{t+1})^Tx_1 = w^tx_1 + y_{t+1}\\|x_1\\|^2$$\n\n$\\underbrace{<0}_{\\text{left}} \\qquad \\underbrace{>0}_{\\text{right}}$",
+  "9": "## Example 1:\n\n$$w^{\\text{new}} = w^{\\text{old}} + x^{(i)} \\frac{y}{\\hat{y}}$$"
+ },
+ "mlt_week09_page004": {
+  "8": "$$w^0 = \\begin{bmatrix} 0 & 0 \\end{bmatrix}$$",
+  "9": "$$- \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}$$\n\n$$w^0{}^T x_1 = 0 \\qquad w^0{}^T x_2 = 0 \\qquad w^0{}^T x_3 = 0$$\n\n$$\\hat{y}_1 = +1 \\qquad \\hat{y}_2 = +1 \\qquad \\boxed{\\hat{y}_3 = +1}$$",
+  "10": "$$\\hat{y}_1 = +1$$",
+  "11": "$$\\hat{y}_2 = +1$$",
+  "12": "$$w' = w^0 + x_3y_3 \\qquad = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix} + \\begin{bmatrix} -1 \\\\ 1/2 \\end{bmatrix}x^{-1}$$"
+ },
+ "mlt_week09_page005": {
+  "1": "$$w^1 = w^0 + x_3y_3 \\quad = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix} + \\begin{bmatrix} -1 \\\\ 1/2 \\end{bmatrix}x^{-1}$$\n\n$$= \\begin{bmatrix} 1 \\\\ -1/2 \\end{bmatrix}$$",
+  "2": "$$w^3 = w^2 + x_2y_2 = \\begin{bmatrix}1\\\\-1\\end{bmatrix} + \\begin{bmatrix}0\\\\-1\\end{bmatrix} \\times 1$$\n\n$$w^3 = \\begin{bmatrix}-1\\\\2\\end{bmatrix} = w^1$$",
+  "3": "$$w^2 = w^1 + x_1y_1 = \\begin{bmatrix} 1 \\\\ -1/2 \\end{bmatrix} + \\begin{bmatrix} 0 \\\\ 1 \\end{bmatrix}^1$$\n\n$$w^2 = \\begin{bmatrix} 1 \\\\ 1/2 \\end{bmatrix}$$"
+ },
+ "mlt_week09_page006": {
+  "8": "$$\\therefore w^{l+1} = w^l + x \\cdot y$$"
+ },
+ "mlt_week09_page007": {
+  "1": "$$\\|w^{l+1}\\|^2 \\leq \\|w^l\\|^2 + R^2$$\n\n$$\\|w^{l+1}\\|^2 \\leq (\\|w^{l-1}\\|^2 + R^2) + R^2$$",
+  "2": "$$\\|w^{l+1}\\|^2 \\leq \\|w^0\\|^2 + lR^2$$\n\n$$= 0$$",
+  "3": "$$\\|w^{l+1}\\|^2 \\leq lR^2$$\n\nno. of mistakes \u2192 \u2460",
+  "4": "$$(w^{l+1})^Tw^* = (w^l + xy)^Tw^*$$\n\n$$= w^{lT}w^* + (w^{*T}x)y \\quad \\text{(orange box)}$$\n\n$$\\geq \\gamma$$",
+  "5": "$$(w^{l+1})^Tw^* \\geq w^{lT}w^* + \\gamma$$\n\n$$\\geq (w^{l-1T}w^* + \\gamma) + \\gamma$$"
+ },
+ "mlt_week09_page008": {
+  "0": "$$(w^{l+1})^Tw^* \\geq (w^0)^Tw^* + l\\gamma$$",
+  "1": "$$(w^{l+1})^Tw^* \\geq \\delta$$",
+  "4": "$$\\left\\|\\left(\\frac{x^Ty}{\\|y\\|^2}\\right)y\\right\\|^2 \\leq \\|x\\|^2$$\n\n[Pythagoras]",
+  "5": "$$(x^Ty)^2 \\frac{\\|y\\|^2}{\\|y\\|^4} \\leq \\|x\\|^2$$",
+  "6": "$$\\Rightarrow (x^Ty)^2 \\leq \\|x\\|^2\\|y\\|^2$$",
+  "9": "$$\\hat{Q}^* \\leq (w^{t+1})^T w^*$$",
+  "10": "$$\\Rightarrow x^2 y^2 \\leq (w^{l+1}, w^*)^2 \\leq \\|w^{l+1}\\|^2 \\|w^*\\|^2 \\quad \\text{[From C.S]}$$\n\n$x,y$ \u2014> $(w^{l+1}, w^*)$ \u2014> $\\|w^{l+1}\\|^2 \\|w^*\\|^2$, 1",
+  "11": "$$\\|w^{R+1}\\|^2 \\geq \\rho^2 y^2$$"
+ },
+ "mlt_week09_page009": {
+  "0": "$$\\|w^{t+1}\\|^2 \\leq \\|w^*\\|^2 \\leq \\|\\hat{R}\\|^2$$\n\nFrom (3)",
+  "2": "$$\\Rightarrow x^2 y^2 \\leq R^2$$",
+  "3": "$$\\Rightarrow \\boxed{x \\leq R^2/\\gamma^2} \\leftarrow \\text{Radius Margin Bound}$$"
+ },
+ "mlt_week09_page010": {
+  "2": "$$P(y=1/x) = \\begin{cases} 1 & \\text{if } w^Tx \\geq 0 \\\\ 0 & \\text{otherwise} \\end{cases}$$"
+ },
+ "mlt_week09_page011": {
+  "2": "$$g(z) = \\frac{1}{1+e^{-z}}$$\n\nsigmoid / function\nlogistic"
+ },
+ "mlt_week09_page012": {
+  "1": "$$P(y=1/x) = \\frac{1}{1+e^{-w^Tx}} \\qquad \\text{Dataset: } \\{(x_1,y_1),\\dots,(x_n,y_n)\\}$$",
+  "3": "$$L(w; \\text{Data}) = \\prod_{i=1}^{n} \\left(g(w^T x_i)^{y_i}(1-g(w^T x_i))^{(1-y_i)}\\right)$$",
+  "4": "$$\\log L(w; \\text{Data}) = \\sum_{i=1}^{n} y_i \\log(g(w^T x_i)) + (1-y_i) \\log(1-g(w^T x_i))$$\n\n$$= \\sum_{i=1}^{n} y_i \\log\\left(\\frac{1}{1+e^{-w^T x_i}}\\right) + (1-y_i) \\log\\left(\\frac{e^{-w^T x_i}}{1+e^{-w^T x_i}}\\right)$$",
+  "5": "$$\\log L(w) = \\sum_{i=1}^{n} \\left[(-y_i)(-w^T x_i) - \\log(1+e^{-w^T x_i})\\right]$$",
+  "6": "Goal: $\\max_w \\sum_{i=1}^{n}(1-y_i)(-w^Tx_i) - \\log(1+e^{-w^Tx_i})$",
+  "9": "$$\\nabla \\log L(w) = \\left[(1-y_i)(-x_i) - \\left(\\frac{e^{-w^Tx_i}}{1+e^{-w^Tx_i}}\\right)(-x_i)\\right]$$\n\n$$= \\left[-x_i + y_ix_i + x_i\\frac{e^{-w^Tx_i}}{1+e^{-w^Tx_i}}\\right]$$"
+ },
+ "mlt_week09_page013": {
+  "0": "$$= \\sum_{i=1}^{n} \\left[ -x_i + y_i x_i + x_i \\frac{e}{1+e^{-w^T x_i}} \\right]$$",
+  "1": "$$= \\sum_{i=1}^{n} \\left[ y_i x_i - x_i \\left( \\frac{1}{1+e^{-w^T x_i}} \\right) \\right]$$",
+  "2": "$$\\nabla \\log L(w) = \\sum_{i=1}^{n} x_i \\left( y_i - \\frac{1}{1+e^{-w^T x_i}} \\right)$$",
+  "4": "$$w_{t+1} = w_t + \\eta_t \\nabla \\log L(w)$$",
+  "5": "$$= w_t + \\eta_t \\left( \\sum_{i=1}^{n} [x_i(y_i - \\frac{1}{1+e^{-w_t^T x_i}})] \\right)$$\n\n[Diagram: A blue box containing a green \"0/1\" circle (input $x_i$) connected via red arrows to a green \"sigmoid\" box ($g(w_t^T x_i)$), which feeds into a red \"loss\" box ($y_i - \\frac{1}{1+e^{-w_t^T x_i}}$).]",
+  "6": "## Regularized Version\n\n$$\\min_{w} \\sum_{i=1}^{n} \\left[ \\log\\left(1+e^{-w^T x_i}\\right) + w^T x_i (1-y_i) \\right] + \\frac{\\lambda}{2} \\|w\\|^2$$\n\nCross validate hyperparameters. Regularized."
+ }
+}

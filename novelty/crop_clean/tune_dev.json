@@ -1,0 +1,654 @@
+{
+ "chosen": {
+  "pad": 0.01,
+  "outside": 0.5,
+  "foreign_frac": 0.5,
+  "wide_text": 0.0,
+  "main": 0.4,
+  "edge": 0.95,
+  "max_removed": 0.35,
+  "foreign_edge": true
+ },
+ "grid": [
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0779354723713371,
+   "drawing_kept_mean": 0.9813266684655084,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 11,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.08019596031323087,
+   "drawing_kept_mean": 0.9838593406015319,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 5,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0779354723713371,
+   "drawing_kept_mean": 0.9813266684655084,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 11,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.08019596031323087,
+   "drawing_kept_mean": 0.9838593406015319,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 5,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07771891968083519,
+   "drawing_kept_mean": 0.9785039101486985,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 12,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0800369316851478,
+   "drawing_kept_mean": 0.981036582284722,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 6,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07771891968083519,
+   "drawing_kept_mean": 0.9785039101486985,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 12,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0800369316851478,
+   "drawing_kept_mean": 0.981036582284722,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 6,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0779354723713371,
+   "drawing_kept_mean": 0.9813266684655084,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 11,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.08019596031323087,
+   "drawing_kept_mean": 0.9838593406015319,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 5,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0779354723713371,
+   "drawing_kept_mean": 0.9813266684655084,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 11,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.08019596031323087,
+   "drawing_kept_mean": 0.9838593406015319,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 3,
+   "crops_changed": 5,
+   "reverted": 1
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07771891968083519,
+   "drawing_kept_mean": 0.9785039101486985,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 12,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0800369316851478,
+   "drawing_kept_mean": 0.981036582284722,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 6,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07771891968083519,
+   "drawing_kept_mean": 0.9785039101486985,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 12,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": false
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.0800369316851478,
+   "drawing_kept_mean": 0.981036582284722,
+   "drawing_kept_min": 0.8162826420890937,
+   "crops_below_98pct_kept": 4,
+   "crops_changed": 6,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.5,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.5,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.0,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 0.95,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07744439183900498,
+   "drawing_kept_mean": 0.9856416941870458,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 11,
+   "reverted": 0
+  },
+  {
+   "params": {
+    "pad": 0.01,
+    "outside": 0.7,
+    "foreign_frac": 0.7,
+    "wide_text": 0.4,
+    "main": 0.4,
+    "edge": 1.01,
+    "max_removed": 0.35,
+    "foreign_edge": true
+   },
+   "n": 16,
+   "foreign_before": 0.0795711015377398,
+   "foreign_after": 0.07971625197055936,
+   "drawing_kept_mean": 0.9881743663230693,
+   "drawing_kept_min": 0.8500768049155146,
+   "crops_below_98pct_kept": 2,
+   "crops_changed": 5,
+   "reverted": 0
+  }
+ ]
+}

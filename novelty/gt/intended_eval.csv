@@ -1,0 +1,25 @@
+page,desc,gt_label,note
+041,D1,D1,
+041,D2,D2,
+041,D3,D3,
+041,D4,D4,
+041,D5,-,extra description: D5 and D6 both describe the split-cuts drawing
+041,D6,D5,
+042,D1,D1,
+042,D2,D2,
+042,D3,D3,
+042,D4,D5,the model wrote no line for GT D4
+044,D1,X,label file has no [Diagram] line but the drawing is real
+046,D1,D1,
+046,D2,D3,"""valid cut for original problem too""; the model wrote no line for GT D2"
+046,D3,D4,
+047,D1,D1,
+047,D2,D2,
+047,D3,D3,
+047,D4,D4,
+047,D5,D5,
+048,D1,D1,
+052,D1,D1,
+052,D2,D2,
+054,D1,D1,
+055,D1,D1,

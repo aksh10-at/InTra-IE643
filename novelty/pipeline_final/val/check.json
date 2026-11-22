@@ -1,0 +1,106 @@
+{
+ "split": "val",
+ "crop_clean": true,
+ "tau": 0.2,
+ "surya": "2.5",
+ "grounding": "dup_only",
+ "pick": "verifier2",
+ "recover": true,
+ "notation": true,
+ "units": {
+  "hlcs_note16": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 7,
+   "blocks": 7,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/hlcs_note16/hlcs_note16.pdf",
+   "pandoc_errors": ""
+  },
+  "ie643_lec07": {
+   "changes": 10,
+   "change_list": [
+    {
+     "page": "ie643_lec07_page001",
+     "from": "## Announcement:",
+     "to": "# Announcement:"
+    },
+    {
+     "page": "ie643_lec07_page002",
+     "from": "## Recap:",
+     "to": "# Recap:"
+    },
+    {
+     "page": "ie643_lec07_page003",
+     "from": "## Supervised learning",
+     "to": "# Supervised learning"
+    },
+    {
+     "page": "ie643_lec07_page005",
+     "from": "## Directional derivative:",
+     "to": "# Directional derivative:"
+    },
+    {
+     "page": "ie643_lec07_page008",
+     "from": "## Negative gradient direction & step-length/learning rate",
+     "to": "# Negative gradient direction & step-length/learning rate"
+    },
+    {
+     "page": "ie643_lec07_page009",
+     "from": "## Property:",
+     "to": "# Property:"
+    },
+    {
+     "page": "ie643_lec07_page012",
+     "from": "## Stochastic gradient descent",
+     "to": "# Stochastic gradient descent"
+    },
+    {
+     "page": "ie643_lec07_page013",
+     "from": "## Mini-batch SGD",
+     "to": "# Mini-batch SGD"
+    },
+    {
+     "page": "ie643_lec07_page014",
+     "from": "## Adam",
+     "to": "# Adam"
+    },
+    {
+     "page": "ie643_lec07_page016",
+     "from": "## Computation of sample-based gradient",
+     "to": "# Computation of sample-based gradient"
+    }
+   ],
+   "blocks_kept": 101,
+   "blocks": 101,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/ie643_lec07/ie643_lec07.pdf",
+   "pandoc_errors": ""
+  },
+  "ie802_notes": {
+   "changes": 2,
+   "change_list": [
+    {
+     "page": "ie802_notes_page041",
+     "from": "## Separation Problem",
+     "to": "# Separation Problem"
+    },
+    {
+     "page": "ie802_notes_page042",
+     "from": "## Split inequalities:",
+     "to": "# Split inequalities:"
+    }
+   ],
+   "blocks_kept": 39,
+   "blocks": 39,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/ie802_notes/ie802_notes.pdf",
+   "pandoc_errors": ""
+  },
+  "mlt_week06": {
+   "changes": 0,
+   "change_list": [],
+   "blocks_kept": 42,
+   "blocks": 42,
+   "pdf": "/home/intralab/workspace/ie643_final/novelty/pipeline_final/val/mlt_week06/mlt_week06.pdf",
+   "pandoc_errors": ""
+  }
+ }
+}
