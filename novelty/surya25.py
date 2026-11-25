@@ -2,7 +2,7 @@
 
 Surya 2.5 (surya-ocr 0.24.0, checkpoint datalab-to/surya-ocr-2.5, 689M parameters) was run
 zero-shot on the processed images of all val + test pages and the 8 IE802 dev pages:
-  separate client env  ~/workspace/ie643_layout_envs/surya0240 (the old surya0221 is untouched)
+  separate client env  ~/workspace/ie643/envs/surya0240 (the old surya0221 is untouched)
   server               the existing vllm0320 env, port 8002, bf16, max_pixels 6291456
   raw output           novelty/surya25/raw/processed/results.json (88 s for 115 pages)
 Nothing in data/tags or data/crops is changed. Surya 2.5 tags go to novelty/surya25/data/.

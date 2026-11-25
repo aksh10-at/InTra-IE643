@@ -16,7 +16,7 @@ Sets of pages:
   other IE643 and MLT val + test pages with [Diagram] lines (to check nothing gets worse there)
   all   eval + dev + other
 
-Usage (GPU machine, from ie643_final/, environment from ie643_final_env.sh; stop the demo first):
+Usage (GPU machine, from ie643_final/, environment from ../env.sh; stop the demo first):
   python3 novelty/ground_qwen.py --set p047
 Output: novelty/grounding/<set>/<page>.json and <page>.jpg (blue = Qwen box, green = GT).
 Existing page files are never overwritten (delete or use --out to re-run).

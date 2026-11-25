@@ -17,7 +17,7 @@ from urllib.request import urlopen
 
 MODEL = 'datalab-to/surya-ocr-2.5'
 SURYA_ENV, SURYA_VERSION = 'surya0240', '0.24.0'
-ENV_ROOT = Path('/home/intralab/workspace/ie643_layout_envs')
+ENV_ROOT = Path('/home/intralab/workspace/ie643/envs')
 
 
 def convert_results(results, data, pages):
@@ -80,7 +80,7 @@ class SuryaServer:
         self.env = os.environ.copy()
         self.env.update(SURYA_INFERENCE_BACKEND='vllm', SURYA_INFERENCE_URL=f'http://127.0.0.1:{self.port}/v1',
                         SURYA_MODEL_CHECKPOINT=MODEL)
-        self.env.setdefault('HF_HOME', '/home/intralab/workspace/hf_cache')
+        self.env.setdefault('HF_HOME', '/home/intralab/workspace/ie643/hf_cache')
 
     @property
     def running(self):

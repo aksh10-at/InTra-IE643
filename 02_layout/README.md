@@ -14,7 +14,7 @@ Starts a private vLLM server, runs Surya on every image in `data/processed/`, st
 and writes `data/tags/<page>.json` (blocks, boxes normalised to 0-1000) and
 `data/crops/<page>_bN.png` (one per figure/table). Previous tags and crops are moved to
 `out/layout_backup_<time>/`. Uses the same code as the upload interface (`06_interface/layout.py`)
-and the environments in `/home/intralab/workspace/ie643_layout_envs` (see `docs/OPERATIONS.md`).
+and the environments in `/home/intralab/workspace/ie643/envs` (see `docs/OPERATIONS.md`).
 
 **Re-run it whenever `data/processed/` is regenerated**: boxes are in the pixel space of the
 processed image, so old tags give wrong crops.

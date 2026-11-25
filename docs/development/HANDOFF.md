@@ -45,10 +45,10 @@ Akshat owns dataset, preprocessing, reconstruction/PDF/evaluation; Ishaan Mane o
 | Qwen environment | `/home/intralab/ie643/.qwen`; latest running-process evidence is Python **3.11.17**, overriding older notes saying 3.13 |
 | Qwen runtime | torch 2.11.0+cu128, transformers 4.57.6; earlier recorded peft 0.21.2, bitsandbytes 0.50.2 |
 | Adapter | `runs/qwen25vl_clean/final_adapter`; config verified, base identifier correct, `adapter_model.safetensors` 181.6 MiB |
-| Tested Surya client | `/home/intralab/workspace/ie643_layout_envs/surya0221`, Python 3.11, `surya-ocr==0.22.1` |
+| Tested Surya client | `/home/intralab/workspace/ie643/envs/surya0221`, Python 3.11, `surya-ocr==0.22.1` |
 | Tested model server | sibling `vllm0320`, `vllm==0.32.0`; checkpoint `datalab-to/surya-ocr-2` |
 | Old Surya | 0.7.0 in `.qwen` is NOT the reviewed model; do not use it as a substitute |
-| HF cache | `/home/intralab/workspace/hf_cache` |
+| HF cache | `/home/intralab/workspace/ie643/hf_cache` |
 | PDF stack | GPU Pandoc/XeLaTeX/DejaVu/pdftotext; PyMuPDF installed after initial missing-fitz error |
 | Interface | Python stdlib HTTP server, no Gradio/Streamlit required |
 | Tunnel | `$HOME/.local/bin/cloudflared`, observed 2026.10.3; HTTP/2 required on this network |

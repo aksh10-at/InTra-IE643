@@ -9,7 +9,7 @@ Same model, loading, image size and box conversion as ground_qwen.py (base Qwen2
 4-bit, no adapter). Output has the same format, in novelty/grounding/page_all/, so
 match_figures.py can use it unchanged (see novelty/crop_fix.py).
 
-Usage (GPU machine, from ie643_final/, environment from ie643_final_env.sh):
+Usage (GPU machine, from ie643_final/, environment from ../env.sh):
   python3 novelty/ground_page.py --set all
 Existing page files are never overwritten.
 """

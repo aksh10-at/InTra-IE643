@@ -58,7 +58,7 @@ grep -E 'https://[^ ]*trycloudflare\.com|Registered tunnel connection|ERR'
 
 Do not manually launch vLLM while UI managed mode is in use. `layout.py` checks Surya0.22.1/vLLM0.32.0, starts checkpoint `datalab-to/surya-ocr-2`, localhost8001, half precision,8192 context/batched tokens, video0,enforce-eager,GPU utilization.90. It refuses occupied8001 and stops only its own process group. UI starts isolated Qwen worker only after layout terminates. Worker exits before PDF rendering. Failed model stages leave logs, not silent successful fallback.
 
-Environment overrides: `IE643_LAYOUT_ENVS` (default `/home/intralab/workspace/ie643_layout_envs`), `IE643_LAYOUT_PORT` (8001). HF_HOME `/home/intralab/workspace/hf_cache`. Explicit `--layout none` skips layout; do not use it while claiming diagrams are automatically cropped.
+Environment overrides: `IE643_LAYOUT_ENVS` (default `/home/intralab/workspace/ie643/envs`), `IE643_LAYOUT_PORT` (8001). HF_HOME `/home/intralab/workspace/ie643/hf_cache`. Explicit `--layout none` skips layout; do not use it while claiming diagrams are automatically cropped.
 
 For CLI integration testing:
 

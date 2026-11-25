@@ -47,7 +47,7 @@ and what we found. Numbers are counts on the pages named. Scripts are in this fo
 - The old Qwen environment had been deleted. We rebuilt it in `workspace/envs/qwen` with the
   versions in the report: PyTorch 2.11 (CUDA 12.8), transformers 4.57.6, PEFT 0.21.2,
   bitsandbytes 0.50.2. Script: `workspace/envs/make_qwen_env.sh`. Activate with
-  `source workspace/ie643_final_env.sh`.
+  `source workspace/ie643/env.sh`.
 - A one-page smoke test ran the full pipeline (adapter, Surya, PDF) in 111 s.
 
 ## Step 1. Ground-truth boxes
@@ -351,7 +351,7 @@ grade against the crops and confirmed them.
   13/13 PDFs build, every block kept. Before/after page images in `structure/<split>/compare/`.
 
 ## Step 13. Surya 2.5 instead of Surya 2 (`surya25.py`, `compare_surya.py`)
-- Setup: surya-ocr 0.24.0 in a new env `ie643_layout_envs/surya0240`, checkpoint
+- Setup: surya-ocr 0.24.0 in a new env `ie643/envs/surya0240`, checkpoint
   datalab-to/surya-ocr-2.5, served by the existing vllm0320 env on port 8002. data/tags is untouched.
   Surya 2.5 tags for all 410 pages are in `surya25/all/data25/`.
 - Speed, all 410 pages after one warm-up page: Surya 2 136 s, Surya 2.5 127 s (about 7% faster on
@@ -450,7 +450,7 @@ grade against the crops and confirmed them.
 
 ## Step 21. Demo and user study
 - The demo start script used the old `ie643_env.sh`, whose Python was deleted. `START_INTERFACE.sh`
-  now sources `ie643_final_env.sh` and adds `~/.local/bin` (cloudflared) to PATH. `manage.py doctor`
+  now sources `ie643/env.sh` and adds `~/.local/bin` (cloudflared) to PATH. `manage.py doctor`
   passes with the rebuilt env. A copy is in `ie643_final/START_INTERFACE.sh`.
 - The interface still uses the first-version pipeline (Surya 2, reading-order pairing). Moving it to
   the novelty pipeline needs grounding inside the recognition worker (adapter switched off for one
@@ -488,7 +488,7 @@ grade against the crops and confirmed them.
 - Checks: 26/26 interface unit tests pass (one test updated for the new Surya version), `manage.py
   doctor` passes, the web service starts on 7861 and answers. Command-line runs: 047 + 042 in 78 s,
   26/26 blocks kept, lec09 p002 + mlt_week09 p004 in 74 s, 17/17 blocks kept, 0 equation failures.
-- Start: `bash ~/workspace/ie643_final/START_INTERFACE_V2.sh`. Run only one of v1 and v2 at a time.
+- Start: `bash ~/workspace/ie643/ie643_final/START_INTERFACE_V2.sh`. Run only one of v1 and v2 at a time.
 - The demo start script for v1 also pointed to the deleted env and was fixed (step 21).
 
 ## Step 24. Improving the maths (`notation.py`, `eq_reread.py`, `retrain_notation.py`)
@@ -519,10 +519,10 @@ grade against the crops and confirmed them.
   Mixed, no significant overall gain, so final_clean stays the model. The new adapter is kept in
   `runs/notation_px16/` (nothing else was overwritten).
 
-## Reproduce steps 11 to 16 (from ie643_final/, after `source ../ie643_final_env.sh`)
+## Reproduce steps 11 to 16 (from ie643_final/, after `source ../env.sh`)
 1. `python3 novelty/crop_clean.py tune`, then `measure`, then `sheet`
 2. Surya 2.5 layout: start the vLLM server for datalab-to/surya-ocr-2.5 on port 8002 (command in
-   `surya25/SUMMARY.md`), run `ie643_layout_envs/surya0240/bin/surya_layout` on `surya25/all/processed`,
+   `surya25/SUMMARY.md`), run `../envs/surya0240/bin/surya_layout` on `surya25/all/processed`,
    stop the server, then `python3 novelty/surya25.py convert_all` and `study`
 3. `python3 novelty/ground_page.py --set all` (GPU, about 2 minutes), then `python3 novelty/crop_fix.py`
 4. `python3 novelty/verify_pick2.py run` (GPU, about 4 minutes), then `pick`
@@ -555,7 +555,7 @@ grade against the crops and confirmed them.
 - Fine-tune a drawing detector on the GT boxes (the dev and val/test boxes are a start).
 - TikZ redrawing of simple diagrams, and textbook explanations as footnotes.
 
-## How to reproduce (from ie643_final/, after `source ../ie643_final_env.sh`)
+## How to reproduce (from ie643_final/, after `source ../env.sh`)
 1. `python3 novelty/diagnose_figures.py` - four-panel diagnostic, no GPU.
 2. `python3 novelty/ground_qwen.py --set all` - Qwen boxes, GPU, about 5 minutes.
 3. `python3 novelty/match_figures.py` - arms A / B / C, TAU chosen on dev, IoU scores.

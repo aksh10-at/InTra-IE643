@@ -1,11 +1,11 @@
 #!/bin/bash
 # Notes2PDF - start everything on the GPU machine.
-# Run:  bash ~/workspace/ie643_final/START_INTERFACE.sh
+# Run:  bash ~/workspace/ie643/ie643_final/START_INTERFACE.sh
 #   or copy-paste the whole file into the terminal.
 
 # Rebuilt environment (21 Nov). Do NOT use the old ie643_env.sh: its Python was deleted.
-source ~/workspace/ie643_final_env.sh    # sets Python, HF cache, and cd's to ie643_final
-cd ~/workspace/ie643_final
+source ~/workspace/ie643/env.sh    # sets Python, HF cache, and cd's to ie643_final
+cd ~/workspace/ie643/ie643_final
 export PATH="$HOME/.local/bin:$PATH"     # cloudflared lives here
 
 echo "== GPU =="
@@ -32,16 +32,16 @@ python3 06_interface/manage.py token
 
 echo
 echo "Done. Open the URL, paste the key, upload 1 page to warm the models (~1 min)."
-echo "Stop later with:  cd ~/workspace/ie643_final && python3 06_interface/manage.py stop"
+echo "Stop later with:  cd ~/workspace/ie643/ie643_final && python3 06_interface/manage.py stop"
 
 # ---------------- IF SOMETHING FAILS ----------------
-# Logs:          tail -50 ~/workspace/ie643_final/out/interface_service/web.log
-#                tail -30 ~/workspace/ie643_final/out/interface_service/tunnel.log
+# Logs:          tail -50 ~/workspace/ie643/ie643_final/out/interface_service/web.log
+#                tail -30 ~/workspace/ie643/ie643_final/out/interface_service/tunnel.log
 # Full reset:    python3 06_interface/manage.py stop
 #                ps aux | grep -E "vllm|recognition_worker|waitress" | grep -v grep
 #                kill <PID>        (kill -9 <PID> if it will not stop)
 #                then run this script again (the URL will change)
 # Port busy:     lsof -i :7860   then  kill <PID>
 # Out of memory: nvidia-smi, kill leftover python/vllm PIDs, run again
-# No flask/torch:you skipped "source ~/workspace/ie643_final_env.sh"
+# No flask/torch:you skipped "source ~/workspace/ie643/env.sh"
 # URL won't open:try phone hotspot (campus Wi-Fi may block trycloudflare.com)
